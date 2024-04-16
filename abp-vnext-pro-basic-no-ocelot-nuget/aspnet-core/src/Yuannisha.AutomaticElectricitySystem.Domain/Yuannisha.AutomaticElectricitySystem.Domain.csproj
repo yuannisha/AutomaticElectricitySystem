@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Yuannisha.AutomaticElectricitySystem</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Abp" Version="9.1.1" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.29" />
+    <PackageReference Include="Lion.AbpPro.BasicManagement.Domain" />
+    <PackageReference Include="Lion.AbpPro.NotificationManagement.Domain" />
+    <PackageReference Include="Lion.AbpPro.DataDictionaryManagement.Domain" />
+    <PackageReference Include="NUglify" Version="1.20.0" />
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="23.3.1-dev" />
+    <ProjectReference Include="..\Yuannisha.AutomaticElectricitySystem.Application.Contracts\Yuannisha.AutomaticElectricitySystem.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Yuannisha.AutomaticElectricitySystem.Domain.Shared\Yuannisha.AutomaticElectricitySystem.Domain.Shared.csproj" />
+    <ProjectReference Include="..\Yuannisha.AutomaticElectricitySystem.HttpApi\Yuannisha.AutomaticElectricitySystem.HttpApi.csproj" />
+  </ItemGroup>
+
+
+</Project>

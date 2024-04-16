@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+
+    <PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Yuannisha.AutomaticElectricitySystem</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Yuannisha.AutomaticElectricitySystem.Domain.Shared\Yuannisha.AutomaticElectricitySystem.Domain.Shared.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+
+        <PackageReference Include="Abp" Version="9.1.1" />
+
+        <PackageReference Include="Lion.AbpPro.BasicManagement.Application.Contracts" />
+        <PackageReference Include="Lion.AbpPro.NotificationManagement.Application.Contracts" />
+        <PackageReference Include="Lion.AbpPro.DataDictionaryManagement.Application.Contracts" />
+    </ItemGroup>
+
+
+</Project>

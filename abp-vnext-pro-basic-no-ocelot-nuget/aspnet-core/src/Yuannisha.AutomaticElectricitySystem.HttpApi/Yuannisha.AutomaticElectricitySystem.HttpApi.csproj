@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Yuannisha.AutomaticElectricitySystem</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yuannisha.AutomaticElectricitySystem.Application.Contracts\Yuannisha.AutomaticElectricitySystem.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" />
+    <PackageReference Include="Lion.AbpPro.BasicManagement.HttpApi" />
+    <PackageReference Include="Lion.AbpPro.NotificationManagement.HttpApi" />
+    <PackageReference Include="Lion.AbpPro.DataDictionaryManagement.HttpApi" />
+  </ItemGroup>
+
+</Project>

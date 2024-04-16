@@ -1,0 +1,1220 @@
+2024-03-17 11:17:14.351 +08:00 [INF] DB tables already exist. Exit install
+2024-03-17 11:17:14.482 +08:00 [INF] Starting Hangfire Server using job storage: 'Server: localhost@YuannishaAutomaticElectricitySystemDB'
+2024-03-17 11:17:14.484 +08:00 [INF] Using the following options for SQL Server job storage:
+2024-03-17 11:17:14.485 +08:00 [INF]     Queue poll interval: 00:00:15.
+2024-03-17 11:17:14.486 +08:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-03-17 11:17:14.529 +08:00 [INF] Loaded ABP modules:
+2024-03-17 11:17:14.530 +08:00 [INF] - Yuannisha.AutomaticElectricitySystem.AutomaticElectricitySystemHttpApiHostModule
+2024-03-17 11:17:14.531 +08:00 [INF]   - Yuannisha.AutomaticElectricitySystem.AutomaticElectricitySystemHttpApiModule
+2024-03-17 11:17:14.532 +08:00 [INF]     - Yuannisha.AutomaticElectricitySystem.AutomaticElectricitySystemApplicationContractsModule
+2024-03-17 11:17:14.532 +08:00 [INF]       - Yuannisha.AutomaticElectricitySystem.AutomaticElectricitySystemDomainSharedModule
+2024-03-17 11:17:14.533 +08:00 [INF]         - Lion.AbpPro.BasicManagement.BasicManagementDomainSharedModule
+2024-03-17 11:17:14.534 +08:00 [INF]           - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2024-03-17 11:17:14.535 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationModule
+2024-03-17 11:17:14.535 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2024-03-17 11:17:14.536 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationModule
+2024-03-17 11:17:14.537 +08:00 [INF]                 - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2024-03-17 11:17:14.538 +08:00 [INF]                 - Volo.Abp.Settings.AbpSettingsModule
+2024-03-17 11:17:14.540 +08:00 [INF]                   - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2024-03-17 11:17:14.540 +08:00 [INF]                   - Volo.Abp.Security.AbpSecurityModule
+2024-03-17 11:17:14.541 +08:00 [INF]                   - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2024-03-17 11:17:14.542 +08:00 [INF]                     - Volo.Abp.Data.AbpDataModule
+2024-03-17 11:17:14.543 +08:00 [INF]                       - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2024-03-17 11:17:14.544 +08:00 [INF]                       - Volo.Abp.Uow.AbpUnitOfWorkModule
+2024-03-17 11:17:14.544 +08:00 [INF]                       - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2024-03-17 11:17:14.545 +08:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2024-03-17 11:17:14.546 +08:00 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2024-03-17 11:17:14.547 +08:00 [INF]           - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2024-03-17 11:17:14.548 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2024-03-17 11:17:14.549 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2024-03-17 11:17:14.549 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2024-03-17 11:17:14.550 +08:00 [INF]           - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2024-03-17 11:17:14.551 +08:00 [INF]             - Volo.Abp.Users.AbpUsersDomainSharedModule
+2024-03-17 11:17:14.552 +08:00 [INF]             - Volo.Abp.Features.AbpFeaturesModule
+2024-03-17 11:17:14.553 +08:00 [INF]               - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2024-03-17 11:17:14.554 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2024-03-17 11:17:14.555 +08:00 [INF]           - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2024-03-17 11:17:14.556 +08:00 [INF]           - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2024-03-17 11:17:14.557 +08:00 [INF]           - Lion.AbpPro.Core.LionAbpProCoreModule
+2024-03-17 11:17:14.557 +08:00 [INF]             - Lion.AbpPro.LionAbpProLocalizationModule
+2024-03-17 11:17:14.558 +08:00 [INF]               - Volo.Abp.Autofac.AbpAutofacModule
+2024-03-17 11:17:14.560 +08:00 [INF]                 - Volo.Abp.Castle.AbpCastleCoreModule
+2024-03-17 11:17:14.560 +08:00 [INF]         - Lion.AbpPro.NotificationManagement.NotificationManagementDomainSharedModule
+2024-03-17 11:17:14.561 +08:00 [INF]         - Lion.AbpPro.DataDictionaryManagement.DataDictionaryManagementDomainSharedModule
+2024-03-17 11:17:14.562 +08:00 [INF]       - Lion.AbpPro.BasicManagement.BasicManagementApplicationContractsModule
+2024-03-17 11:17:14.563 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2024-03-17 11:17:14.565 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2024-03-17 11:17:14.566 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2024-03-17 11:17:14.567 +08:00 [INF]         - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2024-03-17 11:17:14.568 +08:00 [INF]           - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2024-03-17 11:17:14.569 +08:00 [INF]             - Volo.Abp.Users.AbpUsersAbstractionModule
+2024-03-17 11:17:14.569 +08:00 [INF]               - Volo.Abp.EventBus.AbpEventBusModule
+2024-03-17 11:17:14.570 +08:00 [INF]                 - Volo.Abp.Json.AbpJsonModule
+2024-03-17 11:17:14.571 +08:00 [INF]                 - Volo.Abp.Guids.AbpGuidsModule
+2024-03-17 11:17:14.572 +08:00 [INF]                 - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2024-03-17 11:17:14.573 +08:00 [INF]                 - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2024-03-17 11:17:14.574 +08:00 [INF]             - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2024-03-17 11:17:14.575 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2024-03-17 11:17:14.576 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2024-03-17 11:17:14.578 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2024-03-17 11:17:14.579 +08:00 [INF]       - Lion.AbpPro.NotificationManagement.NotificationManagementApplicationContractsModule
+2024-03-17 11:17:14.580 +08:00 [INF]       - Lion.AbpPro.DataDictionaryManagement.DataDictionaryManagementApplicationContractsModule
+2024-03-17 11:17:14.581 +08:00 [INF]     - Lion.AbpPro.BasicManagement.BasicManagementHttpApiModule
+2024-03-17 11:17:14.582 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2024-03-17 11:17:14.583 +08:00 [INF]         - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2024-03-17 11:17:14.584 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingModule
+2024-03-17 11:17:14.586 +08:00 [INF]           - Volo.Abp.Http.AbpHttpModule
+2024-03-17 11:17:14.587 +08:00 [INF]             - Volo.Abp.Http.AbpHttpAbstractionsModule
+2024-03-17 11:17:14.588 +08:00 [INF]             - Volo.Abp.Minify.AbpMinifyModule
+2024-03-17 11:17:14.589 +08:00 [INF]           - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2024-03-17 11:17:14.589 +08:00 [INF]         - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2024-03-17 11:17:14.590 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2024-03-17 11:17:14.591 +08:00 [INF]         - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2024-03-17 11:17:14.592 +08:00 [INF]           - Volo.Abp.UI.AbpUiModule
+2024-03-17 11:17:14.593 +08:00 [INF]         - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2024-03-17 11:17:14.594 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationModule
+2024-03-17 11:17:14.595 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainModule
+2024-03-17 11:17:14.596 +08:00 [INF]             - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2024-03-17 11:17:14.597 +08:00 [INF]             - Volo.Abp.Specifications.AbpSpecificationsModule
+2024-03-17 11:17:14.598 +08:00 [INF]             - Volo.Abp.Caching.AbpCachingModule
+2024-03-17 11:17:14.599 +08:00 [INF]               - Volo.Abp.Serialization.AbpSerializationModule
+2024-03-17 11:17:14.600 +08:00 [INF]     - Lion.AbpPro.NotificationManagement.NotificationManagementHttpApiModule
+2024-03-17 11:17:14.600 +08:00 [INF]     - Lion.AbpPro.DataDictionaryManagement.DataDictionaryManagementHttpApiModule
+2024-03-17 11:17:14.602 +08:00 [INF]   - Lion.AbpPro.SharedHostingMicroserviceModule
+2024-03-17 11:17:14.603 +08:00 [INF]     - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2024-03-17 11:17:14.604 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2024-03-17 11:17:14.604 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2024-03-17 11:17:14.605 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2024-03-17 11:17:14.606 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2024-03-17 11:17:14.607 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2024-03-17 11:17:14.608 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2024-03-17 11:17:14.609 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2024-03-17 11:17:14.609 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2024-03-17 11:17:14.610 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2024-03-17 11:17:14.611 +08:00 [INF]   - Yuannisha.AutomaticElectricitySystem.EntityFrameworkCore.AutomaticElectricitySystemEntityFrameworkCoreModule
+2024-03-17 11:17:14.612 +08:00 [INF]     - Yuannisha.AutomaticElectricitySystem.AutomaticElectricitySystemDomainModule
+2024-03-17 11:17:14.612 +08:00 [INF]       - Lion.AbpPro.BasicManagement.BasicManagementDomainModule
+2024-03-17 11:17:14.613 +08:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2024-03-17 11:17:14.614 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2024-03-17 11:17:14.615 +08:00 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2024-03-17 11:17:14.616 +08:00 [INF]             - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2024-03-17 11:17:14.617 +08:00 [INF]           - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2024-03-17 11:17:14.618 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2024-03-17 11:17:14.619 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainModule
+2024-03-17 11:17:14.620 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainModule
+2024-03-17 11:17:14.621 +08:00 [INF]         - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2024-03-17 11:17:14.622 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2024-03-17 11:17:14.623 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2024-03-17 11:17:14.623 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2024-03-17 11:17:14.624 +08:00 [INF]       - Lion.AbpPro.NotificationManagement.NotificationManagementDomainModule
+2024-03-17 11:17:14.625 +08:00 [INF]       - Lion.AbpPro.DataDictionaryManagement.DataDictionaryManagementDomainModule
+2024-03-17 11:17:14.626 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2024-03-17 11:17:14.627 +08:00 [INF]       - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2024-03-17 11:17:14.628 +08:00 [INF]     - Lion.AbpPro.BasicManagement.EntityFrameworkCore.BasicManagementEntityFrameworkCoreModule
+2024-03-17 11:17:14.629 +08:00 [INF]       - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2024-03-17 11:17:14.629 +08:00 [INF]         - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2024-03-17 11:17:14.630 +08:00 [INF]       - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2024-03-17 11:17:14.631 +08:00 [INF]       - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2024-03-17 11:17:14.632 +08:00 [INF]       - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2024-03-17 11:17:14.633 +08:00 [INF]       - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2024-03-17 11:17:14.634 +08:00 [INF]       - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2024-03-17 11:17:14.635 +08:00 [INF]       - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2024-03-17 11:17:14.636 +08:00 [INF]     - Lion.AbpPro.DataDictionaryManagement.EntityFrameworkCore.DataDictionaryManagementEntityFrameworkCoreModule
+2024-03-17 11:17:14.637 +08:00 [INF]     - Lion.AbpPro.NotificationManagement.EntityFrameworkCore.NotificationManagementEntityFrameworkCoreModule
+2024-03-17 11:17:14.638 +08:00 [INF]   - Volo.Abp.AspNetCore.Authentication.JwtBearer.AbpAspNetCoreAuthenticationJwtBearerModule
+2024-03-17 11:17:14.638 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2024-03-17 11:17:14.639 +08:00 [INF]   - Volo.Abp.Account.Web.AbpAccountWebModule
+2024-03-17 11:17:14.640 +08:00 [INF]     - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2024-03-17 11:17:14.641 +08:00 [INF]   - Yuannisha.AutomaticElectricitySystem.AutomaticElectricitySystemApplicationModule
+2024-03-17 11:17:14.641 +08:00 [INF]     - Lion.AbpPro.BasicManagement.BasicManagementApplicationModule
+2024-03-17 11:17:14.642 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationModule
+2024-03-17 11:17:14.643 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationModule
+2024-03-17 11:17:14.644 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2024-03-17 11:17:14.644 +08:00 [INF]         - Volo.Abp.Emailing.AbpEmailingModule
+2024-03-17 11:17:14.645 +08:00 [INF]           - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2024-03-17 11:17:14.646 +08:00 [INF]             - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2024-03-17 11:17:14.647 +08:00 [INF]               - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2024-03-17 11:17:14.647 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2024-03-17 11:17:14.648 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2024-03-17 11:17:14.650 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2024-03-17 11:17:14.650 +08:00 [INF]     - Lion.AbpPro.NotificationManagement.NotificationManagementApplicationModule
+2024-03-17 11:17:14.651 +08:00 [INF]       - Volo.Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule
+2024-03-17 11:17:14.652 +08:00 [INF]     - Lion.AbpPro.DataDictionaryManagement.DataDictionaryManagementApplicationModule
+2024-03-17 11:17:14.653 +08:00 [INF]     - Yuannisha.AutomaticElectricitySystem.FreeSqlRepository.AutomaticElectricitySystemFreeSqlModule
+2024-03-17 11:17:14.654 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2024-03-17 11:17:14.655 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2024-03-17 11:17:14.921 +08:00 [INF] Server 苑霓砂:19980:15c455fa successfully announced in 418.3075 ms
+2024-03-17 11:17:14.926 +08:00 [INF] Server 苑霓砂:19980:15c455fa is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-03-17 11:17:14.934 +08:00 [INF] Server 苑霓砂:19980:15c455fa all the dispatchers started
+2024-03-17 11:17:16.092 +08:00 [INF] Connecting to Redis endpoints: localhost. Using Server Name: 苑霓砂_055465fb925b48c8aaa38c4fd322099b
+2024-03-17 11:17:16.147 +08:00 [INF] Connected to Redis.
+2024-03-17 11:17:16.226 +08:00 [INF] Initialized all ABP modules.
+2024-03-17 11:17:16.787 +08:00 [INF] Now listening on: http://localhost:44315
+2024-03-17 11:17:16.807 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-17 11:17:16.813 +08:00 [INF] Hosting environment: Development
+2024-03-17 11:17:16.819 +08:00 [INF] Content root path: D:\GraduationProject\testProject1\AutomaticElectricitySystem\abp-vnext-pro-basic-no-ocelot-nuget\aspnet-core\host\Yuannisha.AutomaticElectricitySystem.HttpApi.Host
+2024-03-17 11:26:22.958 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/ - -
+2024-03-17 11:26:23.805 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.Controllers.HomeController.Index (Yuannisha.AutomaticElectricitySystem.HttpApi.Host)'
+2024-03-17 11:26:23.862 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Yuannisha.AutomaticElectricitySystem.Controllers.HomeController (Yuannisha.AutomaticElectricitySystem.HttpApi.Host).
+2024-03-17 11:26:23.920 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.Controllers.HomeController.Index (Yuannisha.AutomaticElectricitySystem.HttpApi.Host) - Validation state: "Valid"
+2024-03-17 11:26:23.934 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.Controllers.HomeController.Index (Yuannisha.AutomaticElectricitySystem.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.3537ms.
+2024-03-17 11:26:23.954 +08:00 [INF] Executing RedirectResult, redirecting to /Login.
+2024-03-17 11:26:23.965 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.Controllers.HomeController.Index (Yuannisha.AutomaticElectricitySystem.HttpApi.Host) in 91.5339ms
+2024-03-17 11:26:23.967 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.Controllers.HomeController.Index (Yuannisha.AutomaticElectricitySystem.HttpApi.Host)'
+2024-03-17 11:26:24.004 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/ - - - 302 0 - 1048.1577ms
+2024-03-17 11:26:24.025 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-03-17 11:26:30.939 +08:00 [INF] Executing endpoint '/Login'
+2024-03-17 11:26:30.952 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-03-17 11:26:30.953 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-03-17 11:26:31.139 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-03-17 11:26:31.141 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-03-17 11:26:31.146 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-03-17 11:26:31.147 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-03-17 11:26:31.207 +08:00 [INF] Executed page /Login in 254.319ms
+2024-03-17 11:26:31.209 +08:00 [INF] Executed endpoint '/Login'
+2024-03-17 11:26:31.215 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 7190.4982ms
+2024-03-17 11:26:31.701 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/favicon.ico - -
+2024-03-17 11:26:31.711 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/favicon.ico - - - 404 0 - 10.0414ms
+2024-03-17 11:26:44.292 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 214
+2024-03-17 11:26:44.297 +08:00 [INF] CORS policy execution failed.
+2024-03-17 11:26:44.298 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-03-17 11:26:44.303 +08:00 [INF] Executing endpoint '/Login'
+2024-03-17 11:26:44.305 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-03-17 11:26:44.306 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-03-17 11:26:44.325 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-03-17 11:26:45.959 +08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-03-17 11:26:46.171 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-03-17 11:26:46.173 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-03-17 11:26:46.174 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-03-17 11:26:46.204 +08:00 [INF] Executed page /Login in 1898.2144ms
+2024-03-17 11:26:46.207 +08:00 [INF] Executed endpoint '/Login'
+2024-03-17 11:26:46.207 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/monitor - -
+2024-03-17 11:26:46.881 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 214 - 302 - text/html;+charset=utf-8 2588.9087ms
+2024-03-17 11:26:46.977 +08:00 [INF] Executing endpoint '/Monitor'
+2024-03-17 11:26:46.981 +08:00 [INF] Route matched with {page = "/Monitor", action = "", controller = "", area = ""}. Executing page /Monitor
+2024-03-17 11:26:46.982 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-03-17 11:26:46.984 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Monitor.OnGet - ModelState is "Valid"
+2024-03-17 11:26:46.986 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-03-17 11:26:46.987 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-03-17 11:26:46.988 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-03-17 11:26:46.996 +08:00 [INF] Executed page /Monitor in 14.3077ms
+2024-03-17 11:26:46.998 +08:00 [INF] Executed endpoint '/Monitor'
+2024-03-17 11:26:47.002 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/monitor - - - 200 - text/html;+charset=utf-8 794.5577ms
+2024-03-17 11:26:49.078 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/swagger/index.html - -
+2024-03-17 11:26:49.365 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/swagger/index.html - - - 200 - text/html;charset=utf-8 287.0166ms
+2024-03-17 11:26:49.887 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/swagger/AutomaticElectricitySystem/swagger.json - -
+2024-03-17 11:26:50.453 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/swagger/AutomaticElectricitySystem/swagger.json - - - 200 - application/json;charset=utf-8 565.7525ms
+2024-03-17 11:32:24.388 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - -
+2024-03-17 11:32:24.457 +08:00 [INF] CORS policy execution successful.
+2024-03-17 11:32:24.495 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - - - 204 - - 112.2890ms
+2024-03-17 11:32:24.499 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 37
+2024-03-17 11:32:24.510 +08:00 [INF] CORS policy execution successful.
+2024-03-17 11:32:24.543 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 11:32:24.738 +08:00 [INF] Route matched with {action = "Login", controller = "Account", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Lion.AbpPro.BasicManagement.Users.Dtos.LoginOutput] LoginAsync(Lion.AbpPro.BasicManagement.Users.Dtos.LoginInput) on controller Lion.AbpPro.BasicManagement.Systems.AccountController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-03-17 11:32:25.030 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-03-17 11:32:25.453 +08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-03-17 11:32:25.537 +08:00 [INF] Executed action method Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 505.4907ms.
+2024-03-17 11:32:25.578 +08:00 [INF] Executing ObjectResult, writing value of type 'Lion.AbpPro.BasicManagement.Users.Dtos.LoginOutput'.
+2024-03-17 11:32:25.643 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) in 902.1295ms
+2024-03-17 11:32:25.644 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 11:32:25.732 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 37 - 200 - application/json;+charset=utf-8 1233.8173ms
+2024-03-17 11:32:25.738 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/api/abp/application-configuration - -
+2024-03-17 11:32:25.739 +08:00 [INF] CORS policy execution successful.
+2024-03-17 11:32:25.740 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/api/abp/application-configuration - - - 204 - - 2.1454ms
+2024-03-17 11:32:25.741 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/api/abp/application-configuration - -
+2024-03-17 11:32:25.744 +08:00 [INF] CORS policy execution successful.
+2024-03-17 11:32:25.750 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-03-17 11:32:25.761 +08:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2024-03-17 11:32:25.824 +08:00 [INF] Executing action method Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) - Validation state: "Valid"
+2024-03-17 11:32:25.836 +08:00 [WRN] The cookie 'XSRF-TOKEN' has set 'SameSite=None' and must also set 'Secure'.
+2024-03-17 11:32:25.847 +08:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2024-03-17 11:32:27.338 +08:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2024-03-17 11:32:27.343 +08:00 [INF] Executed action method Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1517.7132ms.
+2024-03-17 11:32:27.358 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2024-03-17 11:32:27.437 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 1673.9718ms
+2024-03-17 11:32:27.440 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-03-17 11:32:27.446 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/api/abp/application-configuration - - - 200 - application/json;+charset=utf-8 1704.9354ms
+2024-03-17 11:32:39.212 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY0NjM0NSwiZXhwIjoxNzEwNjUzNTQ1LCJpYXQiOjE3MTA2NDYzNDV9.EZttsYCUYJUwe2xDLAnmx7oH5YNfXNTPwyrY9-1aNJ4 - -
+2024-03-17 11:32:39.226 +08:00 [INF] CORS policy execution successful.
+2024-03-17 11:32:39.242 +08:00 [INF] Executing endpoint 'SignalR/Notification'
+2024-03-17 11:36:54.566 +08:00 [INF] Executed endpoint 'SignalR/Notification'
+2024-03-17 11:36:54.596 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY0NjM0NSwiZXhwIjoxNzEwNjUzNTQ1LCJpYXQiOjE3MTA2NDYzNDV9.EZttsYCUYJUwe2xDLAnmx7oH5YNfXNTPwyrY9-1aNJ4 - - - 101 - - 255381.5159ms
+2024-03-17 12:08:41.869 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - -
+2024-03-17 12:08:41.988 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:08:42.016 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - - - 204 - - 157.4616ms
+2024-03-17 12:08:42.020 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 37
+2024-03-17 12:08:42.022 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:08:42.094 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:08:42.127 +08:00 [INF] Route matched with {action = "Login", controller = "Account", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Lion.AbpPro.BasicManagement.Users.Dtos.LoginOutput] LoginAsync(Lion.AbpPro.BasicManagement.Users.Dtos.LoginInput) on controller Lion.AbpPro.BasicManagement.Systems.AccountController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-03-17 12:08:42.312 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-03-17 12:08:42.997 +08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-03-17 12:08:43.054 +08:00 [INF] Executed action method Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 737.4925ms.
+2024-03-17 12:08:43.077 +08:00 [INF] Executing ObjectResult, writing value of type 'Lion.AbpPro.BasicManagement.Users.Dtos.LoginOutput'.
+2024-03-17 12:08:43.103 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) in 972.952ms
+2024-03-17 12:08:43.104 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:08:43.679 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 37 - 200 - application/json;+charset=utf-8 1659.5274ms
+2024-03-17 12:08:43.684 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/api/abp/application-configuration - -
+2024-03-17 12:08:43.687 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:08:43.689 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/api/abp/application-configuration - - - 204 - - 4.3789ms
+2024-03-17 12:08:43.691 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/api/abp/application-configuration - -
+2024-03-17 12:08:43.694 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:08:43.713 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-03-17 12:08:43.716 +08:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2024-03-17 12:08:43.760 +08:00 [INF] Executing action method Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) - Validation state: "Valid"
+2024-03-17 12:08:43.769 +08:00 [WRN] The cookie 'XSRF-TOKEN' has set 'SameSite=None' and must also set 'Secure'.
+2024-03-17 12:08:43.778 +08:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2024-03-17 12:08:43.920 +08:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2024-03-17 12:08:43.921 +08:00 [INF] Executed action method Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 158.8581ms.
+2024-03-17 12:08:43.925 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2024-03-17 12:08:43.936 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 216.3529ms
+2024-03-17 12:08:43.937 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-03-17 12:08:43.942 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/api/abp/application-configuration - - - 200 - application/json;+charset=utf-8 250.0985ms
+2024-03-17 12:08:47.455 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY0ODUyMywiZXhwIjoxNzEwNjU1NzIzLCJpYXQiOjE3MTA2NDg1MjN9.JyOEumGsCejZ9gvpKcwy3b-MGyEFWNQyC_fpaX7LL4E - -
+2024-03-17 12:08:47.462 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:08:47.485 +08:00 [INF] Executing endpoint 'SignalR/Notification'
+2024-03-17 12:08:59.985 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Users/page - -
+2024-03-17 12:08:59.987 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:08:59.990 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Users/page - - - 204 - - 4.9139ms
+2024-03-17 12:08:59.993 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Users/page application/json 29
+2024-03-17 12:08:59.998 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:09:00.002 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.UserController.ListAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:09:00.037 +08:00 [INF] Route matched with {action = "List", controller = "User", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Volo.Abp.Identity.IdentityUserDto]] ListAsync(Lion.AbpPro.BasicManagement.Users.Dtos.PagingUserListInput) on controller Lion.AbpPro.BasicManagement.Systems.UserController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-03-17 12:09:00.197 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.UserController.ListAsync (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-03-17 12:09:05.582 +08:00 [INF] Executed action method Lion.AbpPro.BasicManagement.Systems.UserController.ListAsync (Lion.AbpPro.BasicManagement.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5382.8991ms.
+2024-03-17 12:09:05.585 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Volo.Abp.Identity.IdentityUserDto, Volo.Abp.Identity.Application.Contracts, Version=7.2.2.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:09:05.704 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.UserController.ListAsync (Lion.AbpPro.BasicManagement.HttpApi) in 5664.4175ms
+2024-03-17 12:09:05.706 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.UserController.ListAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:09:05.753 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Users/page application/json 29 - 200 - application/json;+charset=utf-8 5761.1925ms
+2024-03-17 12:16:17.523 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Roles/all - -
+2024-03-17 12:16:17.582 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:16:17.594 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Roles/all - - - 204 - - 76.8473ms
+2024-03-17 12:16:17.596 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Roles/all - 0
+2024-03-17 12:16:17.625 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:16:17.821 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.RoleController.AllListAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:16:17.918 +08:00 [INF] Route matched with {action = "AllList", controller = "Role", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.ListResultDto`1[Volo.Abp.Identity.IdentityRoleDto]] AllListAsync() on controller Lion.AbpPro.BasicManagement.Systems.RoleController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-03-17 12:16:18.063 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.RoleController.AllListAsync (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-03-17 12:16:18.361 +08:00 [INF] Executed action method Lion.AbpPro.BasicManagement.Systems.RoleController.AllListAsync (Lion.AbpPro.BasicManagement.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 295.0436ms.
+2024-03-17 12:16:18.376 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.ListResultDto`1[[Volo.Abp.Identity.IdentityRoleDto, Volo.Abp.Identity.Application.Contracts, Version=7.2.2.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:16:18.411 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.RoleController.AllListAsync (Lion.AbpPro.BasicManagement.HttpApi) in 489.8252ms
+2024-03-17 12:16:18.417 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.RoleController.AllListAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:16:18.496 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Roles/all - 0 - 200 - application/json;+charset=utf-8 899.7535ms
+2024-03-17 12:16:18.502 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Users/role - -
+2024-03-17 12:16:18.504 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:16:18.505 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Users/role - - - 204 - - 3.3738ms
+2024-03-17 12:16:18.510 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Users/role application/json 45
+2024-03-17 12:16:18.511 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:16:18.517 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.UserController.GetRoleByUserId (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:16:18.534 +08:00 [INF] Route matched with {action = "GetRoleByUserId", controller = "User", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.ListResultDto`1[Volo.Abp.Identity.IdentityRoleDto]] GetRoleByUserId(Lion.AbpPro.Core.IdInput) on controller Lion.AbpPro.BasicManagement.Systems.UserController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-03-17 12:16:18.581 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.UserController.GetRoleByUserId (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-03-17 12:16:18.774 +08:00 [INF] Executed action method Lion.AbpPro.BasicManagement.Systems.UserController.GetRoleByUserId (Lion.AbpPro.BasicManagement.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 191.6112ms.
+2024-03-17 12:16:18.777 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.ListResultDto`1[[Volo.Abp.Identity.IdentityRoleDto, Volo.Abp.Identity.Application.Contracts, Version=7.2.2.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:16:18.781 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.UserController.GetRoleByUserId (Lion.AbpPro.BasicManagement.HttpApi) in 243.8585ms
+2024-03-17 12:16:18.785 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.UserController.GetRoleByUserId (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:16:18.841 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Users/role application/json 45 - 200 - application/json;+charset=utf-8 331.5410ms
+2024-03-17 12:16:25.925 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Roles/all - -
+2024-03-17 12:16:25.927 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:16:25.929 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Roles/all - - - 204 - - 3.8033ms
+2024-03-17 12:16:25.931 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Roles/all - 0
+2024-03-17 12:16:25.933 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:16:25.937 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.RoleController.AllListAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:16:25.939 +08:00 [INF] Route matched with {action = "AllList", controller = "Role", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.ListResultDto`1[Volo.Abp.Identity.IdentityRoleDto]] AllListAsync() on controller Lion.AbpPro.BasicManagement.Systems.RoleController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-03-17 12:16:25.950 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.RoleController.AllListAsync (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-03-17 12:16:25.976 +08:00 [INF] Executed action method Lion.AbpPro.BasicManagement.Systems.RoleController.AllListAsync (Lion.AbpPro.BasicManagement.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 24.3177ms.
+2024-03-17 12:16:25.981 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.ListResultDto`1[[Volo.Abp.Identity.IdentityRoleDto, Volo.Abp.Identity.Application.Contracts, Version=7.2.2.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:16:25.985 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.RoleController.AllListAsync (Lion.AbpPro.BasicManagement.HttpApi) in 43.2668ms
+2024-03-17 12:16:25.987 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.RoleController.AllListAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:16:26.130 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Roles/all - 0 - 200 - application/json;+charset=utf-8 198.9716ms
+2024-03-17 12:16:26.244 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Users/role - -
+2024-03-17 12:16:26.248 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:16:26.250 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Users/role - - - 204 - - 5.6143ms
+2024-03-17 12:16:26.254 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Users/role application/json 45
+2024-03-17 12:16:26.256 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:16:26.268 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.UserController.GetRoleByUserId (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:16:26.269 +08:00 [INF] Route matched with {action = "GetRoleByUserId", controller = "User", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.ListResultDto`1[Volo.Abp.Identity.IdentityRoleDto]] GetRoleByUserId(Lion.AbpPro.Core.IdInput) on controller Lion.AbpPro.BasicManagement.Systems.UserController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-03-17 12:16:26.293 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.UserController.GetRoleByUserId (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-03-17 12:16:26.328 +08:00 [INF] Executed action method Lion.AbpPro.BasicManagement.Systems.UserController.GetRoleByUserId (Lion.AbpPro.BasicManagement.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 32.0246ms.
+2024-03-17 12:16:26.332 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.ListResultDto`1[[Volo.Abp.Identity.IdentityRoleDto, Volo.Abp.Identity.Application.Contracts, Version=7.2.2.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:16:26.334 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.UserController.GetRoleByUserId (Lion.AbpPro.BasicManagement.HttpApi) in 62.4405ms
+2024-03-17 12:16:26.343 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.UserController.GetRoleByUserId (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:16:26.418 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Users/role application/json 45 - 200 - application/json;+charset=utf-8 163.6936ms
+2024-03-17 12:16:34.712 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Users/update - -
+2024-03-17 12:16:34.714 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:16:34.719 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Users/update - - - 204 - - 6.7021ms
+2024-03-17 12:16:34.722 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Users/update application/json 272
+2024-03-17 12:16:34.725 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:16:34.733 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.UserController.UpdateAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:16:34.756 +08:00 [INF] Route matched with {action = "Update", controller = "User", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Identity.IdentityUserDto] UpdateAsync(Lion.AbpPro.BasicManagement.Users.Dtos.UpdateUserInput) on controller Lion.AbpPro.BasicManagement.Systems.UserController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-03-17 12:16:34.987 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.UserController.UpdateAsync (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-03-17 12:16:36.430 +08:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": "Volo.Abp.Identity:PasswordRequiresNonAlphanumeric",
+  "message": "密码至少包含一位非字母数字字符., 密码至少包含一位大写字母 ('A'-'Z').",
+  "details": null,
+  "data": {},
+  "validationErrors": null
+}
+
+2024-03-17 12:16:36.440 +08:00 [WRN] Passwords must have at least one non alphanumeric character., Passwords must have at least one uppercase ('A'-'Z').
+Volo.Abp.Identity.AbpIdentityResultException: Passwords must have at least one non alphanumeric character., Passwords must have at least one uppercase ('A'-'Z').
+   at Microsoft.AspNetCore.Identity.AbpIdentityResultExtensions.CheckErrors(IdentityResult identityResult)
+   at Volo.Abp.Identity.IdentityUserAppService.UpdateAsync(Guid id, IdentityUserUpdateDto input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.ProceedByLoggingAsync(IAbpMethodInvocation invocation, AbpAuditingOptions options, IAuditingHelper auditingHelper, IAuditLogScope auditLogScope)
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Lion.AbpPro.BasicManagement.Users.UserAppService.UpdateAsync(UpdateUserInput input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.ProceedByLoggingAsync(IAbpMethodInvocation invocation, AbpAuditingOptions options, IAuditingHelper auditingHelper, IAuditLogScope auditLogScope)
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at lambda_method2778(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-03-17 12:16:36.639 +08:00 [WRN] Code:Volo.Abp.Identity:PasswordRequiresNonAlphanumeric
+2024-03-17 12:16:36.641 +08:00 [WRN] Details:
+2024-03-17 12:16:36.684 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2024-03-17 12:16:36.691 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.UserController.UpdateAsync (Lion.AbpPro.BasicManagement.HttpApi) in 1920.8677ms
+2024-03-17 12:16:36.693 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.UserController.UpdateAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:16:37.095 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Users/update application/json 272 - 500 - application/json;+charset=utf-8 2372.2804ms
+2024-03-17 12:16:44.685 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Users/update - -
+2024-03-17 12:16:44.687 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:16:44.689 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Users/update - - - 204 - - 3.7631ms
+2024-03-17 12:16:44.692 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Users/update application/json 272
+2024-03-17 12:16:44.693 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:16:44.697 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.UserController.UpdateAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:16:44.699 +08:00 [INF] Route matched with {action = "Update", controller = "User", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Identity.IdentityUserDto] UpdateAsync(Lion.AbpPro.BasicManagement.Users.Dtos.UpdateUserInput) on controller Lion.AbpPro.BasicManagement.Systems.UserController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-03-17 12:16:44.709 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.UserController.UpdateAsync (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-03-17 12:16:45.055 +08:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": "Volo.Abp.Identity:PasswordRequiresNonAlphanumeric",
+  "message": "密码至少包含一位非字母数字字符., 密码至少包含一位大写字母 ('A'-'Z').",
+  "details": null,
+  "data": {},
+  "validationErrors": null
+}
+
+2024-03-17 12:16:45.059 +08:00 [WRN] Passwords must have at least one non alphanumeric character., Passwords must have at least one uppercase ('A'-'Z').
+Volo.Abp.Identity.AbpIdentityResultException: Passwords must have at least one non alphanumeric character., Passwords must have at least one uppercase ('A'-'Z').
+   at Microsoft.AspNetCore.Identity.AbpIdentityResultExtensions.CheckErrors(IdentityResult identityResult)
+   at Volo.Abp.Identity.IdentityUserAppService.UpdateAsync(Guid id, IdentityUserUpdateDto input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.ProceedByLoggingAsync(IAbpMethodInvocation invocation, AbpAuditingOptions options, IAuditingHelper auditingHelper, IAuditLogScope auditLogScope)
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Lion.AbpPro.BasicManagement.Users.UserAppService.UpdateAsync(UpdateUserInput input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.ProceedByLoggingAsync(IAbpMethodInvocation invocation, AbpAuditingOptions options, IAuditingHelper auditingHelper, IAuditLogScope auditLogScope)
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at lambda_method2778(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-03-17 12:16:45.087 +08:00 [WRN] Code:Volo.Abp.Identity:PasswordRequiresNonAlphanumeric
+2024-03-17 12:16:45.089 +08:00 [WRN] Details:
+2024-03-17 12:16:45.093 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2024-03-17 12:16:45.098 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.UserController.UpdateAsync (Lion.AbpPro.BasicManagement.HttpApi) in 396.8428ms
+2024-03-17 12:16:45.102 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.UserController.UpdateAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:16:45.160 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Users/update application/json 272 - 500 - application/json;+charset=utf-8 468.3260ms
+2024-03-17 12:17:05.007 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Users/update - -
+2024-03-17 12:17:05.008 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:17:05.010 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Users/update - - - 204 - - 2.7170ms
+2024-03-17 12:17:05.011 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Users/update application/json 272
+2024-03-17 12:17:05.012 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:17:05.014 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.UserController.UpdateAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:17:05.017 +08:00 [INF] Route matched with {action = "Update", controller = "User", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Identity.IdentityUserDto] UpdateAsync(Lion.AbpPro.BasicManagement.Users.Dtos.UpdateUserInput) on controller Lion.AbpPro.BasicManagement.Systems.UserController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-03-17 12:17:05.025 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.UserController.UpdateAsync (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-03-17 12:17:05.361 +08:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": "Volo.Abp.Identity:PasswordRequiresNonAlphanumeric",
+  "message": "密码至少包含一位非字母数字字符., 密码至少包含一位小写字母 ('a'-'z').",
+  "details": null,
+  "data": {},
+  "validationErrors": null
+}
+
+2024-03-17 12:17:05.365 +08:00 [WRN] Passwords must have at least one non alphanumeric character., Passwords must have at least one lowercase ('a'-'z').
+Volo.Abp.Identity.AbpIdentityResultException: Passwords must have at least one non alphanumeric character., Passwords must have at least one lowercase ('a'-'z').
+   at Microsoft.AspNetCore.Identity.AbpIdentityResultExtensions.CheckErrors(IdentityResult identityResult)
+   at Volo.Abp.Identity.IdentityUserAppService.UpdateAsync(Guid id, IdentityUserUpdateDto input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.ProceedByLoggingAsync(IAbpMethodInvocation invocation, AbpAuditingOptions options, IAuditingHelper auditingHelper, IAuditLogScope auditLogScope)
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Lion.AbpPro.BasicManagement.Users.UserAppService.UpdateAsync(UpdateUserInput input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.ProceedByLoggingAsync(IAbpMethodInvocation invocation, AbpAuditingOptions options, IAuditingHelper auditingHelper, IAuditLogScope auditLogScope)
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at lambda_method2778(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-03-17 12:17:05.381 +08:00 [WRN] Code:Volo.Abp.Identity:PasswordRequiresNonAlphanumeric
+2024-03-17 12:17:05.382 +08:00 [WRN] Details:
+2024-03-17 12:17:05.385 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2024-03-17 12:17:05.386 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.UserController.UpdateAsync (Lion.AbpPro.BasicManagement.HttpApi) in 367.3829ms
+2024-03-17 12:17:05.387 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.UserController.UpdateAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:17:05.429 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Users/update application/json 272 - 500 - application/json;+charset=utf-8 418.1525ms
+2024-03-17 12:17:37.309 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Users/update - -
+2024-03-17 12:17:37.316 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:17:37.317 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Users/update - - - 204 - - 8.0852ms
+2024-03-17 12:17:37.319 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Users/update application/json 272
+2024-03-17 12:17:37.325 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:17:37.334 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.UserController.UpdateAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:17:37.337 +08:00 [INF] Route matched with {action = "Update", controller = "User", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Identity.IdentityUserDto] UpdateAsync(Lion.AbpPro.BasicManagement.Users.Dtos.UpdateUserInput) on controller Lion.AbpPro.BasicManagement.Systems.UserController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-03-17 12:17:37.347 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.UserController.UpdateAsync (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-03-17 12:17:37.679 +08:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": "Volo.Abp.Identity:PasswordRequiresNonAlphanumeric",
+  "message": "密码至少包含一位非字母数字字符.",
+  "details": null,
+  "data": {},
+  "validationErrors": null
+}
+
+2024-03-17 12:17:37.682 +08:00 [WRN] Passwords must have at least one non alphanumeric character.
+Volo.Abp.Identity.AbpIdentityResultException: Passwords must have at least one non alphanumeric character.
+   at Microsoft.AspNetCore.Identity.AbpIdentityResultExtensions.CheckErrors(IdentityResult identityResult)
+   at Volo.Abp.Identity.IdentityUserAppService.UpdateAsync(Guid id, IdentityUserUpdateDto input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.ProceedByLoggingAsync(IAbpMethodInvocation invocation, AbpAuditingOptions options, IAuditingHelper auditingHelper, IAuditLogScope auditLogScope)
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Lion.AbpPro.BasicManagement.Users.UserAppService.UpdateAsync(UpdateUserInput input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.ProceedByLoggingAsync(IAbpMethodInvocation invocation, AbpAuditingOptions options, IAuditingHelper auditingHelper, IAuditLogScope auditLogScope)
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at lambda_method2778(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-03-17 12:17:37.699 +08:00 [WRN] Code:Volo.Abp.Identity:PasswordRequiresNonAlphanumeric
+2024-03-17 12:17:37.700 +08:00 [WRN] Details:
+2024-03-17 12:17:37.701 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2024-03-17 12:17:37.703 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.UserController.UpdateAsync (Lion.AbpPro.BasicManagement.HttpApi) in 362.946ms
+2024-03-17 12:17:37.705 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.UserController.UpdateAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:17:37.762 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Users/update application/json 272 - 500 - application/json;+charset=utf-8 442.8216ms
+2024-03-17 12:17:43.106 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Roles/all - -
+2024-03-17 12:17:43.107 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:17:43.109 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Roles/all - - - 204 - - 2.6883ms
+2024-03-17 12:17:43.110 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Roles/all - 0
+2024-03-17 12:17:43.111 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:17:43.114 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.RoleController.AllListAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:17:43.115 +08:00 [INF] Route matched with {action = "AllList", controller = "Role", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.ListResultDto`1[Volo.Abp.Identity.IdentityRoleDto]] AllListAsync() on controller Lion.AbpPro.BasicManagement.Systems.RoleController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-03-17 12:17:43.118 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.RoleController.AllListAsync (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-03-17 12:17:43.135 +08:00 [INF] Executed action method Lion.AbpPro.BasicManagement.Systems.RoleController.AllListAsync (Lion.AbpPro.BasicManagement.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 15.4231ms.
+2024-03-17 12:17:43.137 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.ListResultDto`1[[Volo.Abp.Identity.IdentityRoleDto, Volo.Abp.Identity.Application.Contracts, Version=7.2.2.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:17:43.139 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.RoleController.AllListAsync (Lion.AbpPro.BasicManagement.HttpApi) in 22.4342ms
+2024-03-17 12:17:43.140 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.RoleController.AllListAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:17:43.175 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Roles/all - 0 - 200 - application/json;+charset=utf-8 64.5547ms
+2024-03-17 12:17:43.212 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Users/role - -
+2024-03-17 12:17:43.227 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:17:43.232 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Users/role - - - 204 - - 20.8833ms
+2024-03-17 12:17:43.266 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Users/role application/json 45
+2024-03-17 12:17:43.270 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:17:43.277 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.UserController.GetRoleByUserId (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:17:43.288 +08:00 [INF] Route matched with {action = "GetRoleByUserId", controller = "User", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.ListResultDto`1[Volo.Abp.Identity.IdentityRoleDto]] GetRoleByUserId(Lion.AbpPro.Core.IdInput) on controller Lion.AbpPro.BasicManagement.Systems.UserController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-03-17 12:17:43.347 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.UserController.GetRoleByUserId (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-03-17 12:17:43.403 +08:00 [INF] Executed action method Lion.AbpPro.BasicManagement.Systems.UserController.GetRoleByUserId (Lion.AbpPro.BasicManagement.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 49.156ms.
+2024-03-17 12:17:43.407 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.ListResultDto`1[[Volo.Abp.Identity.IdentityRoleDto, Volo.Abp.Identity.Application.Contracts, Version=7.2.2.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:17:43.410 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.UserController.GetRoleByUserId (Lion.AbpPro.BasicManagement.HttpApi) in 115.4016ms
+2024-03-17 12:17:43.413 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.UserController.GetRoleByUserId (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:17:43.451 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Users/role application/json 45 - 200 - application/json;+charset=utf-8 184.9724ms
+2024-03-17 12:17:53.590 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Tenants/page - -
+2024-03-17 12:17:53.592 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:17:53.596 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Tenants/page - - - 204 - - 5.4665ms
+2024-03-17 12:17:53.597 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Tenants/page application/json 29
+2024-03-17 12:17:53.601 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:17:53.608 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Tenants.TenantController.ListAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:17:53.621 +08:00 [INF] Route matched with {action = "List", controller = "Tenant", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Volo.Abp.TenantManagement.TenantDto]] ListAsync(Lion.AbpPro.BasicManagement.Tenants.Dtos.PagingTenantInput) on controller Lion.AbpPro.BasicManagement.Tenants.TenantController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-03-17 12:17:53.714 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Tenants.TenantController.ListAsync (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-03-17 12:17:54.114 +08:00 [INF] Executed action method Lion.AbpPro.BasicManagement.Tenants.TenantController.ListAsync (Lion.AbpPro.BasicManagement.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 397.8731ms.
+2024-03-17 12:17:54.119 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Volo.Abp.TenantManagement.TenantDto, Volo.Abp.TenantManagement.Application.Contracts, Version=7.2.2.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:17:54.124 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Tenants.TenantController.ListAsync (Lion.AbpPro.BasicManagement.HttpApi) in 499.0143ms
+2024-03-17 12:17:54.126 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Tenants.TenantController.ListAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 12:17:54.153 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Tenants/page application/json 29 - 200 - application/json;+charset=utf-8 555.7618ms
+2024-03-17 12:17:58.411 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/BookingLimiteds/Page - -
+2024-03-17 12:17:58.413 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:17:58.415 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/BookingLimiteds/Page - - - 204 - - 3.3745ms
+2024-03-17 12:17:58.418 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 29
+2024-03-17 12:17:58.419 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:17:58.425 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:17:58.446 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 12:17:58.663 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 12:17:59.120 +08:00 [WRN] Entity 'Buildings' has a global query filter defined and is the required end of a relationship with the entity 'Rooms'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2024-03-17 12:17:59.477 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 808.1033ms.
+2024-03-17 12:17:59.499 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:17:59.510 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 1057.6803ms
+2024-03-17 12:17:59.512 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:17:59.552 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 29 - 200 - application/json;+charset=utf-8 1134.9856ms
+2024-03-17 12:18:06.244 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/BookingInformations/GetAllBookingInfor - -
+2024-03-17 12:18:06.250 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:18:06.257 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/BookingInformations/GetAllBookingInfor - - - 204 - - 12.9885ms
+2024-03-17 12:18:06.267 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingInformations/GetAllBookingInfor application/json 29
+2024-03-17 12:18:06.334 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:18:06.503 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.Controller.BookingInformationController.GetAllBookingInfor (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:18:06.522 +08:00 [INF] Route matched with {action = "GetAllBookingInfor", controller = "BookingInformation", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.BookingInforDto]] GetAllBookingInfor(Yuannisha.AutomaticElectricitySystem.BookingInformations.GetAllBookingInforInput) on controller Yuannisha.AutomaticElectricitySystem.Controller.BookingInformationController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 12:18:06.658 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.Controller.BookingInformationController.GetAllBookingInfor (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 12:18:06.979 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.Controller.BookingInformationController.GetAllBookingInfor (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 320.4897ms.
+2024-03-17 12:18:07.013 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.BookingInforDto, Yuannisha.AutomaticElectricitySystem.Domain.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:18:07.048 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.Controller.BookingInformationController.GetAllBookingInfor (Yuannisha.AutomaticElectricitySystem.HttpApi) in 521.3528ms
+2024-03-17 12:18:07.053 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.Controller.BookingInformationController.GetAllBookingInfor (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:18:07.106 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingInformations/GetAllBookingInfor application/json 29 - 200 - application/json;+charset=utf-8 839.3880ms
+2024-03-17 12:20:15.282 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/BookingLimiteds/Page - -
+2024-03-17 12:20:15.284 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:20:15.285 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/BookingLimiteds/Page - - - 204 - - 3.0858ms
+2024-03-17 12:20:15.287 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47
+2024-03-17 12:20:15.288 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:20:15.292 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:15.294 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 12:20:15.303 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 12:20:15.344 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 38.5511ms.
+2024-03-17 12:20:15.350 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:20:15.353 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 56.854ms
+2024-03-17 12:20:15.356 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:15.401 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47 - 200 - application/json;+charset=utf-8 113.6742ms
+2024-03-17 12:20:17.255 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47
+2024-03-17 12:20:17.256 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:20:17.259 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:17.261 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 12:20:17.268 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 12:20:17.304 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 32.4974ms.
+2024-03-17 12:20:17.310 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:20:17.312 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 48.6778ms
+2024-03-17 12:20:17.316 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:17.366 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47 - 200 - application/json;+charset=utf-8 111.3338ms
+2024-03-17 12:20:17.779 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47
+2024-03-17 12:20:17.780 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:20:17.782 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:17.784 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 12:20:17.788 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 12:20:17.820 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 29.5573ms.
+2024-03-17 12:20:17.824 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:20:17.827 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 41.2733ms
+2024-03-17 12:20:17.830 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:17.868 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47 - 200 - application/json;+charset=utf-8 88.6857ms
+2024-03-17 12:20:17.949 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47
+2024-03-17 12:20:17.950 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:20:17.953 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:17.956 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 12:20:17.963 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 12:20:18.005 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 40.3781ms.
+2024-03-17 12:20:18.011 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:20:18.017 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 58.0948ms
+2024-03-17 12:20:18.020 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:18.076 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47 - 200 - application/json;+charset=utf-8 127.2924ms
+2024-03-17 12:20:22.319 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/BookingLimiteds/Page - -
+2024-03-17 12:20:22.320 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:20:22.321 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/BookingLimiteds/Page - - - 204 - - 1.9681ms
+2024-03-17 12:20:22.322 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47
+2024-03-17 12:20:22.323 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:20:22.326 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:22.327 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 12:20:22.333 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 12:20:22.362 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 26.6184ms.
+2024-03-17 12:20:22.366 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:20:22.369 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 39.7848ms
+2024-03-17 12:20:22.371 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:22.406 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47 - 200 - application/json;+charset=utf-8 83.6574ms
+2024-03-17 12:20:22.806 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47
+2024-03-17 12:20:22.807 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:20:22.809 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:22.810 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 12:20:22.814 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 12:20:22.846 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 28.869ms.
+2024-03-17 12:20:22.849 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:20:22.851 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 39.379ms
+2024-03-17 12:20:22.854 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:22.898 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47 - 200 - application/json;+charset=utf-8 92.2738ms
+2024-03-17 12:20:22.986 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47
+2024-03-17 12:20:22.987 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:20:22.991 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:22.994 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 12:20:23.000 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 12:20:23.036 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 33.8448ms.
+2024-03-17 12:20:23.041 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:20:23.043 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 47.278ms
+2024-03-17 12:20:23.044 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:23.091 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47 - 200 - application/json;+charset=utf-8 104.6963ms
+2024-03-17 12:20:23.191 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47
+2024-03-17 12:20:23.195 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:20:23.198 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:23.201 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 12:20:23.206 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 12:20:23.237 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 28.6824ms.
+2024-03-17 12:20:23.240 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:20:23.244 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 41.8198ms
+2024-03-17 12:20:23.246 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:23.287 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47 - 200 - application/json;+charset=utf-8 95.5251ms
+2024-03-17 12:20:23.388 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47
+2024-03-17 12:20:23.389 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:20:23.391 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:23.394 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 12:20:23.399 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 12:20:23.445 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 43.0618ms.
+2024-03-17 12:20:23.450 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:20:23.453 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 56.2881ms
+2024-03-17 12:20:23.455 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:23.497 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47 - 200 - application/json;+charset=utf-8 108.6049ms
+2024-03-17 12:20:23.570 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47
+2024-03-17 12:20:23.571 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:20:23.576 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:23.578 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 12:20:23.584 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 12:20:23.618 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 32.9684ms.
+2024-03-17 12:20:23.622 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:20:23.625 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 44.5612ms
+2024-03-17 12:20:23.626 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:23.671 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 47 - 200 - application/json;+charset=utf-8 100.7040ms
+2024-03-17 12:20:27.541 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/BookingLimiteds/Page - -
+2024-03-17 12:20:27.542 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:20:27.544 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/BookingLimiteds/Page - - - 204 - - 2.3994ms
+2024-03-17 12:20:27.569 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 49
+2024-03-17 12:20:27.575 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:20:27.578 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:27.581 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 12:20:27.588 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 12:20:27.632 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 42.6846ms.
+2024-03-17 12:20:27.638 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:20:27.640 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 57.4956ms
+2024-03-17 12:20:27.643 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:27.700 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 49 - 200 - application/json;+charset=utf-8 130.2315ms
+2024-03-17 12:20:28.220 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 49
+2024-03-17 12:20:28.222 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:20:28.224 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:28.225 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 12:20:28.230 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 12:20:28.272 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 38.735ms.
+2024-03-17 12:20:28.277 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:20:28.282 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 55.2917ms
+2024-03-17 12:20:28.288 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:28.392 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 49 - 200 - application/json;+charset=utf-8 172.2705ms
+2024-03-17 12:20:28.693 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 49
+2024-03-17 12:20:28.695 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:20:28.697 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:28.699 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 12:20:28.702 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 12:20:28.739 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 33.8436ms.
+2024-03-17 12:20:28.744 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:20:28.747 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 46.4909ms
+2024-03-17 12:20:28.749 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:28.788 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 49 - 200 - application/json;+charset=utf-8 94.9109ms
+2024-03-17 12:20:29.256 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 49
+2024-03-17 12:20:29.257 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:20:29.259 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:29.261 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 12:20:29.265 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 12:20:29.296 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 29.4346ms.
+2024-03-17 12:20:29.302 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:20:29.303 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 40.581ms
+2024-03-17 12:20:29.305 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:29.338 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 49 - 200 - application/json;+charset=utf-8 82.4632ms
+2024-03-17 12:20:29.663 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 49
+2024-03-17 12:20:29.665 +08:00 [INF] CORS policy execution successful.
+2024-03-17 12:20:29.668 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:29.670 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 12:20:29.677 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 12:20:29.719 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 39.3585ms.
+2024-03-17 12:20:29.721 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 12:20:29.725 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 53.3377ms
+2024-03-17 12:20:29.728 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 12:20:29.780 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 49 - 200 - application/json;+charset=utf-8 116.9311ms
+2024-03-17 12:54:36.642 +08:00 [INF] Execution Worker recovered from the Faulted state after 00:01:29.9528166 and is in the Running state now
+2024-03-17 13:41:39.816 +08:00 [INF] Execution Worker recovered from the Faulted state after 00:01:30.0943326 and is in the Running state now
+2024-03-17 13:53:10.493 +08:00 [INF] Execution Worker recovered from the Faulted state after 00:01:00.0714241 and is in the Running state now
+2024-03-17 15:56:03.130 +08:00 [INF] Execution Worker recovered from the Faulted state after 00:00:14.9888370 and is in the Running state now
+2024-03-17 17:17:28.845 +08:00 [INF] Executed endpoint 'SignalR/Notification'
+2024-03-17 17:17:28.883 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY0ODUyMywiZXhwIjoxNzEwNjU1NzIzLCJpYXQiOjE3MTA2NDg1MjN9.JyOEumGsCejZ9gvpKcwy3b-MGyEFWNQyC_fpaX7LL4E - - - 101 - - 18521421.9193ms
+2024-03-17 17:40:41.232 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - -
+2024-03-17 17:40:41.326 +08:00 [INF] CORS policy execution successful.
+2024-03-17 17:40:41.349 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - - - 204 - - 127.0516ms
+2024-03-17 17:40:41.367 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 37
+2024-03-17 17:40:41.373 +08:00 [INF] CORS policy execution successful.
+2024-03-17 17:40:41.464 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 17:40:41.496 +08:00 [INF] Route matched with {action = "Login", controller = "Account", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Lion.AbpPro.BasicManagement.Users.Dtos.LoginOutput] LoginAsync(Lion.AbpPro.BasicManagement.Users.Dtos.LoginInput) on controller Lion.AbpPro.BasicManagement.Systems.AccountController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-03-17 17:40:41.861 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-03-17 17:40:42.886 +08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-03-17 17:40:42.979 +08:00 [INF] Executed action method Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1110.8823ms.
+2024-03-17 17:40:43.008 +08:00 [INF] Executing ObjectResult, writing value of type 'Lion.AbpPro.BasicManagement.Users.Dtos.LoginOutput'.
+2024-03-17 17:40:43.055 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) in 1548.5167ms
+2024-03-17 17:40:43.061 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 17:40:43.320 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 37 - 200 - application/json;+charset=utf-8 1953.2681ms
+2024-03-17 17:40:43.364 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/api/abp/application-configuration - -
+2024-03-17 17:40:43.366 +08:00 [INF] CORS policy execution successful.
+2024-03-17 17:40:43.370 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/api/abp/application-configuration - - - 204 - - 5.7028ms
+2024-03-17 17:40:43.373 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/api/abp/application-configuration - -
+2024-03-17 17:40:43.376 +08:00 [INF] CORS policy execution successful.
+2024-03-17 17:40:43.397 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-03-17 17:40:43.403 +08:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2024-03-17 17:40:43.469 +08:00 [INF] Executing action method Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) - Validation state: "Valid"
+2024-03-17 17:40:43.484 +08:00 [WRN] The cookie 'XSRF-TOKEN' has set 'SameSite=None' and must also set 'Secure'.
+2024-03-17 17:40:43.496 +08:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2024-03-17 17:40:44.785 +08:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2024-03-17 17:40:44.792 +08:00 [INF] Executed action method Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1320.5634ms.
+2024-03-17 17:40:44.819 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2024-03-17 17:40:45.043 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 1637.8096ms
+2024-03-17 17:40:45.138 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-03-17 17:40:45.162 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/api/abp/application-configuration - - - 200 - application/json;+charset=utf-8 1788.8094ms
+2024-03-17 17:41:01.734 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY2ODQ0MiwiZXhwIjoxNzEwNjc1NjQyLCJpYXQiOjE3MTA2Njg0NDJ9.7n_ZdzTMMquhTWSUpFF1aR-Eoq_p-5_-SFmkMkYAnEU - -
+2024-03-17 17:41:01.743 +08:00 [INF] CORS policy execution successful.
+2024-03-17 17:41:01.759 +08:00 [INF] Executing endpoint 'SignalR/Notification'
+2024-03-17 17:41:30.160 +08:00 [INF] Executed endpoint 'SignalR/Notification'
+2024-03-17 17:41:30.162 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY2ODQ0MiwiZXhwIjoxNzEwNjc1NjQyLCJpYXQiOjE3MTA2Njg0NDJ9.7n_ZdzTMMquhTWSUpFF1aR-Eoq_p-5_-SFmkMkYAnEU - - - 101 - - 28429.2826ms
+2024-03-17 17:41:33.224 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY2ODQ0MiwiZXhwIjoxNzEwNjc1NjQyLCJpYXQiOjE3MTA2Njg0NDJ9.7n_ZdzTMMquhTWSUpFF1aR-Eoq_p-5_-SFmkMkYAnEU - -
+2024-03-17 17:41:33.226 +08:00 [INF] CORS policy execution successful.
+2024-03-17 17:41:33.231 +08:00 [INF] Executing endpoint 'SignalR/Notification'
+2024-03-17 17:41:43.398 +08:00 [INF] Executed endpoint 'SignalR/Notification'
+2024-03-17 17:41:43.402 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY2ODQ0MiwiZXhwIjoxNzEwNjc1NjQyLCJpYXQiOjE3MTA2Njg0NDJ9.7n_ZdzTMMquhTWSUpFF1aR-Eoq_p-5_-SFmkMkYAnEU - - - 101 - - 10178.3284ms
+2024-03-17 17:41:45.767 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY2ODQ0MiwiZXhwIjoxNzEwNjc1NjQyLCJpYXQiOjE3MTA2Njg0NDJ9.7n_ZdzTMMquhTWSUpFF1aR-Eoq_p-5_-SFmkMkYAnEU - -
+2024-03-17 17:41:45.770 +08:00 [INF] CORS policy execution successful.
+2024-03-17 17:41:45.777 +08:00 [INF] Executing endpoint 'SignalR/Notification'
+2024-03-17 18:09:17.097 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/BookingLimiteds/Page - -
+2024-03-17 18:09:17.186 +08:00 [INF] CORS policy execution successful.
+2024-03-17 18:09:17.207 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/BookingLimiteds/Page - - - 204 - - 116.9308ms
+2024-03-17 18:09:17.220 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 29
+2024-03-17 18:09:17.224 +08:00 [INF] CORS policy execution successful.
+2024-03-17 18:09:17.269 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 18:09:17.310 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 18:09:17.478 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 18:09:17.725 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 245.4565ms.
+2024-03-17 18:09:17.735 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 18:09:17.752 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 439.2161ms
+2024-03-17 18:09:17.755 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 18:09:17.846 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 29 - 200 - application/json;+charset=utf-8 626.3084ms
+2024-03-17 18:11:39.761 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/BookingLimiteds/Page - -
+2024-03-17 18:11:39.763 +08:00 [INF] CORS policy execution successful.
+2024-03-17 18:11:39.767 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/BookingLimiteds/Page - - - 204 - - 6.3562ms
+2024-03-17 18:11:39.773 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 29
+2024-03-17 18:11:39.775 +08:00 [INF] CORS policy execution successful.
+2024-03-17 18:11:39.788 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 18:11:39.790 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 18:11:39.842 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 18:11:39.898 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 54.6609ms.
+2024-03-17 18:11:39.905 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 18:11:39.908 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 113.7689ms
+2024-03-17 18:11:39.912 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 18:11:40.041 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 29 - 200 - application/json;+charset=utf-8 269.1378ms
+2024-03-17 18:24:19.689 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/BookingInformations/GetAllBookingInfor - -
+2024-03-17 18:24:19.714 +08:00 [INF] CORS policy execution successful.
+2024-03-17 18:24:19.727 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/BookingInformations/GetAllBookingInfor - - - 204 - - 43.9453ms
+2024-03-17 18:24:19.733 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingInformations/GetAllBookingInfor application/json 29
+2024-03-17 18:24:19.735 +08:00 [INF] CORS policy execution successful.
+2024-03-17 18:24:19.807 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.Controller.BookingInformationController.GetAllBookingInfor (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 18:24:19.824 +08:00 [INF] Route matched with {action = "GetAllBookingInfor", controller = "BookingInformation", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.BookingInforDto]] GetAllBookingInfor(Yuannisha.AutomaticElectricitySystem.BookingInformations.GetAllBookingInforInput) on controller Yuannisha.AutomaticElectricitySystem.Controller.BookingInformationController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 18:24:19.995 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.Controller.BookingInformationController.GetAllBookingInfor (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 18:24:20.183 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.Controller.BookingInformationController.GetAllBookingInfor (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 185.4477ms.
+2024-03-17 18:24:20.191 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.BookingInforDto, Yuannisha.AutomaticElectricitySystem.Domain.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 18:24:20.202 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.Controller.BookingInformationController.GetAllBookingInfor (Yuannisha.AutomaticElectricitySystem.HttpApi) in 363.0804ms
+2024-03-17 18:24:20.204 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.Controller.BookingInformationController.GetAllBookingInfor (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 18:24:20.266 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingInformations/GetAllBookingInfor application/json 29 - 200 - application/json;+charset=utf-8 533.0849ms
+2024-03-17 18:24:43.564 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/BookingLimiteds/Page - -
+2024-03-17 18:24:43.574 +08:00 [INF] CORS policy execution successful.
+2024-03-17 18:24:43.610 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/BookingLimiteds/Page - - - 204 - - 46.7785ms
+2024-03-17 18:24:43.615 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 29
+2024-03-17 18:24:43.618 +08:00 [INF] CORS policy execution successful.
+2024-03-17 18:24:43.627 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 18:24:43.632 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 18:24:43.646 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 18:24:43.754 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 106.572ms.
+2024-03-17 18:24:43.758 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 18:24:43.761 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 127.5205ms
+2024-03-17 18:24:43.763 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 18:24:43.841 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 29 - 200 - application/json;+charset=utf-8 226.3124ms
+2024-03-17 18:56:00.457 +08:00 [INF] Execution Worker recovered from the Faulted state after 00:00:45.0215886 and is in the Running state now
+2024-03-17 21:04:09.093 +08:00 [INF] Execution Worker recovered from the Faulted state after 00:01:00.6846164 and is in the Running state now
+2024-03-17 22:31:56.836 +08:00 [INF] Executed endpoint 'SignalR/Notification'
+2024-03-17 22:31:56.872 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY2ODQ0MiwiZXhwIjoxNzEwNjc1NjQyLCJpYXQiOjE3MTA2Njg0NDJ9.7n_ZdzTMMquhTWSUpFF1aR-Eoq_p-5_-SFmkMkYAnEU - - - 101 - - 17412996.5428ms
+2024-03-17 22:35:25.137 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - -
+2024-03-17 22:35:25.207 +08:00 [INF] CORS policy execution successful.
+2024-03-17 22:35:25.222 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - - - 204 - - 90.9210ms
+2024-03-17 22:35:25.231 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 37
+2024-03-17 22:35:25.234 +08:00 [INF] CORS policy execution successful.
+2024-03-17 22:35:25.331 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 22:35:25.348 +08:00 [INF] Route matched with {action = "Login", controller = "Account", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Lion.AbpPro.BasicManagement.Users.Dtos.LoginOutput] LoginAsync(Lion.AbpPro.BasicManagement.Users.Dtos.LoginInput) on controller Lion.AbpPro.BasicManagement.Systems.AccountController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-03-17 22:35:25.571 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-03-17 22:35:26.238 +08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-03-17 22:35:26.315 +08:00 [INF] Executed action method Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 738.6958ms.
+2024-03-17 22:35:26.327 +08:00 [INF] Executing ObjectResult, writing value of type 'Lion.AbpPro.BasicManagement.Users.Dtos.LoginOutput'.
+2024-03-17 22:35:26.349 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) in 998.7177ms
+2024-03-17 22:35:26.354 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 22:35:26.529 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 37 - 200 - application/json;+charset=utf-8 1298.7316ms
+2024-03-17 22:35:26.537 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/api/abp/application-configuration - -
+2024-03-17 22:35:26.542 +08:00 [INF] CORS policy execution successful.
+2024-03-17 22:35:26.544 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/api/abp/application-configuration - - - 204 - - 7.2132ms
+2024-03-17 22:35:26.556 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/api/abp/application-configuration - -
+2024-03-17 22:35:26.559 +08:00 [INF] CORS policy execution successful.
+2024-03-17 22:35:26.570 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-03-17 22:35:26.575 +08:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2024-03-17 22:35:26.643 +08:00 [INF] Executing action method Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) - Validation state: "Valid"
+2024-03-17 22:35:26.654 +08:00 [WRN] The cookie 'XSRF-TOKEN' has set 'SameSite=None' and must also set 'Secure'.
+2024-03-17 22:35:26.666 +08:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2024-03-17 22:35:26.920 +08:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2024-03-17 22:35:26.923 +08:00 [INF] Executed action method Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 277.5316ms.
+2024-03-17 22:35:26.932 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2024-03-17 22:35:26.949 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 371.1451ms
+2024-03-17 22:35:26.952 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-03-17 22:35:26.959 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/api/abp/application-configuration - - - 200 - application/json;+charset=utf-8 407.1721ms
+2024-03-17 22:35:33.257 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY4NjEyNiwiZXhwIjoxNzEwNjkzMzI2LCJpYXQiOjE3MTA2ODYxMjZ9.v1WcuGbEMPfJQz7nY4mbRcm3-UuwYlfvvyQL6vyNt5A - -
+2024-03-17 22:35:33.262 +08:00 [INF] CORS policy execution successful.
+2024-03-17 22:35:33.272 +08:00 [INF] Executing endpoint 'SignalR/Notification'
+2024-03-17 23:15:30.220 +08:00 [INF] Executed endpoint 'SignalR/Notification'
+2024-03-17 23:15:30.450 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY4NjEyNiwiZXhwIjoxNzEwNjkzMzI2LCJpYXQiOjE3MTA2ODYxMjZ9.v1WcuGbEMPfJQz7nY4mbRcm3-UuwYlfvvyQL6vyNt5A - - - 101 - - 2397182.4092ms
+2024-03-17 23:15:45.657 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY4NjEyNiwiZXhwIjoxNzEwNjkzMzI2LCJpYXQiOjE3MTA2ODYxMjZ9.v1WcuGbEMPfJQz7nY4mbRcm3-UuwYlfvvyQL6vyNt5A - -
+2024-03-17 23:15:45.706 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:15:45.832 +08:00 [INF] Executing endpoint 'SignalR/Notification'
+2024-03-17 23:16:00.465 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - -
+2024-03-17 23:16:00.488 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:16:00.502 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - - - 204 - - 29.1793ms
+2024-03-17 23:16:00.514 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29
+2024-03-17 23:16:00.535 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:16:00.544 +08:00 [INF] Executing endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:16:00.776 +08:00 [INF] Route matched with {action = "Page", controller = "Rooms", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageRoomsInput) on controller GIIST.AutomaticElectricitySystem.Controller.RoomsController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 23:16:01.224 +08:00 [INF] Executing action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 23:16:02.099 +08:00 [INF] Executed action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 872.255ms.
+2024-03-17 23:16:02.241 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 23:16:02.432 +08:00 [INF] Executed action GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 1652.7043ms
+2024-03-17 23:16:02.433 +08:00 [INF] Executed endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:16:02.543 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29 - 200 - application/json;+charset=utf-8 2028.1808ms
+2024-03-17 23:16:11.531 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - -
+2024-03-17 23:16:11.533 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:16:11.537 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - - - 204 - - 5.3186ms
+2024-03-17 23:16:11.540 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29
+2024-03-17 23:16:11.542 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:16:11.545 +08:00 [INF] Executing endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:16:11.549 +08:00 [INF] Route matched with {action = "Page", controller = "Rooms", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageRoomsInput) on controller GIIST.AutomaticElectricitySystem.Controller.RoomsController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 23:16:11.562 +08:00 [INF] Executing action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 23:16:11.617 +08:00 [INF] Executed action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 51.6643ms.
+2024-03-17 23:16:11.621 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 23:16:11.624 +08:00 [INF] Executed action GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 70.3289ms
+2024-03-17 23:16:11.627 +08:00 [INF] Executed endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:16:11.690 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29 - 200 - application/json;+charset=utf-8 150.3263ms
+2024-03-17 23:20:26.943 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - -
+2024-03-17 23:20:26.946 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:20:26.948 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - - - 204 - - 5.7537ms
+2024-03-17 23:20:26.950 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29
+2024-03-17 23:20:26.951 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:20:27.022 +08:00 [INF] Executing endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:20:27.026 +08:00 [INF] Route matched with {action = "Page", controller = "Rooms", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageRoomsInput) on controller GIIST.AutomaticElectricitySystem.Controller.RoomsController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 23:20:27.182 +08:00 [INF] Executing action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 23:20:27.529 +08:00 [INF] Executed action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 344.3578ms.
+2024-03-17 23:20:27.532 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 23:20:27.535 +08:00 [INF] Executed action GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 505.0566ms
+2024-03-17 23:20:27.536 +08:00 [INF] Executed endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:20:27.859 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29 - 200 - application/json;+charset=utf-8 908.6317ms
+2024-03-17 23:22:09.203 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - -
+2024-03-17 23:22:09.227 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:22:09.231 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - - - 204 - - 37.4831ms
+2024-03-17 23:22:09.238 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29
+2024-03-17 23:22:09.245 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:22:09.285 +08:00 [INF] Executing endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:22:09.302 +08:00 [INF] Route matched with {action = "Page", controller = "Rooms", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageRoomsInput) on controller GIIST.AutomaticElectricitySystem.Controller.RoomsController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 23:22:09.422 +08:00 [INF] Executing action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 23:22:09.628 +08:00 [INF] Executed action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 201.8819ms.
+2024-03-17 23:22:09.635 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 23:22:09.644 +08:00 [INF] Executed action GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 330.2237ms
+2024-03-17 23:22:09.645 +08:00 [INF] Executed endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:22:09.720 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29 - 200 - application/json;+charset=utf-8 485.2605ms
+2024-03-17 23:22:27.272 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - -
+2024-03-17 23:22:27.273 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:22:27.277 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - - - 204 - - 4.8500ms
+2024-03-17 23:22:27.279 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29
+2024-03-17 23:22:27.280 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:22:27.287 +08:00 [INF] Executing endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:22:27.290 +08:00 [INF] Route matched with {action = "Page", controller = "Rooms", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageRoomsInput) on controller GIIST.AutomaticElectricitySystem.Controller.RoomsController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 23:22:27.298 +08:00 [INF] Executing action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 23:22:27.375 +08:00 [INF] Executed action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 75.6835ms.
+2024-03-17 23:22:27.382 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 23:22:27.385 +08:00 [INF] Executed action GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 92.1604ms
+2024-03-17 23:22:27.389 +08:00 [INF] Executed endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:22:28.008 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29 - 200 - application/json;+charset=utf-8 729.1929ms
+2024-03-17 23:23:37.179 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - -
+2024-03-17 23:23:37.182 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:23:37.185 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - - - 204 - - 6.0259ms
+2024-03-17 23:23:37.187 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29
+2024-03-17 23:23:37.189 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:23:37.200 +08:00 [INF] Executing endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:23:37.202 +08:00 [INF] Route matched with {action = "Page", controller = "Rooms", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageRoomsInput) on controller GIIST.AutomaticElectricitySystem.Controller.RoomsController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 23:23:37.223 +08:00 [INF] Executing action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 23:23:37.364 +08:00 [INF] Executed action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 137.5699ms.
+2024-03-17 23:23:37.371 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 23:23:37.375 +08:00 [INF] Executed action GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 165.4415ms
+2024-03-17 23:23:37.382 +08:00 [INF] Executed endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:23:37.489 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29 - 200 - application/json;+charset=utf-8 301.4532ms
+2024-03-17 23:23:50.064 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - -
+2024-03-17 23:23:50.065 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:23:50.067 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - - - 204 - - 2.8856ms
+2024-03-17 23:23:50.070 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29
+2024-03-17 23:23:50.071 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:23:50.082 +08:00 [INF] Executing endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:23:50.088 +08:00 [INF] Route matched with {action = "Page", controller = "Rooms", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageRoomsInput) on controller GIIST.AutomaticElectricitySystem.Controller.RoomsController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 23:23:50.110 +08:00 [INF] Executing action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 23:23:50.337 +08:00 [INF] Executed action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 189.5453ms.
+2024-03-17 23:23:50.346 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 23:23:50.349 +08:00 [INF] Executed action GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 254.3414ms
+2024-03-17 23:23:50.357 +08:00 [INF] Executed endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:23:50.440 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29 - 200 - application/json;+charset=utf-8 369.6584ms
+2024-03-17 23:25:21.366 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - -
+2024-03-17 23:25:21.368 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:25:21.370 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - - - 204 - - 2.9238ms
+2024-03-17 23:25:21.371 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29
+2024-03-17 23:25:21.372 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:25:21.377 +08:00 [INF] Executing endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:25:21.379 +08:00 [INF] Route matched with {action = "Page", controller = "Rooms", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageRoomsInput) on controller GIIST.AutomaticElectricitySystem.Controller.RoomsController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 23:25:21.388 +08:00 [INF] Executing action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 23:25:21.459 +08:00 [INF] Executed action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 68.2632ms.
+2024-03-17 23:25:21.462 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 23:25:21.467 +08:00 [INF] Executed action GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 85.8904ms
+2024-03-17 23:25:21.468 +08:00 [INF] Executed endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:25:21.524 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29 - 200 - application/json;+charset=utf-8 152.6061ms
+2024-03-17 23:25:22.699 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29
+2024-03-17 23:25:22.701 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:25:22.704 +08:00 [INF] Executing endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:25:22.706 +08:00 [INF] Route matched with {action = "Page", controller = "Rooms", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageRoomsInput) on controller GIIST.AutomaticElectricitySystem.Controller.RoomsController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 23:25:22.716 +08:00 [INF] Executing action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 23:25:22.792 +08:00 [INF] Executed action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 71.0796ms.
+2024-03-17 23:25:22.795 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 23:25:22.803 +08:00 [INF] Executed action GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 95.0565ms
+2024-03-17 23:25:22.805 +08:00 [INF] Executed endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:25:22.875 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29 - 200 - application/json;+charset=utf-8 176.4809ms
+2024-03-17 23:27:01.565 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - -
+2024-03-17 23:27:01.571 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:27:01.573 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - - - 204 - - 8.1529ms
+2024-03-17 23:27:01.579 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 37
+2024-03-17 23:27:01.581 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:27:01.604 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 23:27:01.610 +08:00 [INF] Route matched with {action = "Login", controller = "Account", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Lion.AbpPro.BasicManagement.Users.Dtos.LoginOutput] LoginAsync(Lion.AbpPro.BasicManagement.Users.Dtos.LoginInput) on controller Lion.AbpPro.BasicManagement.Systems.AccountController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-03-17 23:27:01.755 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-03-17 23:27:02.250 +08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-03-17 23:27:02.303 +08:00 [INF] Executed action method Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 546.9904ms.
+2024-03-17 23:27:02.311 +08:00 [INF] Executing ObjectResult, writing value of type 'Lion.AbpPro.BasicManagement.Users.Dtos.LoginOutput'.
+2024-03-17 23:27:02.315 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) in 702.4964ms
+2024-03-17 23:27:02.318 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 23:27:02.374 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 37 - 200 - application/json;+charset=utf-8 796.2269ms
+2024-03-17 23:27:02.379 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/api/abp/application-configuration - -
+2024-03-17 23:27:02.381 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:27:02.383 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/api/abp/application-configuration - - - 204 - - 3.3644ms
+2024-03-17 23:27:02.384 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/api/abp/application-configuration - -
+2024-03-17 23:27:02.391 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:27:02.405 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-03-17 23:27:02.410 +08:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2024-03-17 23:27:02.473 +08:00 [INF] Executing action method Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) - Validation state: "Valid"
+2024-03-17 23:27:02.481 +08:00 [WRN] The cookie 'XSRF-TOKEN' has set 'SameSite=None' and must also set 'Secure'.
+2024-03-17 23:27:02.492 +08:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2024-03-17 23:27:02.898 +08:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2024-03-17 23:27:02.901 +08:00 [INF] Executed action method Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 427.1832ms.
+2024-03-17 23:27:02.918 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2024-03-17 23:27:02.957 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 545.1185ms
+2024-03-17 23:27:02.958 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-03-17 23:27:02.968 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/api/abp/application-configuration - - - 200 - application/json;+charset=utf-8 583.5117ms
+2024-03-17 23:27:09.001 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY4OTIyMiwiZXhwIjoxNzEwNjk2NDIyLCJpYXQiOjE3MTA2ODkyMjJ9.9waKS76RNpkNCoKwA9emYlyZM7D_3EM_d5ZezyPNLjo - -
+2024-03-17 23:27:09.011 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:27:09.018 +08:00 [INF] Executing endpoint 'SignalR/Notification'
+2024-03-17 23:27:17.720 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/PowerSwitchs/Page - -
+2024-03-17 23:27:17.725 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:27:17.729 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/PowerSwitchs/Page - - - 204 - - 8.8852ms
+2024-03-17 23:27:17.733 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/PowerSwitchs/Page application/json 29
+2024-03-17 23:27:17.736 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:27:17.739 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.PowerSwitchsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:27:17.776 +08:00 [INF] Route matched with {action = "Page", controller = "PowerSwitchs", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PagePowerSwitchsOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PagePowerSwitchsInput) on controller Yuannisha.AutomaticElectricitySystem.PowerSwitchsController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-17 23:27:18.071 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.PowerSwitchsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-17 23:27:18.400 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.PowerSwitchsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 327.1692ms.
+2024-03-17 23:27:18.452 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PagePowerSwitchsOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-17 23:27:18.524 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.PowerSwitchsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 746.5941ms
+2024-03-17 23:27:18.526 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.PowerSwitchsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-17 23:27:18.556 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/PowerSwitchs/Page application/json 29 - 200 - application/json;+charset=utf-8 823.3500ms
+2024-03-17 23:27:29.732 +08:00 [INF] Executed endpoint 'SignalR/Notification'
+2024-03-17 23:27:29.734 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY4OTIyMiwiZXhwIjoxNzEwNjk2NDIyLCJpYXQiOjE3MTA2ODkyMjJ9.9waKS76RNpkNCoKwA9emYlyZM7D_3EM_d5ZezyPNLjo - - - 101 - - 20733.0590ms
+2024-03-17 23:27:34.634 +08:00 [INF] Executed endpoint 'SignalR/Notification'
+2024-03-17 23:27:34.636 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY4NjEyNiwiZXhwIjoxNzEwNjkzMzI2LCJpYXQiOjE3MTA2ODYxMjZ9.v1WcuGbEMPfJQz7nY4mbRcm3-UuwYlfvvyQL6vyNt5A - - - 101 - - 708978.9382ms
+2024-03-17 23:27:43.730 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - -
+2024-03-17 23:27:43.731 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:27:43.734 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - - - 204 - - 3.6834ms
+2024-03-17 23:27:43.735 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 37
+2024-03-17 23:27:43.737 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:27:43.740 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 23:27:43.743 +08:00 [INF] Route matched with {action = "Login", controller = "Account", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Lion.AbpPro.BasicManagement.Users.Dtos.LoginOutput] LoginAsync(Lion.AbpPro.BasicManagement.Users.Dtos.LoginInput) on controller Lion.AbpPro.BasicManagement.Systems.AccountController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-03-17 23:27:43.758 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-03-17 23:27:43.959 +08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-03-17 23:27:44.012 +08:00 [INF] Executed action method Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 252.2745ms.
+2024-03-17 23:27:44.016 +08:00 [INF] Executing ObjectResult, writing value of type 'Lion.AbpPro.BasicManagement.Users.Dtos.LoginOutput'.
+2024-03-17 23:27:44.018 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) in 272.4947ms
+2024-03-17 23:27:44.021 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-03-17 23:27:44.072 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 37 - 200 - application/json;+charset=utf-8 337.2534ms
+2024-03-17 23:27:44.078 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/api/abp/application-configuration - -
+2024-03-17 23:27:44.080 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:27:44.083 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/api/abp/application-configuration - - - 204 - - 4.2947ms
+2024-03-17 23:27:44.085 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/api/abp/application-configuration - -
+2024-03-17 23:27:44.086 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:27:44.092 +08:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-03-17 23:27:44.093 +08:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2024-03-17 23:27:44.100 +08:00 [INF] Executing action method Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) - Validation state: "Valid"
+2024-03-17 23:27:44.103 +08:00 [WRN] The cookie 'XSRF-TOKEN' has set 'SameSite=None' and must also set 'Secure'.
+2024-03-17 23:27:44.106 +08:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2024-03-17 23:27:44.147 +08:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2024-03-17 23:27:44.148 +08:00 [INF] Executed action method Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 45.7445ms.
+2024-03-17 23:27:44.150 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2024-03-17 23:27:44.159 +08:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 63.2336ms
+2024-03-17 23:27:44.162 +08:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-03-17 23:27:44.163 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/api/abp/application-configuration - - - 200 - application/json;+charset=utf-8 77.5240ms
+2024-03-17 23:27:44.303 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY4OTI2NCwiZXhwIjoxNzEwNjk2NDY0LCJpYXQiOjE3MTA2ODkyNjR9.JZStRUh8X3TjTekze2fK6B_ru-iusibX6o4uYN7y0UM - -
+2024-03-17 23:27:44.305 +08:00 [INF] CORS policy execution successful.
+2024-03-17 23:27:44.307 +08:00 [INF] Executing endpoint 'SignalR/Notification'

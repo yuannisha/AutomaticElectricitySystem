@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Yuannisha.AutomaticElectricitySystem</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Yuannisha.AutomaticElectricitySystem.Domain\Yuannisha.AutomaticElectricitySystem.Domain.csproj" />
+        <ProjectReference Include="..\Yuannisha.AutomaticElectricitySystem.Application.Contracts\Yuannisha.AutomaticElectricitySystem.Application.Contracts.csproj" />
+        <ProjectReference Include="..\Yuannisha.AutomaticElectricitySystem.FreeSqlRepository\Yuannisha.AutomaticElectricitySystem.FreeSqlRepository.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+
+        <PackageReference Include="Abp" Version="9.1.1" />
+
+        <PackageReference Include="NPOI" Version="2.6.2" />
+
+        <PackageReference Include="Volo.Abp.BackgroundJobs.HangFire" />
+        <PackageReference Include="Lion.AbpPro.BasicManagement.Application" />
+        <PackageReference Include="Lion.AbpPro.NotificationManagement.Application" />
+        <PackageReference Include="Lion.AbpPro.DataDictionaryManagement.Application" />
+    </ItemGroup>
+
+</Project>

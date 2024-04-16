@@ -1,0 +1,42 @@
+{
+  "culture": "en",
+  "texts": {
+    "Menu:Home": "Home",
+    "Welcome": "Welcome",
+    "Test": "Test",
+    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
+    "Permission:Query": "Query",
+    "Permission:Create": "Create",
+    "Permission:Update": "Update",
+    "Permission:Delete": "Delete",
+    "Permission:Export": "Export",
+    "Permission:Enable": "Enable|Disable",
+    "Permission:SystemManagement": "SystemManagement",
+    "Permission:AuditLogManagement": "AuditLog",
+    "Permission:HangfireManagement": "BackgroundTask",
+    "Permission:CapManagement": "IntegratedEvent",
+    "Permission:ESManagement": "ESManagement",
+    "Permission:SettingManagement": "SettingManagement",
+    "Permission:OrganizationUnitManagement": "OrganizationUnitManagement",
+    "Setting.Group.System": "System",
+    "Setting.Group.Other": "Other",
+    "DisplayName:Setting.Group.Other.Github": "Github",
+    "Description:Setting.Group.Other.Github": "Github",
+    "Enum:TestType:Created:1":"Created",
+    "Enum:TestType:Cancel:1":"Cancel",
+    "Enum:TestType:Delete:1":"Delete",
+
+    "Yuannisha.AutomaticElectricitySystem:100001": "OrganizationUnit Not Exist",
+    "Yuannisha.AutomaticElectricitySystem:100002": "UserLockedOut",
+    "Yuannisha.AutomaticElectricitySystem:100003": "UserOrPasswordMismatch",
+    "Yuannisha.AutomaticElectricitySystem:100004": "ApiResource Not Exist",
+    "Yuannisha.AutomaticElectricitySystem:100005": "ApiResource  Exist",
+    "Yuannisha.AutomaticElectricitySystem:100006": "ApiScope Not Exist",
+    "Yuannisha.AutomaticElectricitySystem:100007": "ApiScope  Exist",
+    "Yuannisha.AutomaticElectricitySystem:100008": "ApiClient Not Exist",
+    "Yuannisha.AutomaticElectricitySystem:100009": "ApiClient  Exist",
+    "Yuannisha.AutomaticElectricitySystem:100010": "IdentityResource Not Exist",
+    "Yuannisha.AutomaticElectricitySystem:100011": "IdentityResource  Exist"
+    
+  }
+}

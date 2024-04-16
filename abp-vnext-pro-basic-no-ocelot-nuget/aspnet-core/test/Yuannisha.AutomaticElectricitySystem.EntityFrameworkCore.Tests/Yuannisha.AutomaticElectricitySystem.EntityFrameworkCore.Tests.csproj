@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Yuannisha.AutomaticElectricitySystem</RootNamespace>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Yuannisha.AutomaticElectricitySystem.EntityFrameworkCore\Yuannisha.AutomaticElectricitySystem.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Yuannisha.AutomaticElectricitySystem.TestBase\Yuannisha.AutomaticElectricitySystem.TestBase.csproj" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" />
+    <PackageReference Include="Zack.EFCore.Batch.Sqlite_NET6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+  </ItemGroup>
+
+</Project>

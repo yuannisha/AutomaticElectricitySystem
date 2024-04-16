@@ -1,0 +1,96 @@
+2024-03-18 00:55:56.381 +08:00 [INF] Executed endpoint 'SignalR/Notification'
+2024-03-18 00:55:56.579 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY4OTI2NCwiZXhwIjoxNzEwNjk2NDY0LCJpYXQiOjE3MTA2ODkyNjR9.JZStRUh8X3TjTekze2fK6B_ru-iusibX6o4uYN7y0UM - - - 101 - - 5292260.0003ms
+2024-03-18 00:56:20.552 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY4OTI2NCwiZXhwIjoxNzEwNjk2NDY0LCJpYXQiOjE3MTA2ODkyNjR9.JZStRUh8X3TjTekze2fK6B_ru-iusibX6o4uYN7y0UM - -
+2024-03-18 00:56:20.608 +08:00 [INF] CORS policy execution successful.
+2024-03-18 00:56:20.753 +08:00 [INF] Executing endpoint 'SignalR/Notification'
+2024-03-18 00:57:12.025 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/PowerSwitchs/Page - -
+2024-03-18 00:57:12.031 +08:00 [INF] CORS policy execution successful.
+2024-03-18 00:57:12.034 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/PowerSwitchs/Page - - - 204 - - 9.2517ms
+2024-03-18 00:57:12.043 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/PowerSwitchs/Page application/json 29
+2024-03-18 00:57:12.047 +08:00 [INF] CORS policy execution successful.
+2024-03-18 00:57:12.060 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.PowerSwitchsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-18 00:57:12.090 +08:00 [INF] Route matched with {action = "Page", controller = "PowerSwitchs", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PagePowerSwitchsOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PagePowerSwitchsInput) on controller Yuannisha.AutomaticElectricitySystem.PowerSwitchsController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-18 00:57:12.268 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.PowerSwitchsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-18 00:57:12.561 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.PowerSwitchsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 287.6166ms.
+2024-03-18 00:57:12.582 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PagePowerSwitchsOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-18 00:57:12.600 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.PowerSwitchsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 507.0651ms
+2024-03-18 00:57:12.602 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.PowerSwitchsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-18 00:57:12.708 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/PowerSwitchs/Page application/json 29 - 200 - application/json;+charset=utf-8 665.2835ms
+2024-03-18 00:57:26.420 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/PowerSwitchs/Page - -
+2024-03-18 00:57:26.422 +08:00 [INF] CORS policy execution successful.
+2024-03-18 00:57:26.424 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/PowerSwitchs/Page - - - 204 - - 3.1447ms
+2024-03-18 00:57:26.425 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/PowerSwitchs/Page application/json 29
+2024-03-18 00:57:26.426 +08:00 [INF] CORS policy execution successful.
+2024-03-18 00:57:26.428 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.PowerSwitchsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-18 00:57:26.430 +08:00 [INF] Route matched with {action = "Page", controller = "PowerSwitchs", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PagePowerSwitchsOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PagePowerSwitchsInput) on controller Yuannisha.AutomaticElectricitySystem.PowerSwitchsController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-18 00:57:26.435 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.PowerSwitchsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-18 00:57:26.474 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.PowerSwitchsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 36.833ms.
+2024-03-18 00:57:26.479 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PagePowerSwitchsOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-18 00:57:26.481 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.PowerSwitchsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 48.6478ms
+2024-03-18 00:57:26.483 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.PowerSwitchsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-18 00:57:26.551 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/PowerSwitchs/Page application/json 29 - 200 - application/json;+charset=utf-8 125.7642ms
+2024-03-18 00:57:44.103 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - -
+2024-03-18 00:57:44.107 +08:00 [INF] CORS policy execution successful.
+2024-03-18 00:57:44.109 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - - - 204 - - 6.7522ms
+2024-03-18 00:57:44.116 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29
+2024-03-18 00:57:44.120 +08:00 [INF] CORS policy execution successful.
+2024-03-18 00:57:44.124 +08:00 [INF] Executing endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-18 00:57:44.129 +08:00 [INF] Route matched with {action = "Page", controller = "Rooms", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageRoomsInput) on controller GIIST.AutomaticElectricitySystem.Controller.RoomsController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-18 00:57:44.160 +08:00 [INF] Executing action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-18 00:57:44.313 +08:00 [INF] Executed action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 147.5327ms.
+2024-03-18 00:57:44.326 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-18 00:57:44.333 +08:00 [INF] Executed action GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 194.1486ms
+2024-03-18 00:57:44.339 +08:00 [INF] Executed endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-18 00:57:44.454 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29 - 200 - application/json;+charset=utf-8 335.2125ms
+2024-03-18 01:11:01.211 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/BookingInformations/GetAllBookingInfor - -
+2024-03-18 01:11:01.238 +08:00 [INF] CORS policy execution successful.
+2024-03-18 01:11:01.243 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/BookingInformations/GetAllBookingInfor - - - 204 - - 36.3873ms
+2024-03-18 01:11:01.249 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingInformations/GetAllBookingInfor application/json 29
+2024-03-18 01:11:01.253 +08:00 [INF] CORS policy execution successful.
+2024-03-18 01:11:01.293 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.Controller.BookingInformationController.GetAllBookingInfor (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-18 01:11:01.312 +08:00 [INF] Route matched with {action = "GetAllBookingInfor", controller = "BookingInformation", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.BookingInforDto]] GetAllBookingInfor(Yuannisha.AutomaticElectricitySystem.BookingInformations.GetAllBookingInforInput) on controller Yuannisha.AutomaticElectricitySystem.Controller.BookingInformationController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-18 01:11:01.441 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.Controller.BookingInformationController.GetAllBookingInfor (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-18 01:11:01.654 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.Controller.BookingInformationController.GetAllBookingInfor (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 211.2789ms.
+2024-03-18 01:11:01.663 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.BookingInforDto, Yuannisha.AutomaticElectricitySystem.Domain.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-18 01:11:01.676 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.Controller.BookingInformationController.GetAllBookingInfor (Yuannisha.AutomaticElectricitySystem.HttpApi) in 356.792ms
+2024-03-18 01:11:01.677 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.Controller.BookingInformationController.GetAllBookingInfor (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-18 01:11:01.755 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingInformations/GetAllBookingInfor application/json 29 - 200 - application/json;+charset=utf-8 505.6796ms
+2024-03-18 01:11:06.193 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - -
+2024-03-18 01:11:06.198 +08:00 [INF] CORS policy execution successful.
+2024-03-18 01:11:06.199 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/Rooms/Page - - - 204 - - 5.6322ms
+2024-03-18 01:11:06.203 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29
+2024-03-18 01:11:06.205 +08:00 [INF] CORS policy execution successful.
+2024-03-18 01:11:06.248 +08:00 [INF] Executing endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-18 01:11:06.339 +08:00 [INF] Route matched with {action = "Page", controller = "Rooms", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageRoomsInput) on controller GIIST.AutomaticElectricitySystem.Controller.RoomsController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-18 01:11:06.359 +08:00 [INF] Executing action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-18 01:11:06.514 +08:00 [INF] Executed action method GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 139.3281ms.
+2024-03-18 01:11:06.525 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageRoomsOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-18 01:11:06.531 +08:00 [INF] Executed action GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 188.0958ms
+2024-03-18 01:11:06.533 +08:00 [INF] Executed endpoint 'GIIST.AutomaticElectricitySystem.Controller.RoomsController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-18 01:11:06.582 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Rooms/Page application/json 29 - 200 - application/json;+charset=utf-8 378.7093ms
+2024-03-18 01:11:08.805 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/BookingLimiteds/Page - -
+2024-03-18 01:11:08.809 +08:00 [INF] CORS policy execution successful.
+2024-03-18 01:11:08.810 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/BookingLimiteds/Page - - - 204 - - 6.0618ms
+2024-03-18 01:11:08.814 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 29
+2024-03-18 01:11:08.817 +08:00 [INF] CORS policy execution successful.
+2024-03-18 01:11:08.823 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-18 01:11:08.826 +08:00 [INF] Route matched with {action = "Page", controller = "BookingLimited", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput]] PageAsync(Yuannisha.AutomaticElectricitySystem.PageBookingLimitedInput) on controller Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController (Yuannisha.AutomaticElectricitySystem.HttpApi).
+2024-03-18 01:11:08.845 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) - Validation state: "Valid"
+2024-03-18 01:11:08.931 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 83.5975ms.
+2024-03-18 01:11:08.936 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Yuannisha.AutomaticElectricitySystem.PageBookingLimitedOutput, Yuannisha.AutomaticElectricitySystem.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-18 01:11:08.941 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi) in 111.0821ms
+2024-03-18 01:11:08.942 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.BookingLimiteds.BookingLimitedController.PageAsync (Yuannisha.AutomaticElectricitySystem.HttpApi)'
+2024-03-18 01:11:09.006 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/BookingLimiteds/Page application/json 29 - 200 - application/json;+charset=utf-8 192.3496ms
+2024-03-18 01:13:49.884 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/swagger/index.html - -
+2024-03-18 01:13:50.540 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/swagger/index.html - - - 200 - text/html;charset=utf-8 655.8223ms
+2024-03-18 01:13:51.299 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/swagger/AutomaticElectricitySystem/swagger.json - -
+2024-03-18 01:13:52.869 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/swagger/AutomaticElectricitySystem/swagger.json - - - 200 - application/json;charset=utf-8 1570.4409ms
+2024-03-18 01:26:10.426 +08:00 [INF] Execution Worker recovered from the Faulted state after 00:00:30.0097204 and is in the Running state now
+2024-03-18 01:55:10.793 +08:00 [INF] Executed endpoint 'SignalR/Notification'
+2024-03-18 01:55:10.876 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/signalr/notification?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJpc3MiOiJZdWFubmlzaGEuQXV0b21hdGljRWxlY3RyaWNpdHlTeXN0ZW0iLCJuYW1laWQiOiIzYTEwZjA4OS0zZjgyLWU5YjYtNWJmOS05NzAyZjVmNTZmNjkiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJ0ZW5hbnRpZCI6IiIsInJvbGUiOiJhZG1pbiIsIm5iZiI6MTcxMDY4OTI2NCwiZXhwIjoxNzEwNjk2NDY0LCJpYXQiOjE3MTA2ODkyNjR9.JZStRUh8X3TjTekze2fK6B_ru-iusibX6o4uYN7y0UM - - - 101 - - 3530317.4040ms
+2024-03-18 01:55:20.820 +08:00 [INF] Application is shutting down...
+2024-03-18 01:55:21.088 +08:00 [INF] Server 苑霓砂:19980:15c455fa caught stopping signal...
+2024-03-18 01:55:21.099 +08:00 [INF] Server 苑霓砂:19980:15c455fa caught stopped signal...
+2024-03-18 01:55:21.132 +08:00 [INF] Server 苑霓砂:19980:15c455fa All dispatchers stopped
+2024-03-18 01:55:21.176 +08:00 [INF] Server 苑霓砂:19980:15c455fa successfully reported itself as stopped in 28.8825 ms
+2024-03-18 01:55:21.177 +08:00 [INF] Server 苑霓砂:19980:15c455fa has been stopped in total 80.6929 ms
