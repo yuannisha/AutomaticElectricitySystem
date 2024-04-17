@@ -178,7 +178,12 @@ namespace Yuannisha.AutomaticElectricitySystem
         /// </summary>
         private void ConfigureIdentity(ServiceConfigurationContext context)
         {
-            context.Services.Configure<IdentityOptions>(options => { options.Lockout = new LockoutOptions() { AllowedForNewUsers = false }; });
+            context.Services.Configure<IdentityOptions>(options => { options.Lockout = new LockoutOptions()
+            {
+                DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30), // 账户锁定时间
+                MaxFailedAccessAttempts = 5, // 最大失败尝试次数
+                AllowedForNewUsers = true // 新用户是否启用锁定
+            }; });
         }
 
         private static void ConfigureSwaggerServices(ServiceConfigurationContext context)
@@ -281,7 +286,7 @@ namespace Yuannisha.AutomaticElectricitySystem
                 options.AddPolicy(name: "MyAllowSpecificOrigins",
                     builder =>
                     {
-                        builder.WithOrigins("http://localhost:44315/","http://localhost:4200","http://localhost:44315/hangfire/stats")
+                        builder.WithOrigins("http://localhost:44315/","http://localhost:4200","http://localhost:44315/hangfire/stats","http://localhost:44315/Login")
                             .AllowAnyHeader()
                             .AllowAnyMethod();
                     });

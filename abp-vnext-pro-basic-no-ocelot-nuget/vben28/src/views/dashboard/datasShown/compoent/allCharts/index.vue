@@ -35,7 +35,7 @@
     <div class="contetn_center">
       <!-- <CenterMap class="contetn_center_top" title="设备分布图" />-->
       <Center class="contetn_center_top" title="数据概览" />
-      <ItemWrap class="contetn_center-bottom" title="安装计划">
+      <ItemWrap class="contetn_center-bottom" title="教室使用情况">
         <CenterBottom />
       </ItemWrap>
     </div>

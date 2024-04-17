@@ -32,11 +32,11 @@ public class BookingInformationAppService : ApplicationService, IBookingInformat
 
     protected static Dictionary<string, List<string>> PianoRoomsBookingTimespan = new Dictionary<string, List<string>>();
 
-    protected static List<string> Timespans = new List<string>() { "8:00-9:00","9:00-10:00",
+    protected static List<string> Timespans = new List<string>() { "08:00-09:00","09:00-10:00",
             "10:00-11:00", "11:00-12:00", "12:00-13:00", "13:00-14:00", "14:00-15:00", "15:00-16:00",
             "16:00-17:00", "17:00-18:00", "18:00-19:00", "19:00-20:00", "20:00-21:00" };
 
-    protected static List<string> ReferenceTimespans = new List<string>() { "8:00-9:00","9:00-10:00",
+    protected static List<string> ReferenceTimespans = new List<string>() { "08:00-09:00","09:00-10:00",
             "10:00-11:00", "11:00-12:00", "12:00-13:00", "13:00-14:00", "14:00-15:00", "15:00-16:00",
             "16:00-17:00", "17:00-18:00", "18:00-19:00", "19:00-20:00", "20:00-21:00" };
 
@@ -56,10 +56,10 @@ public class BookingInformationAppService : ApplicationService, IBookingInformat
         switch (whichClass)
         {
             case 1:
-                timeStamp = "8:00-9:00";
+                timeStamp = "08:00-09:00";
                 break;
             case 2:
-                timeStamp = "9:00-10:00";
+                timeStamp = "09:00-10:00";
                 break;
             case 3:
                 timeStamp = "10:00-11:00";
@@ -883,7 +883,7 @@ public class BookingInformationAppService : ApplicationService, IBookingInformat
                     }
                     else
                     {
-                        throw new Exception("请正确填写时间段，例如：\"8:00-9:00\"或者\"8:00-9:00;9:00-10:00\"");
+                        throw new Exception("请正确填写时间段，例如：\"08:00-09:00\"或者\"08:00-09:00;09:00-10:00\"");
                     }
                 }
                 else
@@ -894,7 +894,7 @@ public class BookingInformationAppService : ApplicationService, IBookingInformat
                     }
                     else
                     {
-                        throw new Exception("请正确填写时间段，例如：\"8:00-9:00\"或者\"8:00-9:00;9:00-10:00\"");
+                        throw new Exception("请正确填写时间段，例如：\"08:00-09:00\"或者\"08:00-09:00;09:00-10:00\"");
                     }
                 }
 
@@ -951,7 +951,7 @@ public class BookingInformationAppService : ApplicationService, IBookingInformat
                     }
                     else
                     {
-                        throw new Exception("请正确填写时间段，例如：\"8:00-9:00\"或者\"8:00-9:00;9:00-10:00\"");
+                        throw new Exception("请正确填写时间段，例如：\"08:00-09:00\"或者\"08:00-09:00;09:00-10:00\"");
                     }
                 }
                 else
@@ -969,7 +969,7 @@ public class BookingInformationAppService : ApplicationService, IBookingInformat
                     }
                     else
                     {
-                        throw new Exception("请正确填写时间段，例如：\"8:00-9:00\"或者\"8:00-9:00;9:00-10:00\"");
+                        throw new Exception("请正确填写时间段，例如：\"08:00-09:00\"或者\"08:00-09:00;09:00-10:00\"");
                     }
                 }
             }
@@ -1126,7 +1126,7 @@ public class BookingInformationAppService : ApplicationService, IBookingInformat
     public bool IdentityVerify(string StudentId, string Name, string ClassName)
     {
         var result = false;
-        DataTable dt = ExcelToDatatable(@"D:\GraduationProject\testProject1\AutomaticElectricitySystem\StudentsList.xlsx", "Sheet1", true);
+        DataTable dt = ExcelToDatatable(@"D:\Project\AutomaticElectricitySystem\StudentsList.xlsx", "Sheet1", true);
         //将excel表格数据存入list集合中
         //EachdayTX定义的类，字段值对应excel表中的每一列
         List<EachdayTX> eachdayTX = new List<EachdayTX>();
@@ -1209,7 +1209,8 @@ public class BookingInformationAppService : ApplicationService, IBookingInformat
         foreach (var kkk in timespanCounts)
         {
             var re = (double) kkk.Value / count;
-            useRatesOfRooms[kkk.Key] = re;
+            // useRatesOfRooms[kkk.Key] = string.Format("{0:0.00}%", re * 100);
+            useRatesOfRooms[kkk.Key] = Math.Round(re, 4) * 100;
         }
 
         var list = useRatesOfRooms.Values.ToList();

@@ -62,7 +62,7 @@
         img: '../../../../../assets/images/allEnergyConsumption.png',
       },
       {
-        title: '今日教室预约人数(人)',
+        title: '今日申请教室人数(人)',
         subTitle: "Today's Total Orders",
         // startVal: (oldProps && oldProps.orderToday) || 0,
         // endVal: newProps.orderToday,
@@ -70,7 +70,7 @@
         img: 'https://www.youbaobao.xyz/datav-res/order.png',
       },
       {
-        title: '今日已预约教室数(间)',
+        title: '今日已申请教室数(间)',
         subTitle: "Today's Payed Users",
         // startVal: (oldProps && oldProps.orderUser) || 0,
         // endVal: newProps.orderUser,
@@ -80,7 +80,7 @@
     ];
   };
   const initData2 = (datas: any) => {
-    headerData1.value = [
+    headerData2.value = [
       {
         title: '总电量消耗(度)',
         subTitle: "Today's Sales Amount",
@@ -90,7 +90,7 @@
         img: '../../../../../assets/images/allEnergyConsumption.png',
       },
       {
-        title: '总教室预约人数(人)',
+        title: '总申请教室人数(人)',
         subTitle: "Today's Total Orders",
         // startVal: (oldProps && oldProps.orderToday) || 0,
         // endVal: newProps.orderToday,
@@ -98,7 +98,7 @@
         img: 'https://www.youbaobao.xyz/datav-res/order.png',
       },
       {
-        title: '总已预约教室数(间)',
+        title: '总已申请教室数(间)',
         subTitle: "Today's Payed Users",
         // startVal: (oldProps && oldProps.orderUser) || 0,
         // endVal: newProps.orderUser,
@@ -110,6 +110,7 @@
   const getDatasForData = async () => {
     const service = new BuildingConsumptionServiceProxy();
     var datas = await service.getTodayDatasCount();
+    console.log(datas);
     initData1(datas);
     initData2(datas);
   };

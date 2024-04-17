@@ -58,7 +58,7 @@
         },
         formatter: function (params: any) {
           // 添加单位
-          var result = params[0].name + '<br>';
+          var result = params[1].name + '<br>';
           params.forEach(function (item: any) {
             if (item.value) {
               if (item.seriesName == '使用率') {
@@ -71,6 +71,7 @@
             }
           });
           return result;
+
         },
       },
       legend: {
@@ -118,7 +119,7 @@
             },
           },
           axisLabel: {
-            formatter: '{value}% ',
+            formatter: '{value} %',
           },
         },
       ],

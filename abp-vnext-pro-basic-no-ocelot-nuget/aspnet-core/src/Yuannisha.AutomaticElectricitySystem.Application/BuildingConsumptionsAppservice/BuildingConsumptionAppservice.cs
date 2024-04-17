@@ -152,7 +152,7 @@ public class BuildingConsumptionAppservice : IBuildingConsumptionAppservice
             .Distinct()
             .Count();
 
-        var currentdate3 = DateTime.Now.ToString("yyyy/MM/dd");
+        var currentdate3 = DateTime.Now.ToString("yyyy-MM-dd");
         var totalConsumption =await _dailyTotalConsumptionManager.GetAllDailyTotalConsumption();
         var singledata = totalConsumption.AllDailyTotalConsumptionOutput.FirstOrDefault(x=>x.Date.Equals(currentdate3));
         double totaldata = 0;

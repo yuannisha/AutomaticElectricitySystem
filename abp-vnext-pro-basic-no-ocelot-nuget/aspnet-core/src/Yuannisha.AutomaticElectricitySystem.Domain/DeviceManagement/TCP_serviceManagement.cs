@@ -22,7 +22,7 @@ public class TCP_serviceManagement
 
     // public static GetBuildingOutPutDto Buildings = null;
 
-    public static List<PowerSwitchsDto> PowerSwitchs = null;
+    public static List<PowerSwitchsDto> PowerSwitchs = new List<PowerSwitchsDto>();
 
     // public static GetAllClassroomsOutPutDto Rooms = null;
     
@@ -163,7 +163,53 @@ public class TCP_serviceManagement
         }
     }
 
-    public static async void MonitorEnergyConsumption(string DSN , string energyConsumption)
+    public static async Task AutoAddTestDatasScript()
+    {
+        var newPowerSwitchsDto = new PowerSwitchsDto();
+        var list = DSNwithInfor.Keys.ToList();
+        string DSN = "";
+        foreach (var powerSwitch in PowerSwitchs)
+        {
+            var time = DateTime.Now.ToString("HH:mm");
+            double totalSumForUpdate = 0;
+            if (time.Equals(UpdateTimeSpan))
+            {
+                totalSumForUpdate = 0;
+            }
+            else
+            {
+                // 创建 Random 类的实例
+                Random random = new Random();
+
+                // 生成一个介于 2200 到 20500 之间的随机整数
+                int randomInt = random.Next(150, 1351); // 20501 是上限的独占值
+
+                // 转换为 double 类型并除以 100.0，以生成两位小数的浮点数
+                double randomValue = randomInt / 100.0;
+
+                totalSumForUpdate = powerSwitch.EnergyConsumption + randomValue;
+            }
+            list.ForEach(x =>
+            {
+                if (x.Replace(" ", "").Equals(powerSwitch.SerialNumber))
+                    DSN = x;
+            });
+            newPowerSwitchsDto = await powerSwitchsManager.UpdateAsync(powerSwitch.Id, powerSwitch.RoomId, 
+                powerSwitch
+                    .SerialNumber, powerSwitch.ControlledMachineName, powerSwitch.IsOnline, powerSwitch
+                    .Status, DSNwithInfor[DSN].isAbnormal,totalSumForUpdate);
+        }
+        if (newPowerSwitchsDto.Id != Guid.Empty)
+        {
+            int index = PowerSwitchs.FindIndex(p => p.Id == newPowerSwitchsDto.Id);
+            if(index != -1)
+            {
+                PowerSwitchs[index] = newPowerSwitchsDto;
+            }
+        }
+    }
+
+    public static async Task MonitorEnergyConsumption(string DSN , string energyConsumption)
     {
         var parts = energyConsumption.Split(" ");
         Array.Reverse(parts);
@@ -202,7 +248,7 @@ public class TCP_serviceManagement
             }
         }
     }
-    public static async void OpeningtimeAndExceptionStatusWatch(string DSN,string exceptionStatusCheck)
+    public static async Task OpeningtimeAndExceptionStatusWatch(string DSN,string exceptionStatusCheck)
     {
         var newPowerSwitchsDto = new PowerSwitchsDto();
         foreach (var powerSwitch in PowerSwitchs)

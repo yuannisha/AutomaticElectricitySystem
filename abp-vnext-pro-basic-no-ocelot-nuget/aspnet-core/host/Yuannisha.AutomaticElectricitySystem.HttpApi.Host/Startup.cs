@@ -1,16 +1,24 @@
 using Hangfire.MySql;
+using Volo.Abp.Domain.Repositories;
+using Volo.Abp.Guids;
 using Yuannisha.AutomaticElectricitySystem.BookingInformationsAppservice;
 using Yuannisha.AutomaticElectricitySystem.BuildingConsumptionsAppservice;
+using Yuannisha.AutomaticElectricitySystem.BuildingsEntity;
+using Yuannisha.AutomaticElectricitySystem.DailyTotalConsumptionEntity;
 using Yuannisha.AutomaticElectricitySystem.DailyTotalConsumptionIAppservice;
 using Yuannisha.AutomaticElectricitySystem.DailyTotalConsumptionsAppservice;
+using Yuannisha.AutomaticElectricitySystem.DeviceManagement;
 using Yuannisha.AutomaticElectricitySystem.HangfireWorks;
+using Yuannisha.AutomaticElectricitySystem.PowerConsumption;
 using Yuannisha.AutomaticElectricitySystem.PowerConsumptionIAppservice;
+using Yuannisha.AutomaticElectricitySystem.PowerSwitchsEntity;
+using Yuannisha.AutomaticElectricitySystem.RoomsEntity;
+using Yuannisha.AutomaticElectricitySystem.SchoolClassTable;
 
 namespace Yuannisha.AutomaticElectricitySystem
 {
     public class Startup
     {
-        // private string[] corsUrl = new string[]{"http://localhost:44315/"};
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddApplication<AutomaticElectricitySystemHttpApiHostModule>();
@@ -42,28 +50,56 @@ namespace Yuannisha.AutomaticElectricitySystem
             // });
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory, IServiceProvider serviceProvider)
         {
             // 启用 CORS
             // app.UseCors("MyAllowSpecificOrigins");
             app.InitializeApplication();
             
-            BookingInformationAppService.InitPianoRoomsBookingTimespan();
+           
             
+            // BookingInformationAppService.InitPianoRoomsBookingTimespan();
+
+            //系统开启时首次执行任务
+            // backgroundJobs.Enqueue<AutoOperatePowerSwitch>(s => s.Test());
+            // backgroundJobs.Enqueue<AutoOperatePowerSwitch>(s => s.SetValuesForPowerSwitchs());
+
             // 调度定时任务
-            RecurringJob.RemoveIfExists("Test");
+            // RecurringJob.RemoveIfExists("Test");
             // RecurringJob.RemoveIfExists("InitPowerSwitchsValue");
             // RecurringJob.RemoveIfExists("AutoTeleMetering");
             // RecurringJob.RemoveIfExists("AutoSetValueWithConsumption");
+            // RecurringJob.RemoveIfExists("AutoAddTestDatasScriptJob");
+            // RecurringJob.RemoveIfExists("InitTimeSpans");
+            // RecurringJob.RemoveIfExists("UpdateClassInformation");
+            // RecurringJob.RemoveIfExists("AutoOperateByTime");
             
-            RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("Test",s=>s.Test(),Cron.Minutely);
-            // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("InitPowerSwitchsValue",s=>s.SetValuesForPowerSwitchs(),Cron.Minutely);
-            // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoTeleMetering",s=>s.AutoTleMetering(),Cron.MinuteInterval(15));
+            var autoOperatePowerSwitch = serviceProvider.GetService<AutoOperatePowerSwitch>();
+            RecurringJob.AddOrUpdate("InitPowerSwitchsValue", () => autoOperatePowerSwitch.SetValuesForPowerSwitchs(), Cron.Minutely);
+            
+            // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("Test",s=>s.Test(),Cron.Minutely);
+            // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("InitPowerSwitchsValue",s=>s.SetValuesForPowerSwitchs(),
+            //     Cron.Minutely,TimeZoneInfo.Local);
+            // // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoTeleMetering",s=>s.AutoTleMetering(),Cron.MinuteInterval(13));
             // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoSetValueWithConsumption",s=>s
-            //     .AutoSetValueWithConsumption(),Cron.MinuteInterval(18));
+            //     .AutoSetValueWithConsumption(),Cron.MinuteInterval(14),TimeZoneInfo.Local);
+            // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoAddTestDatasScriptJob",
+            //     s=>s.AutoAddTestDatasScriptJob(),Cron.Minutely,TimeZoneInfo.Local);
             
-            // RecurringJob.AddOrUpdate<TestWork>("test1",ser=>ser.test(),Cron.Minutely);
             
+            // TCP_serviceManagement.benginService();//项目启动时开启Socket服务
+            //
+            // DatasHandle.GetInformationOfClasses();//项目开启时获取系统数据库中的课表信息
+            //
+            // BookingInformationAppService.InitPianoRoomsBookingTimespan();
+            //
+            // RecurringJob.AddOrUpdate("UpdateClassInformation", () => DatasHandle.GetInformationOfClasses(), 
+            //     Cron.Daily(0),TimeZoneInfo.Local);//每天更新课表信息(可能源课表数据库的数据有更改)
+            // RecurringJob.AddOrUpdate("InitTimeSpans", () => BookingInformationAppService.InitPianoRoomsBookingTimespan(),
+            //     Cron.Daily(0),TimeZoneInfo.Local);
+            // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoOperateByTime", x => x.AutoOperateByTime(), 
+            //     Cron.MinuteInterval(10), TimeZoneInfo.Local);
+            //
             
         }
     }

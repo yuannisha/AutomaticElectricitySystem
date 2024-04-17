@@ -104,7 +104,7 @@ public class DailyTotalConsumptionManager : DomainService
         for (int i = 0; i < 7; i++)
         {
             var date = currentDate.AddDays(-i);
-            var formattedDate = date.ToString("yyyy/MM/dd");
+            var formattedDate = date.ToString("yyyy-MM-dd");
             datesList.Add(formattedDate);
         }
 

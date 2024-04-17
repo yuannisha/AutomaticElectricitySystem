@@ -9,8 +9,9 @@ using Yuannisha.AutomaticElectricitySystem.DailyTotalConsumptionShared;
 using Yuannisha.AutomaticElectricitySystem.DeviceManagement;
 using Yuannisha.AutomaticElectricitySystem.PowerConsumption;
 using Yuannisha.AutomaticElectricitySystem.PowerConsumptionIAppservice;
-using Yuannisha.AutomaticElectricitySystem.PowerSwitchsEntity;
+using Yuannisha.AutomaticElectricitySystem.PowerSwitchsAppservice;
 using Yuannisha.AutomaticElectricitySystem.PowerSwitchsShared;
+using Yuannisha.AutomaticElectricitySystem.RoomsAppservice;
 using Yuannisha.AutomaticElectricitySystem.RoomsEntity;
 using Yuannisha.AutomaticElectricitySystem.SchoolClassTable;
 using ITransientDependency = Volo.Abp.DependencyInjection.ITransientDependency;
@@ -23,30 +24,31 @@ public class AutoOperatePowerSwitch : ITransientDependency
 
     //DatasHandle datasHandle = new DatasHandle();
 
-    private readonly RoomsManager _roommManager;
-    private readonly PowerSwitchsManager _powerSwitchsManager;
+    private readonly RoomsAppService _roommManager;
+    private readonly PowerSwitchsAppService _powerSwitchsManager;
     private readonly BuildingsManager _buildingsManager;
-    private readonly Volo.Abp.Domain.Repositories.IRepository<Rooms, Guid> _roomRepository;
+    private readonly IRepository<Rooms, Guid> _roomRepository;
     private readonly IGuidGenerator _guidGenerator;
     private readonly BuildingConsumptionAppservice _buildingConsumptionAppservice;
     // private readonly ConsumptionAmountAppservice _consumptionAmountAppservice;
     private readonly DailyTotalConsumptionManager _dailyTotalConsumptionManager;
-    private readonly Volo.Abp.Domain.Repositories.IRepository<BuildingConsumption, Guid> _repositoryOfBuildingConsumption;
+    private readonly IRepository<BuildingConsumption, Guid> _repositoryOfBuildingConsumption;
+    private static readonly IBackgroundJobClient BackgroundJobs;
 
 
     public AutoOperatePowerSwitch(/*IRepository<PowerSwitch, Guid> powerSwitchRepository,*/
-        RoomsManager _roommManager, Volo.Abp.Domain.Repositories.IRepository<Rooms, Guid> roomRepository,
-        PowerSwitchsManager powerSwitchsManager,
+        RoomsAppService roommManager, IRepository<Rooms, Guid> roomRepository,
+        PowerSwitchsAppService powerSwitchsManager,
         BuildingsManager buildingsManager,
         IGuidGenerator guidGenerator,
         BuildingConsumptionAppservice buildingConsumptionAppservice,
-        Volo.Abp.Domain.Repositories.IRepository<BuildingConsumption, Guid> repositoryOfBuildingConsumption,
+        IRepository<BuildingConsumption, Guid> repositoryOfBuildingConsumption,
         // ConsumptionAmountAppservice consumptionAmountAppservice
         DailyTotalConsumptionManager dailyTotalConsumptionManager
         )
     {
         //_powerSwitchRepository = powerSwitchRepository;
-        _roommManager = _roommManager;
+        _roommManager = roommManager;
         _roomRepository = roomRepository;
         _powerSwitchsManager = powerSwitchsManager;
         _buildingsManager = buildingsManager;
@@ -80,7 +82,7 @@ public class AutoOperatePowerSwitch : ITransientDependency
     }
 
     [UnitOfWork]
-    public virtual async void AutoOperateDeviceByTime()
+    public virtual async Task AutoOperateDeviceByTime()
     {
         var ss =await _roomRepository.WithDetailsAsync(x => x.PowerSwitches);
         var roomList = ss.ToList();
@@ -141,7 +143,7 @@ public class AutoOperatePowerSwitch : ITransientDependency
     }
 
     [UnitOfWork]
-    public virtual async void AutoOperateByTime()
+    public virtual async Task AutoOperateByTime()
     {
         var ss = await _roomRepository.WithDetailsAsync(x => x.PowerSwitches);
         var roomlist = ss.ToList();
@@ -206,6 +208,50 @@ public class AutoOperatePowerSwitch : ITransientDependency
     }
 
 
+    // public static void StarJobs()
+    // {
+    //     var autoOperatePowerSwitch = serviceProvider.GetService<AutoOperatePowerSwitch>();
+    //     // BookingInformationAppService.InitPianoRoomsBookingTimespan();
+    //
+    //         //系统开启时首次执行任务
+    //         // BackgroundJobs.Enqueue<AutoOperatePowerSwitch>(s => s.Test());
+    //         // backgroundJobs.Enqueue<AutoOperatePowerSwitch>(s => s.SetValuesForPowerSwitchs());
+    //
+    //         // 调度定时任务
+    //         RecurringJob.RemoveIfExists("Test");
+    //         RecurringJob.RemoveIfExists("InitPowerSwitchsValue");
+    //         RecurringJob.RemoveIfExists("AutoTeleMetering");
+    //         RecurringJob.RemoveIfExists("AutoSetValueWithConsumption");
+    //         RecurringJob.RemoveIfExists("AutoAddTestDatasScriptJob");
+    //         RecurringJob.RemoveIfExists("InitTimeSpans");
+    //         RecurringJob.RemoveIfExists("UpdateClassInformation");
+    //         RecurringJob.RemoveIfExists("AutoOperateByTime");
+    //         
+    //         // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("Test",s=>s.Test(),Cron.Minutely);
+    //         RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("InitPowerSwitchsValue",s=>s.SetValuesForPowerSwitchs(),
+    //             Cron.Minutely,TimeZoneInfo.Local);
+    //         // // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoTeleMetering",s=>s.AutoTleMetering(),Cron.MinuteInterval(13));
+    //         // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoSetValueWithConsumption",s=>s
+    //         //     .AutoSetValueWithConsumption(),Cron.MinuteInterval(14),TimeZoneInfo.Local);
+    //         // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoAddTestDatasScriptJob",
+    //         //     s=>s.AutoAddTestDatasScriptJob(),Cron.Minutely,TimeZoneInfo.Local);
+    //         
+    //         
+    //         // TCP_serviceManagement.benginService();//项目启动时开启Socket服务
+    //         //
+    //         // DatasHandle.GetInformationOfClasses();//项目开启时获取系统数据库中的课表信息
+    //         //
+    //         // BookingInformationAppService.InitPianoRoomsBookingTimespan();
+    //         //
+    //         // RecurringJob.AddOrUpdate("UpdateClassInformation", () => DatasHandle.GetInformationOfClasses(), 
+    //         //     Cron.Daily(0),TimeZoneInfo.Local);//每天更新课表信息(可能源课表数据库的数据有更改)
+    //         // RecurringJob.AddOrUpdate("InitTimeSpans", () => BookingInformationAppService.InitPianoRoomsBookingTimespan(),
+    //         //     Cron.Daily(0),TimeZoneInfo.Local);
+    //         // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoOperateByTime", x => x.AutoOperateByTime(), 
+    //         //     Cron.MinuteInterval(10), TimeZoneInfo.Local);
+    //         //
+    // }
+    
     //[Obsolete("该方法显示被弃用了，但仍可以使用")]
     public void RegistryTask()
     {
@@ -229,12 +275,16 @@ public class AutoOperatePowerSwitch : ITransientDependency
 
         BookingInformationAppService.InitPianoRoomsBookingTimespan();
 
-        //RecurringJob.AddOrUpdate("UpdateClassInformation", () => DatasHandle.GetInformationOfClasses(), Cron.Daily(0),TimeZoneInfo.Local);//每天更新课表信息(可能源课表数据库的数据有更改)
-        //RecurringJob.AddOrUpdate("AutoFuncTest", () => aops.AutoOperateDeviceByTime(), Cron.Hourly,TimeZoneInfo.Local,"default");//自动每隔一分钟检测教室是否在上课时间从而控制智能空开
+        RecurringJob.AddOrUpdate("UpdateClassInformation", () => DatasHandle.GetInformationOfClasses(), 
+            Cron.Daily(0),TimeZoneInfo.Local);//每天更新课表信息(可能源课表数据库的数据有更改)
+        //RecurringJob.AddOrUpdate("AutoFuncTest", () => aops.AutoOperateDeviceByTime(),
+        //Cron.Hourly,TimeZoneInfo.Local,"default");//自动每隔一分钟检测教室是否在上课时间从而控制智能空开
         //RecurringJob.AddOrUpdate("test", () => OperateDeviceTest(), Cron.MinuteInterval(3));
         RecurringJob.AddOrUpdate("test", () => Console.WriteLine("测试"), Cron.Minutely());
-        //RecurringJob.AddOrUpdate("InitTimeSpans", () => ClassroomBookingAppService.InitPianoRoomsBookingTimespan(),Cron.Daily(0),TimeZoneInfo.Local);
-        //RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoOperateByTime", x => x.AutoOperateByTime(), Cron.MinuteInterval(10), TimeZoneInfo.Local);
+        RecurringJob.AddOrUpdate("InitTimeSpans", () => BookingInformationAppService.InitPianoRoomsBookingTimespan(),
+            Cron.Daily(0),TimeZoneInfo.Local);
+        RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoOperateByTime", x => x.AutoOperateByTime(), 
+            Cron.MinuteInterval(10), TimeZoneInfo.Local);
         
     
     }
@@ -253,7 +303,7 @@ public class AutoOperatePowerSwitch : ITransientDependency
         
     }
 
-    public async void AutoSetValueWithConsumption()
+    public async Task AutoSetValueWithConsumption()
     {
         var rooms = await _roommManager.GetAllClassrooms();
         var buildings = await _buildingsManager.GetAllBuildingsAsyncUnConditional();
@@ -350,12 +400,25 @@ public class AutoOperatePowerSwitch : ITransientDependency
         }
     }
 
-    public async void SetValuesForPowerSwitchs()
+    public async Task SetValuesForPowerSwitchs()
     {
-        TCP_serviceManagement.PowerSwitchs = await _powerSwitchsManager.GetAllPowerSwitchs();
+        var ppp = await _powerSwitchsManager.GetAllPowerSwitchs();
+        if (!TCP_serviceManagement.PowerSwitchs.Count.Equals(0))
+        {
+            TCP_serviceManagement.PowerSwitchs.Clear();
+        }
+        ppp.ForEach(x =>
+        {
+            TCP_serviceManagement.PowerSwitchs.Add(x);
+        });
     }
 
-    public async void SetValuesForConsumptionAmount(Dictionary<Guid, double> buildingConsumption)
+    public async Task AutoAddTestDatasScriptJob()
+    {
+        await TCP_serviceManagement.AutoAddTestDatasScript();
+    }
+    
+    public async Task SetValuesForConsumptionAmount(Dictionary<Guid, double> buildingConsumption)
     {
         double sum = 0;
         foreach (var item in buildingConsumption)

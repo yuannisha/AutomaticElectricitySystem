@@ -158,7 +158,7 @@
             },
             {
               value: state.isNotAbnormalNum,
-              name: '锁定',
+              name: '正常',
               itemStyle: {
                 color: echartsGraphic(['#F48C02', '#FDDB7D']),
               },
