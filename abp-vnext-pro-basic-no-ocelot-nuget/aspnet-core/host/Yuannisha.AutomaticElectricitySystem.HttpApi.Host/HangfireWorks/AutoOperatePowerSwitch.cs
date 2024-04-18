@@ -10,6 +10,7 @@ using Yuannisha.AutomaticElectricitySystem.DeviceManagement;
 using Yuannisha.AutomaticElectricitySystem.PowerConsumption;
 using Yuannisha.AutomaticElectricitySystem.PowerConsumptionIAppservice;
 using Yuannisha.AutomaticElectricitySystem.PowerSwitchsAppservice;
+using Yuannisha.AutomaticElectricitySystem.PowerSwitchsEntity;
 using Yuannisha.AutomaticElectricitySystem.PowerSwitchsShared;
 using Yuannisha.AutomaticElectricitySystem.RoomsAppservice;
 using Yuannisha.AutomaticElectricitySystem.RoomsEntity;
@@ -25,7 +26,7 @@ public class AutoOperatePowerSwitch : ITransientDependency
     //DatasHandle datasHandle = new DatasHandle();
 
     private readonly RoomsAppService _roommManager;
-    private readonly PowerSwitchsAppService _powerSwitchsManager;
+    private readonly PowerSwitchsManager _powerSwitchsManager;
     private readonly BuildingsManager _buildingsManager;
     private readonly IRepository<Rooms, Guid> _roomRepository;
     private readonly IGuidGenerator _guidGenerator;
@@ -38,7 +39,7 @@ public class AutoOperatePowerSwitch : ITransientDependency
 
     public AutoOperatePowerSwitch(/*IRepository<PowerSwitch, Guid> powerSwitchRepository,*/
         RoomsAppService roommManager, IRepository<Rooms, Guid> roomRepository,
-        PowerSwitchsAppService powerSwitchsManager,
+        PowerSwitchsManager powerSwitchsManager,
         BuildingsManager buildingsManager,
         IGuidGenerator guidGenerator,
         BuildingConsumptionAppservice buildingConsumptionAppservice,
@@ -59,9 +60,9 @@ public class AutoOperatePowerSwitch : ITransientDependency
         // _consumptionAmountAppservice = consumptionAmountAppservice;
     }
 
-    public AutoOperatePowerSwitch()
-    {
-    }
+    // public AutoOperatePowerSwitch()
+    // {
+    // }
 
     public void OperateDeviceTest()
     {
@@ -411,6 +412,15 @@ public class AutoOperatePowerSwitch : ITransientDependency
         {
             TCP_serviceManagement.PowerSwitchs.Add(x);
         });
+        // var test1 =await _roomRepository.WithDetailsAsync(x => x.PowerSwitches);
+        // var test2 =await _buildingsManager.GetAllBuildingsAsyncUnConditional();
+        // var test3 =await _roommManager.GetAllClassrooms();
+        // var test4 =await _buildingConsumptionAppservice.GetAllBuildingConsumption();
+        // var test5 =await _powerSwitchsManager.GetAllPowerSwitchs();
+        // var test6 =await _dailyTotalConsumptionManager.GetAllDailyTotalConsumption();
+        // var test7 =await _repositoryOfBuildingConsumption.GetListAsync();
+        // await TCP_serviceManagement.SetValuesForPowerSwitchs(_powerSwitchsManager);
+        Console.WriteLine(TCP_serviceManagement.PowerSwitchs.Count);
     }
 
     public async Task AutoAddTestDatasScriptJob()

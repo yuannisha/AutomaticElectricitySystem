@@ -13,7 +13,8 @@ namespace Yuannisha.AutomaticElectricitySystem
         typeof(AbpAccountWebModule),
         typeof(AutomaticElectricitySystemApplicationModule),
         typeof(AbpAspNetCoreMvcUiBasicThemeModule),
-        typeof(AbpCachingStackExchangeRedisModule)
+        typeof(AbpCachingStackExchangeRedisModule),
+        typeof(AutomaticElectricitySystemDomainModule)
     )]
     public class AutomaticElectricitySystemHttpApiHostModule : AbpModule
     {

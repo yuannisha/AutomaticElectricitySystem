@@ -163,6 +163,19 @@ public class TCP_serviceManagement
         }
     }
 
+    // public static async Task SetValuesForPowerSwitchs(PowerSwitchsManager _powerSwitchsManager)
+    // {
+    //     var ppp = await _powerSwitchsManager.GetAllPowerSwitchs();
+    //     if (!PowerSwitchs.Count.Equals(0))
+    //     {
+    //         PowerSwitchs.Clear();
+    //     }
+    //     ppp.ForEach(x =>
+    //     {
+    //         PowerSwitchs.Add(x);
+    //     });
+    // }
+    
     public static async Task AutoAddTestDatasScript()
     {
         var newPowerSwitchsDto = new PowerSwitchsDto();

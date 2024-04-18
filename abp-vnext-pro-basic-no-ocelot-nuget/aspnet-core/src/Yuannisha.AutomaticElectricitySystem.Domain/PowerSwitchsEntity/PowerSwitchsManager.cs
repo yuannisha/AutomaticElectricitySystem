@@ -9,11 +9,11 @@ namespace Yuannisha.AutomaticElectricitySystem.PowerSwitchsEntity
     {
         private readonly IPowerSwitchsRepository _powerSwitchsRepository;
         private readonly IObjectMapper _objectMapper;
-        private readonly IRepository<PowerSwitchsEntity.PowerSwitchs,Guid> _repositoryOfPowerSwitchs;
+        private readonly IRepository<PowerSwitchs,Guid> _repositoryOfPowerSwitchs;
 
         public PowerSwitchsManager(IPowerSwitchsRepository powerSwitchsRepository, 
             IObjectMapper objectMapper,
-            IRepository<PowerSwitchsEntity.PowerSwitchs,Guid> repositoryOfPowerSwitchs
+            IRepository<PowerSwitchs,Guid> repositoryOfPowerSwitchs
             )
         {
             _powerSwitchsRepository = powerSwitchsRepository;

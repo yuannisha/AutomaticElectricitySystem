@@ -8,6 +8,7 @@
 
     <ItemGroup>
         <ProjectReference Include="..\Yuannisha.AutomaticElectricitySystem.Domain\Yuannisha.AutomaticElectricitySystem.Domain.csproj" />
+        <PackageReference Include="Castle.Core" Version="5.1.1" />
         <PackageReference Include="Volo.Abp.EntityFrameworkCore.MySQL" />
         <PackageReference Include="Lion.AbpPro.BasicManagement.EntityFrameworkCore" />
         <PackageReference Include="Lion.AbpPro.NotificationManagement.EntityFrameworkCore" />

@@ -1,19 +1,9 @@
 using Hangfire.MySql;
-using Volo.Abp.Domain.Repositories;
-using Volo.Abp.Guids;
-using Yuannisha.AutomaticElectricitySystem.BookingInformationsAppservice;
 using Yuannisha.AutomaticElectricitySystem.BuildingConsumptionsAppservice;
-using Yuannisha.AutomaticElectricitySystem.BuildingsEntity;
-using Yuannisha.AutomaticElectricitySystem.DailyTotalConsumptionEntity;
 using Yuannisha.AutomaticElectricitySystem.DailyTotalConsumptionIAppservice;
 using Yuannisha.AutomaticElectricitySystem.DailyTotalConsumptionsAppservice;
-using Yuannisha.AutomaticElectricitySystem.DeviceManagement;
 using Yuannisha.AutomaticElectricitySystem.HangfireWorks;
-using Yuannisha.AutomaticElectricitySystem.PowerConsumption;
 using Yuannisha.AutomaticElectricitySystem.PowerConsumptionIAppservice;
-using Yuannisha.AutomaticElectricitySystem.PowerSwitchsEntity;
-using Yuannisha.AutomaticElectricitySystem.RoomsEntity;
-using Yuannisha.AutomaticElectricitySystem.SchoolClassTable;
 
 namespace Yuannisha.AutomaticElectricitySystem
 {
@@ -33,9 +23,10 @@ namespace Yuannisha.AutomaticElectricitySystem
                 })));
             services.AddHangfireServer();
             // services.AddTransient<TestWork>();
-            services.AddTransient <AutoOperatePowerSwitch>();
+            // services.AddTransient <AutoOperatePowerSwitch>();
             services.AddTransient<IBuildingConsumptionAppservice, BuildingConsumptionAppservice>();
             services.AddTransient<IDailyTotalConsumptionAppservice, DailyTotalConsumptionAppservice>();
+            services.AddTransient<BuildingConsumptionAppservice>();
             // services.AddAbpRepository<ConsumptionAmount, Guid>();
 
             // services.AddCors(options =>
@@ -50,7 +41,8 @@ namespace Yuannisha.AutomaticElectricitySystem
             // });
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory, IServiceProvider serviceProvider)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory, 
+            IServiceProvider serviceProvider, IBackgroundJobClient backgroundJobs)
         {
             // 启用 CORS
             // app.UseCors("MyAllowSpecificOrigins");
@@ -62,24 +54,25 @@ namespace Yuannisha.AutomaticElectricitySystem
 
             //系统开启时首次执行任务
             // backgroundJobs.Enqueue<AutoOperatePowerSwitch>(s => s.Test());
-            // backgroundJobs.Enqueue<AutoOperatePowerSwitch>(s => s.SetValuesForPowerSwitchs());
+            backgroundJobs.Enqueue<AutoOperatePowerSwitch>(s => s.SetValuesForPowerSwitchs());
 
             // 调度定时任务
-            // RecurringJob.RemoveIfExists("Test");
-            // RecurringJob.RemoveIfExists("InitPowerSwitchsValue");
-            // RecurringJob.RemoveIfExists("AutoTeleMetering");
-            // RecurringJob.RemoveIfExists("AutoSetValueWithConsumption");
-            // RecurringJob.RemoveIfExists("AutoAddTestDatasScriptJob");
-            // RecurringJob.RemoveIfExists("InitTimeSpans");
-            // RecurringJob.RemoveIfExists("UpdateClassInformation");
-            // RecurringJob.RemoveIfExists("AutoOperateByTime");
+            RecurringJob.RemoveIfExists("Test");
+            RecurringJob.RemoveIfExists("InitPowerSwitchsValue");
+            RecurringJob.RemoveIfExists("AutoTeleMetering");
+            RecurringJob.RemoveIfExists("AutoSetValueWithConsumption");
+            RecurringJob.RemoveIfExists("AutoAddTestDatasScriptJob");
+            RecurringJob.RemoveIfExists("InitTimeSpans");
+            RecurringJob.RemoveIfExists("UpdateClassInformation");
+            RecurringJob.RemoveIfExists("AutoOperateByTime");
             
-            var autoOperatePowerSwitch = serviceProvider.GetService<AutoOperatePowerSwitch>();
-            RecurringJob.AddOrUpdate("InitPowerSwitchsValue", () => autoOperatePowerSwitch.SetValuesForPowerSwitchs(), Cron.Minutely);
+            // var autoOperatePowerSwitch = serviceProvider.GetService<AutoOperatePowerSwitch>();
+            // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("InitPowerSwitchsValue", s => s
+                // .SetValuesForPowerSwitchs(), Cron.Minutely);
             
             // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("Test",s=>s.Test(),Cron.Minutely);
-            // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("InitPowerSwitchsValue",s=>s.SetValuesForPowerSwitchs(),
-            //     Cron.Minutely,TimeZoneInfo.Local);
+            RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("InitPowerSwitchsValue",s=>s.SetValuesForPowerSwitchs(),
+                Cron.Minutely,TimeZoneInfo.Local);
             // // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoTeleMetering",s=>s.AutoTleMetering(),Cron.MinuteInterval(13));
             // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoSetValueWithConsumption",s=>s
             //     .AutoSetValueWithConsumption(),Cron.MinuteInterval(14),TimeZoneInfo.Local);
