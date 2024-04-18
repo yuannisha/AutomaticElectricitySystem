@@ -5,6 +5,7 @@ using NUglify.Helpers;
 using Volo.Abp.Domain.Repositories;
 using Yuannisha.AutomaticElectricitySystem.PowerSwitchsEntity;
 using Yuannisha.AutomaticElectricitySystem.PowerSwitchsShared;
+using Yuannisha.AutomaticElectricitySystem.ServiceLocatorInit;
 
 namespace Yuannisha.AutomaticElectricitySystem.DeviceManagement;
 
@@ -26,11 +27,11 @@ public class TCP_serviceManagement
 
     // public static GetAllClassroomsOutPutDto Rooms = null;
     
-    private static readonly IPowerSwitchsRepository _powerSwitchsRepository;
-    private static readonly IObjectMapper _objectMapper;
-    private static readonly IRepository<PowerSwitchs,Guid> _repositoryOfPowerSwitchs;
-    private static PowerSwitchsManager powerSwitchsManager = new PowerSwitchsManager(_powerSwitchsRepository,
-        _objectMapper,_repositoryOfPowerSwitchs);
+    // private static readonly IPowerSwitchsRepository _powerSwitchsRepository;
+    // private static readonly IObjectMapper _objectMapper;
+    // private static readonly IRepository<PowerSwitchs,Guid> _repositoryOfPowerSwitchs;
+    // private static PowerSwitchsManager powerSwitchsManager = new PowerSwitchsManager(_powerSwitchsRepository,
+    //     _objectMapper,_repositoryOfPowerSwitchs);
     
     private const string UpdateTimeSpan = "00:00";
     private static double YesyterdayConsumption = 0;
@@ -207,10 +208,14 @@ public class TCP_serviceManagement
                 if (x.Replace(" ", "").Equals(powerSwitch.SerialNumber))
                     DSN = x;
             });
-            newPowerSwitchsDto = await powerSwitchsManager.UpdateAsync(powerSwitch.Id, powerSwitch.RoomId, 
-                powerSwitch
-                    .SerialNumber, powerSwitch.ControlledMachineName, powerSwitch.IsOnline, powerSwitch
-                    .Status, DSNwithInfor[DSN].isAbnormal,totalSumForUpdate);
+            using (var scope = ServiceLocator.CreateScope())
+            {
+                var myService = scope.ServiceProvider.GetRequiredService<PowerSwitchsManager>();
+                newPowerSwitchsDto = await myService.UpdateAsync(powerSwitch.Id, powerSwitch.RoomId, 
+                                powerSwitch
+                                    .SerialNumber, powerSwitch.ControlledMachineName, powerSwitch.IsOnline, powerSwitch
+                                    .Status, DSNwithInfor[DSN].isAbnormal,totalSumForUpdate);
+            }
         }
         if (newPowerSwitchsDto.Id != Guid.Empty)
         {
@@ -246,10 +251,15 @@ public class TCP_serviceManagement
                 {
                     totalSumForUpdate = totalSum - YesyterdayConsumption;
                 }
-                newPowerSwitchsDto = await powerSwitchsManager.UpdateAsync(powerSwitch.Id, powerSwitch.RoomId, 
-                    powerSwitch
-                        .SerialNumber, powerSwitch.ControlledMachineName, powerSwitch.IsOnline, powerSwitch
-                        .Status, DSNwithInfor[DSN].isAbnormal,totalSumForUpdate);
+
+                using (var scope = ServiceLocator.CreateScope())
+                {
+                    var myService = scope.ServiceProvider.GetRequiredService<PowerSwitchsManager>();
+                    newPowerSwitchsDto = await myService.UpdateAsync(powerSwitch.Id, powerSwitch.RoomId, 
+                        powerSwitch
+                            .SerialNumber, powerSwitch.ControlledMachineName, powerSwitch.IsOnline, powerSwitch
+                            .Status, DSNwithInfor[DSN].isAbnormal,totalSumForUpdate);
+                }
             }
         }
         if (newPowerSwitchsDto.Id != Guid.Empty)
@@ -274,10 +284,14 @@ public class TCP_serviceManagement
 
                     if (!powerSwitch.IsAbnormal.Equals(DSNwithInfor[DSN].isAbnormal))
                     {
-                        newPowerSwitchsDto = await powerSwitchsManager.UpdateAsync(powerSwitch.Id, powerSwitch.RoomId, 
-                            powerSwitch
-                                .SerialNumber, powerSwitch.ControlledMachineName, powerSwitch.IsOnline, powerSwitch
-                                .Status, DSNwithInfor[DSN].isAbnormal, powerSwitch.EnergyConsumption);
+                        using (var scope = ServiceLocator.CreateScope())
+                        {
+                            var myService = scope.ServiceProvider.GetRequiredService<PowerSwitchsManager>();
+                            newPowerSwitchsDto = await myService.UpdateAsync(powerSwitch.Id, powerSwitch.RoomId, 
+                                powerSwitch
+                                    .SerialNumber, powerSwitch.ControlledMachineName, powerSwitch.IsOnline, powerSwitch
+                                    .Status, DSNwithInfor[DSN].isAbnormal, powerSwitch.EnergyConsumption);
+                        }
                     }
                 }
             }
@@ -313,11 +327,17 @@ public class TCP_serviceManagement
                             {
                                 if (!powerSwitch.IsOnline.Equals(DSNwithInfor[item.Key].isOnline))
                                 {
-                                    newPowerSwitchsDto = await powerSwitchsManager.UpdateAsync(powerSwitch.Id, powerSwitch.RoomId, 
-                                        powerSwitch
-                                            .SerialNumber, powerSwitch.ControlledMachineName, DSNwithInfor[item.Key].isOnline, powerSwitch
-                                            .Status, powerSwitch.IsAbnormal, powerSwitch.EnergyConsumption);
-                                    break;
+                                    using (var scope = ServiceLocator.CreateScope())
+                                    {
+                                        var myService = scope.ServiceProvider.GetRequiredService<PowerSwitchsManager>();
+                                        newPowerSwitchsDto = await myService.UpdateAsync(powerSwitch.Id, powerSwitch.RoomId, 
+                                            powerSwitch
+                                                .SerialNumber, powerSwitch.ControlledMachineName, DSNwithInfor[item.Key].isOnline, powerSwitch
+                                                .Status, powerSwitch.IsAbnormal, powerSwitch.EnergyConsumption);
+                                        break;
+                                    }
+
+                                   
                                 }
                             }
                         }
@@ -336,11 +356,17 @@ public class TCP_serviceManagement
                             {
                                 if (!powerSwitch.IsOnline.Equals(DSNwithInfor[item.Key].isOnline))
                                 {
-                                    newPowerSwitchsDto = await powerSwitchsManager.UpdateAsync(powerSwitch.Id, powerSwitch.RoomId, 
-                                        powerSwitch
-                                            .SerialNumber, powerSwitch.ControlledMachineName, DSNwithInfor[item.Key].isOnline, powerSwitch
-                                            .Status, powerSwitch.IsAbnormal, powerSwitch.EnergyConsumption);
-                                    break;
+                                    using (var scope = ServiceLocator.CreateScope())
+                                    {
+                                        var myService = scope.ServiceProvider.GetRequiredService<PowerSwitchsManager>();
+                                        newPowerSwitchsDto = await myService.UpdateAsync(powerSwitch.Id, powerSwitch.RoomId, 
+                                            powerSwitch
+                                                .SerialNumber, powerSwitch.ControlledMachineName, DSNwithInfor[item.Key].isOnline, powerSwitch
+                                                .Status, powerSwitch.IsAbnormal, powerSwitch.EnergyConsumption);
+                                        break;
+                                    }
+
+                                    
                                 }
                             }
                         }

@@ -4,6 +4,7 @@ using Yuannisha.AutomaticElectricitySystem.DailyTotalConsumptionIAppservice;
 using Yuannisha.AutomaticElectricitySystem.DailyTotalConsumptionsAppservice;
 using Yuannisha.AutomaticElectricitySystem.HangfireWorks;
 using Yuannisha.AutomaticElectricitySystem.PowerConsumptionIAppservice;
+using Yuannisha.AutomaticElectricitySystem.ServiceLocatorInit;
 
 namespace Yuannisha.AutomaticElectricitySystem
 {
@@ -48,7 +49,7 @@ namespace Yuannisha.AutomaticElectricitySystem
             // app.UseCors("MyAllowSpecificOrigins");
             app.InitializeApplication();
             
-           
+            ServiceLocator.SetLocatorProvider(serviceProvider);
             
             // BookingInformationAppService.InitPianoRoomsBookingTimespan();
 
@@ -74,8 +75,8 @@ namespace Yuannisha.AutomaticElectricitySystem
             RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("InitPowerSwitchsValue",s=>s.SetValuesForPowerSwitchs(),
                 Cron.Minutely,TimeZoneInfo.Local);
             // // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoTeleMetering",s=>s.AutoTleMetering(),Cron.MinuteInterval(13));
-            // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoSetValueWithConsumption",s=>s
-            //     .AutoSetValueWithConsumption(),Cron.MinuteInterval(14),TimeZoneInfo.Local);
+            RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoSetValueWithConsumption",s=>s
+                .AutoSetValueWithConsumption(),Cron.MinuteInterval(14),TimeZoneInfo.Local);
             // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoAddTestDatasScriptJob",
             //     s=>s.AutoAddTestDatasScriptJob(),Cron.Minutely,TimeZoneInfo.Local);
             
