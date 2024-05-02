@@ -8,8 +8,8 @@ const tenant: AppRouteModule = {
   meta: {
     orderNo: 30,
     icon: 'ant-design:contacts-outlined',
-    // title: t('教室预约'),
-    title: '教室预约管理',
+    // title: t('教室申请'),
+    title: '教室申请管理',
     policy: 'BookingInformation',
   },
   children: [
@@ -19,7 +19,7 @@ const tenant: AppRouteModule = {
       component: () => import('/@/views/classroomBooking/index.vue'),
       meta: {
         // title: t('routes.tenant.tenantList'),
-        title: '教室预约',
+        title: '教室申请',
         icon: 'ant-design:switcher-filled',
         policy: 'BookingInformation.BookingInformationManagement.view',
       },

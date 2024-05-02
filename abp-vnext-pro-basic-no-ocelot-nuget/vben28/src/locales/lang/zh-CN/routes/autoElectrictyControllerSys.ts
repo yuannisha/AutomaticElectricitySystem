@@ -3,7 +3,7 @@ export default {
   StudentName: '姓名',
   StudentClass: '班级',
   UsingClassroom: '使用教室',
-  BookingTimespan: '预约时间段',
+  BookingTimespan: '申请时间段',
   UsingPurpose: '使用用途',
   TelephoneNumber: '电话号码',
   CreationTime: '创建时间',

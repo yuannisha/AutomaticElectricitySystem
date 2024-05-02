@@ -8,7 +8,7 @@ const tenant: AppRouteModule = {
   meta: {
     orderNo: 30,
     icon: 'ant-design:contacts-outlined',
-    // title: t('教室预约'),
+    // title: t('教室申请'),
     title: '教室管理',
     policy: 'Rooms',
   },

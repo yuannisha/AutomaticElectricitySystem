@@ -115,7 +115,7 @@
                 >
               </div>
               <div class="info time shrink-0 flexChild2">
-                <span class="labels">预约时间段：</span>
+                <span class="labels">申请时间段：</span>
                 <span class="text-content text-adjust" style="font-size: 12px">
                   {{ item.bookingTimespan }}</span
                 >
@@ -123,7 +123,7 @@
             </div>
             <div class="flex">
               <div class="info">
-                <span class="labels">预约教室：</span>
+                <span class="labels">申请教室：</span>
                 <span class="text-content ciyao" :class="{ warning: item.alertdetail }">
                   {{ item.usingClassroom || '无' }}</span
                 >

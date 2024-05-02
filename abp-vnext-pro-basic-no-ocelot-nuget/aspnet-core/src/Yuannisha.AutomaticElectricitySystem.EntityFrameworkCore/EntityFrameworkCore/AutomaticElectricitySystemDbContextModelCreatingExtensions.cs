@@ -24,7 +24,8 @@ namespace Yuannisha.AutomaticElectricitySystem.EntityFrameworkCore
                 b.Property(e => e.RoomType);
                 b.Property(e => e.ControlType);
                 b.ConfigureByConvention();
-                b.HasOne(a => a.Building).WithMany(b => b.Rooms).HasForeignKey(c => c.BuildingId).OnDelete(DeleteBehavior.Restrict);
+                b.HasOne(a => a.Building).WithMany(b => b.Rooms).
+                    HasForeignKey(c => c.BuildingId).OnDelete(DeleteBehavior.Restrict);
             });
             builder.Entity<PowerSwitchs>(b =>
             {
@@ -35,7 +36,8 @@ namespace Yuannisha.AutomaticElectricitySystem.EntityFrameworkCore
                 b.Property(e => e.IsOnline);
                 b.Property(e => e.Status);
                 b.ConfigureByConvention();
-                b.HasOne(a => a.Room).WithMany(b => b.PowerSwitches).HasForeignKey(c => c.RoomId).OnDelete(DeleteBehavior.Restrict);
+                b.HasOne(a => a.Room).WithMany(b => b.PowerSwitches)
+                    .HasForeignKey(c => c.RoomId).OnDelete(DeleteBehavior.Restrict);
             });
             builder.Entity<BuildingsEntity.Buildings>(b =>
             {

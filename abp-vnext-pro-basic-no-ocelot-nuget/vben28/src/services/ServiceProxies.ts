@@ -590,7 +590,7 @@ export class BookingInformationsServiceProxy extends ServiceProxyBase {
     }
 
     /**
-     * 获取所有的预约信息
+     * 获取所有的申请信息
      * @param body (optional) 
      * @return Success
      */
@@ -691,7 +691,7 @@ export class BookingInformationsServiceProxy extends ServiceProxyBase {
     }
 
     /**
-     * 插入预约信息
+     * 插入申请信息
      * @param body (optional) 
      * @return Success
      */
@@ -792,7 +792,7 @@ export class BookingInformationsServiceProxy extends ServiceProxyBase {
     }
 
     /**
-     * 周末预约
+     * 周末申请
      * @param body (optional) 
      * @return Success
      */
@@ -1102,7 +1102,7 @@ export class BookingInformationsServiceProxy extends ServiceProxyBase {
     }
 
     /**
-     * 创建预约信息
+     * 创建申请信息
      * @param body (optional) 
      * @return Success
      */
@@ -1199,7 +1199,7 @@ export class BookingInformationsServiceProxy extends ServiceProxyBase {
     }
 
     /**
-     * 更新预约信息
+     * 更新申请信息
      * @param body (optional) 
      * @return Success
      */
@@ -1296,7 +1296,7 @@ export class BookingInformationsServiceProxy extends ServiceProxyBase {
     }
 
     /**
-     * 删除预约信息
+     * 删除申请信息
      * @param body (optional) 
      * @return Success
      */
@@ -1606,7 +1606,7 @@ export class BookingInformationsServiceProxy extends ServiceProxyBase {
     }
 
     /**
-     * 无条件获取所有预约信息
+     * 无条件获取所有申请信息
      * @return Success
      */
     getAllInformation(  cancelToken?: CancelToken | undefined): Promise<BookingInformationDto[]> {
@@ -1817,7 +1817,7 @@ export class BookingLimitedsServiceProxy extends ServiceProxyBase {
     }
 
     /**
-     * 分页查询预约限制信息
+     * 分页查询申请限制信息
      * @param body (optional) 
      * @return Success
      */

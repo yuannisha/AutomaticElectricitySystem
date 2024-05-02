@@ -26,12 +26,6 @@ namespace Yuannisha.AutomaticElectricitySystem.BuildingsAppservice
         public async Task<PagedResultDto<BuildingsDto>> PageAsync(PageBuildingsInput input)
         {
             var result = await _buildingsManager.GetListAsync(input);
-            // var result = new PagedResultDto<PageBuildingsOutput>();
-            // var totalCount = await _buildingsManager.GetCountAsync();
-            // result.TotalCount = totalCount;
-            // if (totalCount <= 0) return result;
-            // var list = await _buildingsManager.GetListAsync(input);
-            // result.Items = ObjectMapper.Map<List<BuildingsDto>, List<PageBuildingsOutput>>(list);
             return new PagedResultDto<BuildingsDto>(result.TotalCount,result.BuildingsDto);
         }
 

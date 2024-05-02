@@ -254,41 +254,41 @@ public class AutoOperatePowerSwitch : ITransientDependency
     // }
     
     //[Obsolete("该方法显示被弃用了，但仍可以使用")]
-    public void RegistryTask()
-    {
-        RecurringJob.RemoveIfExists("test");
-        RecurringJob.RemoveIfExists("InitTimeSpans");
-        RecurringJob.RemoveIfExists("AutoFuncTest");
-        RecurringJob.RemoveIfExists("UpdateClassInformation");
-        RecurringJob.RemoveIfExists("AutoOperateByTime");
-
-        //var tz = TZConvert.GetTimeZoneInfo("Asia/Shanghai");
-        //var roomRepository = IocManager.Instance.Resolve<IRepository<Basics.Room, Guid>>();
-        //sss. StartSocketService();
-        //RecurringJob.AddOrUpdate("test", () => sss.CheckTimeSpan( ), Cron.Minutely());
-
-
-        TCP_serviceManagement.benginService();//项目启动时开启Socket服务
-        // var aops = IocManager.Instance.Resolve<AutoOperatePowerSwitch>();
-
-
-        DatasHandle.GetInformationOfClasses();//项目开启时获取系统数据库中的课表信息
-
-        BookingInformationAppService.InitPianoRoomsBookingTimespan();
-
-        RecurringJob.AddOrUpdate("UpdateClassInformation", () => DatasHandle.GetInformationOfClasses(), 
-            Cron.Daily(0),TimeZoneInfo.Local);//每天更新课表信息(可能源课表数据库的数据有更改)
-        //RecurringJob.AddOrUpdate("AutoFuncTest", () => aops.AutoOperateDeviceByTime(),
-        //Cron.Hourly,TimeZoneInfo.Local,"default");//自动每隔一分钟检测教室是否在上课时间从而控制智能空开
-        //RecurringJob.AddOrUpdate("test", () => OperateDeviceTest(), Cron.MinuteInterval(3));
-        RecurringJob.AddOrUpdate("test", () => Console.WriteLine("测试"), Cron.Minutely());
-        RecurringJob.AddOrUpdate("InitTimeSpans", () => BookingInformationAppService.InitPianoRoomsBookingTimespan(),
-            Cron.Daily(0),TimeZoneInfo.Local);
-        RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoOperateByTime", x => x.AutoOperateByTime(), 
-            Cron.MinuteInterval(10), TimeZoneInfo.Local);
-        
-    
-    }
+    // public void RegistryTask()
+    // {
+    //     RecurringJob.RemoveIfExists("test");
+    //     RecurringJob.RemoveIfExists("InitTimeSpans");
+    //     RecurringJob.RemoveIfExists("AutoFuncTest");
+    //     RecurringJob.RemoveIfExists("UpdateClassInformation");
+    //     RecurringJob.RemoveIfExists("AutoOperateByTime");
+    //
+    //     //var tz = TZConvert.GetTimeZoneInfo("Asia/Shanghai");
+    //     //var roomRepository = IocManager.Instance.Resolve<IRepository<Basics.Room, Guid>>();
+    //     //sss. StartSocketService();
+    //     //RecurringJob.AddOrUpdate("test", () => sss.CheckTimeSpan( ), Cron.Minutely());
+    //
+    //
+    //     TCP_serviceManagement.benginService();//项目启动时开启Socket服务
+    //     // var aops = IocManager.Instance.Resolve<AutoOperatePowerSwitch>();
+    //
+    //
+    //     DatasHandle.GetInformationOfClasses();//项目开启时获取系统数据库中的课表信息
+    //
+    //     BookingInformationAppService.InitPianoRoomsBookingTimespan();
+    //
+    //     RecurringJob.AddOrUpdate("UpdateClassInformation", () => DatasHandle.GetInformationOfClasses(), 
+    //         Cron.Daily(0),TimeZoneInfo.Local);//每天更新课表信息(可能源课表数据库的数据有更改)
+    //     //RecurringJob.AddOrUpdate("AutoFuncTest", () => aops.AutoOperateDeviceByTime(),
+    //     //Cron.Hourly,TimeZoneInfo.Local,"default");//自动每隔一分钟检测教室是否在上课时间从而控制智能空开
+    //     //RecurringJob.AddOrUpdate("test", () => OperateDeviceTest(), Cron.MinuteInterval(3));
+    //     RecurringJob.AddOrUpdate("test", () => Console.WriteLine("测试"), Cron.Minutely());
+    //     RecurringJob.AddOrUpdate("InitTimeSpans", () => BookingInformationAppService.InitPianoRoomsBookingTimespan(),
+    //         Cron.Daily(0),TimeZoneInfo.Local);
+    //     RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoOperateByTime", x => x.AutoOperateByTime(), 
+    //         Cron.MinuteInterval(10), TimeZoneInfo.Local);
+    //     
+    //
+    // }
 
     public void AutoTleMetering()
     {

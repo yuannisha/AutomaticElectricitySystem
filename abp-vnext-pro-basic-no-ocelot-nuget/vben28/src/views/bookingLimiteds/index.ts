@@ -72,7 +72,7 @@ export const tableColumns: BasicColumn[] = [
 ];
 
 /**
- * 获取所有的预约限制信息
+ * 获取所有的申请限制信息
  * @param params
  * @returns
  */

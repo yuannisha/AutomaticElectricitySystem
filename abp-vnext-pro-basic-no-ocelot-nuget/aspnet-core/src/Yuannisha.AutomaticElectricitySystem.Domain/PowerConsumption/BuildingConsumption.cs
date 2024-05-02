@@ -1,5 +1,6 @@
 ﻿using Abp.Domain.Entities;
 using Volo.Abp.Domain.Entities.Auditing;
+using Yuannisha.AutomaticElectricitySystem.BuildingsEntity;
 
 namespace Yuannisha.AutomaticElectricitySystem.PowerConsumption;
 
@@ -28,7 +29,7 @@ public class BuildingConsumption : FullAuditedAggregateRoot<Guid>, IEntity<Guid>
     public string Date { get; set; }
     public double PowerConsumption { get; set; }
 
-    public BuildingsEntity.Buildings Building { get; set; } // 导航属性
+    public Buildings Building { get; set; } // 导航属性
     
     private void SetId(Guid id)
     {

@@ -2,7 +2,6 @@ using Hangfire.MySql;
 using Yuannisha.AutomaticElectricitySystem.BuildingConsumptionsAppservice;
 using Yuannisha.AutomaticElectricitySystem.DailyTotalConsumptionIAppservice;
 using Yuannisha.AutomaticElectricitySystem.DailyTotalConsumptionsAppservice;
-using Yuannisha.AutomaticElectricitySystem.HangfireWorks;
 using Yuannisha.AutomaticElectricitySystem.PowerConsumptionIAppservice;
 using Yuannisha.AutomaticElectricitySystem.ServiceLocatorInit;
 
@@ -55,7 +54,7 @@ namespace Yuannisha.AutomaticElectricitySystem
 
             //系统开启时首次执行任务
             // backgroundJobs.Enqueue<AutoOperatePowerSwitch>(s => s.Test());
-            backgroundJobs.Enqueue<AutoOperatePowerSwitch>(s => s.SetValuesForPowerSwitchs());
+            // backgroundJobs.Enqueue<AutoOperatePowerSwitch>(s => s.SetValuesForPowerSwitchs());
 
             // 调度定时任务
             RecurringJob.RemoveIfExists("Test");
@@ -72,15 +71,15 @@ namespace Yuannisha.AutomaticElectricitySystem
                 // .SetValuesForPowerSwitchs(), Cron.Minutely);
             
             // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("Test",s=>s.Test(),Cron.Minutely);
-            RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("InitPowerSwitchsValue",s=>s.SetValuesForPowerSwitchs(),
-                Cron.Minutely,TimeZoneInfo.Local);
+            // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("InitPowerSwitchsValue",s=>s.SetValuesForPowerSwitchs(),
+            //     Cron.Minutely,TimeZoneInfo.Local);
             // // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoTeleMetering",s=>s.AutoTleMetering(),Cron.MinuteInterval(13));
-            RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoSetValueWithConsumption",s=>s
-                .AutoSetValueWithConsumption(),Cron.MinuteInterval(14),TimeZoneInfo.Local);
+            // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoSetValueWithConsumption",s=>s
+            //     .AutoSetValueWithConsumption(),Cron.MinuteInterval(14),TimeZoneInfo.Local);
             // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoAddTestDatasScriptJob",
             //     s=>s.AutoAddTestDatasScriptJob(),Cron.Minutely,TimeZoneInfo.Local);
-            
-            
+            //
+            //
             // TCP_serviceManagement.benginService();//项目启动时开启Socket服务
             //
             // DatasHandle.GetInformationOfClasses();//项目开启时获取系统数据库中的课表信息
@@ -93,7 +92,7 @@ namespace Yuannisha.AutomaticElectricitySystem
             //     Cron.Daily(0),TimeZoneInfo.Local);
             // RecurringJob.AddOrUpdate<AutoOperatePowerSwitch>("AutoOperateByTime", x => x.AutoOperateByTime(), 
             //     Cron.MinuteInterval(10), TimeZoneInfo.Local);
-            //
+            
             
         }
     }

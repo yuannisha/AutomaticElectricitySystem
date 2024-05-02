@@ -94,7 +94,7 @@
         subTitle: "Today's Total Orders",
         // startVal: (oldProps && oldProps.orderToday) || 0,
         // endVal: newProps.orderToday,
-        Val: datas.totalRoomsBeBooked,
+        Val: datas.totalStudentsOfBooking,
         img: 'https://www.youbaobao.xyz/datav-res/order.png',
       },
       {
@@ -102,7 +102,7 @@
         subTitle: "Today's Payed Users",
         // startVal: (oldProps && oldProps.orderUser) || 0,
         // endVal: newProps.orderUser,
-        Val: datas.totalStudentsOfBooking,
+        Val: datas.totalRoomsBeBooked,
         img: 'https://www.youbaobao.xyz/datav-res/member.png',
       },
     ];

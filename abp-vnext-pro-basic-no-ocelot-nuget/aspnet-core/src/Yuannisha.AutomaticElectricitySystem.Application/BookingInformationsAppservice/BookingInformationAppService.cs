@@ -1189,7 +1189,7 @@ public class BookingInformationAppService : ApplicationService, IBookingInformat
                             // {
                             //     timespanCounts[timespan] = 0;
                             // }
-                            if(timespanCounts.ContainsKey(span))
+                            if(timespanCounts.ContainsKey(timespan))
                                     timespanCounts[timespan]++;
                         }
                     }

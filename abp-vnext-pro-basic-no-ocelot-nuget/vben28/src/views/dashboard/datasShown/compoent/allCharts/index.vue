@@ -14,10 +14,6 @@
 <template>
   <div class="index-box">
     <div class="contetn_left">
-      <!-- <div class="pagetab">
-        <div class="item">实时监测</div>
-        <div class="item">统计分析</div>
-      </div> -->
       <ItemWrap class="contetn_left-top contetn_lr-item" title="设备总览">
         <LeftTop />
       </ItemWrap>
@@ -33,7 +29,6 @@
       </ItemWrap>
     </div>
     <div class="contetn_center">
-      <!-- <CenterMap class="contetn_center_top" title="设备分布图" />-->
       <Center class="contetn_center_top" title="数据概览" />
       <ItemWrap class="contetn_center-bottom" title="教室使用情况">
         <CenterBottom />

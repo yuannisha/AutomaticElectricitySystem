@@ -2,7 +2,8 @@ namespace Yuannisha.AutomaticElectricitySystem.EntityFrameworkCore
 {
     /* This class is needed for EF Core console commands
      * (like Add-Migration and Update-Database commands) */
-    public class AutomaticElectricitySystemMigrationsDbContextFactory : IDesignTimeDbContextFactory<AutomaticElectricitySystemDbContext>
+    public class AutomaticElectricitySystemMigrationsDbContextFactory :
+        IDesignTimeDbContextFactory<AutomaticElectricitySystemDbContext>
     {
         public AutomaticElectricitySystemDbContext CreateDbContext(string[] args)
         {
@@ -11,7 +12,8 @@ namespace Yuannisha.AutomaticElectricitySystem.EntityFrameworkCore
             var configuration = BuildConfiguration();
 
             var builder = new DbContextOptionsBuilder<AutomaticElectricitySystemDbContext>()
-                .UseMySql(configuration.GetConnectionString("Default"), MySqlServerVersion.LatestSupportedServerVersion,mySqlOptionsAction:
+                .UseMySql(configuration.GetConnectionString("Default"), 
+                    MySqlServerVersion.LatestSupportedServerVersion,mySqlOptionsAction:
                     opt =>
                     {
                         opt.EnableRetryOnFailure(

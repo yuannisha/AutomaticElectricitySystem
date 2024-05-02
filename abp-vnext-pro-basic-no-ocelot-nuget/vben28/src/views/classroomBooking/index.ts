@@ -115,7 +115,7 @@ export const tableColumns: BasicColumn[] = [
 ];
 
 /**
- * 获取所有的预约信息
+ * 获取所有的申请信息
  * @param params
  * @returns
  */
@@ -125,7 +125,7 @@ export async function getAllBookingInfor(GetAllBookingInforInput) {
 }
 
 /**
- * 插入预约信息
+ * 插入申请信息
  * @param params
  * @returns
  */
@@ -137,7 +137,7 @@ export async function storeAndInsertNewInfor(params: CreateOrUpdateClassroomBook
 }
 
 /**
- * 周末预约
+ * 周末申请
  * @param params
  * @returns
  */
@@ -167,7 +167,7 @@ export async function getClassroomBookingEdit(params: GuidNullableIdDto) {
 }
 
 /**
- * 创建预约信息
+ * 创建申请信息
  * @param params
  * @returns
  */
@@ -179,7 +179,7 @@ export async function createClassroomBooking(params: CreateOrUpdateClassroomBook
 }
 
 /**
- * 更新预约信息
+ * 更新申请信息
  * @param params
  * @returns
  */
@@ -191,7 +191,7 @@ export async function updateClassroomBooking(params: CreateOrUpdateClassroomBook
 }
 
 /**
- * 删除预约信息
+ * 删除申请信息
  * @param params
  * @returns
  */
@@ -221,7 +221,7 @@ export async function identityVerify(params: studentId, name, className) {
 }
 
 /**
- * 无条件获取所有预约信息
+ * 无条件获取所有申请信息
  * @param params
  * @returns
  */

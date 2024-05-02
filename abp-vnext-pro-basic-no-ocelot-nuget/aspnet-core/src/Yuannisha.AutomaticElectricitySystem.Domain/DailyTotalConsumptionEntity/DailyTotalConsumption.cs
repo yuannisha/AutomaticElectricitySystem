@@ -1,5 +1,4 @@
 ﻿using Abp.Domain.Entities;
-using OfficeOpenXml.FormulaParsing.Excel.Functions.DateTime;
 using Volo.Abp.Domain.Entities.Auditing;
 
 namespace Yuannisha.AutomaticElectricitySystem.DailyTotalConsumptionEntity;
