@@ -37,23 +37,25 @@ export class ServiceProxyBase {
   protected transformResult(
     _url: string,
     response: AxiosResponse,
-    processor: (response: AxiosResponse) => Promise<any>
+    processor: (response: AxiosResponse) => Promise<any>,
   ): Promise<any> {
     const { t } = useI18n();
 
     if (response.status == 401 || response.status == 403 || response.status == 302) {
-      message.error(t('common.authorityText'));
+      message.warning(t('common.authorityText'));
       router.replace(PageEnum.BASE_LOGIN);
     } else if (response.status == 400) {
-      Modal.error({
-        title: '验证失败',
-        content: response.data.error.validationErrors[0].message,
-      });
+      // Modal.warning({
+      //   title: '验证失败',
+      //   content: response.data.error.validationErrors[0].message,
+      // });
+      message.warning(response.data.error.validationErrors[0].message);
     } else if (response.status >= 500) {
-      Modal.error({
-        title: '请求异常',
-        content: response.data.error.message,
-      });
+      // Modal.warning({
+      //   title: '请求异常',
+      //   content: response.data.error.message,
+      // });
+      message.warning(response.data.error.message);
     }
 
     return processor(response);

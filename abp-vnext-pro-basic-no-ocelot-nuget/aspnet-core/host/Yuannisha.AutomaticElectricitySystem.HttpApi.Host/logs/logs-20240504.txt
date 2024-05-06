@@ -1,0 +1,1355 @@
+2024-05-04 17:52:43.864 +08:00 [INF] DB tables already exist. Exit install
+2024-05-04 17:52:44.208 +08:00 [INF] Creating key {a49883f0-57e8-4471-8510-4cd95011ba22} with creation date 2024-05-04 09:52:44Z, activation date 2024-05-04 09:52:44Z, and expiration date 2024-08-02 09:52:44Z.
+2024-05-04 17:52:44.232 +08:00 [WRN] No XML encryptor configured. Key {a49883f0-57e8-4471-8510-4cd95011ba22} may be persisted to storage in unencrypted form.
+2024-05-04 17:52:44.280 +08:00 [INF] Starting Hangfire Server using job storage: 'Server: localhost@YuannishaAutomaticElectricitySystemDB'
+2024-05-04 17:52:44.282 +08:00 [INF] Using the following options for SQL Server job storage:
+2024-05-04 17:52:44.283 +08:00 [INF]     Queue poll interval: 00:00:15.
+2024-05-04 17:52:44.286 +08:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-05-04 17:52:44.433 +08:00 [INF] Loaded ABP modules:
+2024-05-04 17:52:44.454 +08:00 [INF] - Yuannisha.AutomaticElectricitySystem.AutomaticElectricitySystemHttpApiHostModule
+2024-05-04 17:52:44.507 +08:00 [INF]   - Yuannisha.AutomaticElectricitySystem.AutomaticElectricitySystemHttpApiModule
+2024-05-04 17:52:44.512 +08:00 [INF]     - Yuannisha.AutomaticElectricitySystem.AutomaticElectricitySystemApplicationContractsModule
+2024-05-04 17:52:44.532 +08:00 [INF]       - Yuannisha.AutomaticElectricitySystem.AutomaticElectricitySystemDomainSharedModule
+2024-05-04 17:52:44.534 +08:00 [INF]         - Lion.AbpPro.BasicManagement.BasicManagementDomainSharedModule
+2024-05-04 17:52:44.539 +08:00 [INF]           - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2024-05-04 17:52:44.545 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationModule
+2024-05-04 17:52:44.549 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2024-05-04 17:52:44.555 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationModule
+2024-05-04 17:52:44.558 +08:00 [INF]                 - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2024-05-04 17:52:44.559 +08:00 [INF]                 - Volo.Abp.Settings.AbpSettingsModule
+2024-05-04 17:52:44.561 +08:00 [INF]                   - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2024-05-04 17:52:44.565 +08:00 [INF]                   - Volo.Abp.Security.AbpSecurityModule
+2024-05-04 17:52:44.565 +08:00 [INF]                   - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2024-05-04 17:52:44.591 +08:00 [INF]                     - Volo.Abp.Data.AbpDataModule
+2024-05-04 17:52:44.655 +08:00 [INF]                       - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2024-05-04 17:52:44.664 +08:00 [INF]                       - Volo.Abp.Uow.AbpUnitOfWorkModule
+2024-05-04 17:52:44.669 +08:00 [INF]                       - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2024-05-04 17:52:44.704 +08:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2024-05-04 17:52:44.706 +08:00 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2024-05-04 17:52:44.708 +08:00 [INF]           - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2024-05-04 17:52:44.710 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2024-05-04 17:52:44.712 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2024-05-04 17:52:44.716 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2024-05-04 17:52:44.732 +08:00 [INF]           - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2024-05-04 17:52:44.735 +08:00 [INF]             - Volo.Abp.Users.AbpUsersDomainSharedModule
+2024-05-04 17:52:44.738 +08:00 [INF]             - Volo.Abp.Features.AbpFeaturesModule
+2024-05-04 17:52:44.773 +08:00 [INF]               - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2024-05-04 17:52:44.785 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2024-05-04 17:52:44.786 +08:00 [INF]           - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2024-05-04 17:52:44.788 +08:00 [INF]           - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2024-05-04 17:52:44.798 +08:00 [INF]           - Lion.AbpPro.Core.LionAbpProCoreModule
+2024-05-04 17:52:44.799 +08:00 [INF]             - Lion.AbpPro.LionAbpProLocalizationModule
+2024-05-04 17:52:44.801 +08:00 [INF]               - Volo.Abp.Autofac.AbpAutofacModule
+2024-05-04 17:52:44.803 +08:00 [INF]                 - Volo.Abp.Castle.AbpCastleCoreModule
+2024-05-04 17:52:44.804 +08:00 [INF]         - Lion.AbpPro.NotificationManagement.NotificationManagementDomainSharedModule
+2024-05-04 17:52:44.805 +08:00 [INF]         - Lion.AbpPro.DataDictionaryManagement.DataDictionaryManagementDomainSharedModule
+2024-05-04 17:52:44.809 +08:00 [INF]       - Lion.AbpPro.BasicManagement.BasicManagementApplicationContractsModule
+2024-05-04 17:52:44.811 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2024-05-04 17:52:44.812 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2024-05-04 17:52:44.813 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2024-05-04 17:52:44.813 +08:00 [INF]         - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2024-05-04 17:52:44.814 +08:00 [INF]           - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2024-05-04 17:52:44.815 +08:00 [INF]             - Volo.Abp.Users.AbpUsersAbstractionModule
+2024-05-04 17:52:44.816 +08:00 [INF]               - Volo.Abp.EventBus.AbpEventBusModule
+2024-05-04 17:52:44.817 +08:00 [INF]                 - Volo.Abp.Json.AbpJsonModule
+2024-05-04 17:52:44.817 +08:00 [INF]                 - Volo.Abp.Guids.AbpGuidsModule
+2024-05-04 17:52:44.818 +08:00 [INF]                 - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2024-05-04 17:52:44.819 +08:00 [INF]                 - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2024-05-04 17:52:44.820 +08:00 [INF]             - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2024-05-04 17:52:44.821 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2024-05-04 17:52:44.822 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2024-05-04 17:52:44.829 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2024-05-04 17:52:44.843 +08:00 [INF]       - Lion.AbpPro.NotificationManagement.NotificationManagementApplicationContractsModule
+2024-05-04 17:52:44.846 +08:00 [INF]       - Lion.AbpPro.DataDictionaryManagement.DataDictionaryManagementApplicationContractsModule
+2024-05-04 17:52:44.847 +08:00 [INF]     - Lion.AbpPro.BasicManagement.BasicManagementHttpApiModule
+2024-05-04 17:52:44.848 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2024-05-04 17:52:44.848 +08:00 [INF]         - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2024-05-04 17:52:44.849 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingModule
+2024-05-04 17:52:44.849 +08:00 [INF]           - Volo.Abp.Http.AbpHttpModule
+2024-05-04 17:52:44.850 +08:00 [INF]             - Volo.Abp.Http.AbpHttpAbstractionsModule
+2024-05-04 17:52:44.852 +08:00 [INF]             - Volo.Abp.Minify.AbpMinifyModule
+2024-05-04 17:52:44.852 +08:00 [INF]           - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2024-05-04 17:52:44.853 +08:00 [INF]         - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2024-05-04 17:52:44.854 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2024-05-04 17:52:44.855 +08:00 [INF]         - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2024-05-04 17:52:44.855 +08:00 [INF]           - Volo.Abp.UI.AbpUiModule
+2024-05-04 17:52:44.856 +08:00 [INF]         - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2024-05-04 17:52:44.857 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationModule
+2024-05-04 17:52:44.858 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainModule
+2024-05-04 17:52:44.859 +08:00 [INF]             - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2024-05-04 17:52:44.860 +08:00 [INF]             - Volo.Abp.Specifications.AbpSpecificationsModule
+2024-05-04 17:52:44.860 +08:00 [INF]             - Volo.Abp.Caching.AbpCachingModule
+2024-05-04 17:52:44.861 +08:00 [INF]               - Volo.Abp.Serialization.AbpSerializationModule
+2024-05-04 17:52:44.862 +08:00 [INF]     - Lion.AbpPro.NotificationManagement.NotificationManagementHttpApiModule
+2024-05-04 17:52:44.862 +08:00 [INF]     - Lion.AbpPro.DataDictionaryManagement.DataDictionaryManagementHttpApiModule
+2024-05-04 17:52:44.863 +08:00 [INF]   - Lion.AbpPro.SharedHostingMicroserviceModule
+2024-05-04 17:52:44.864 +08:00 [INF]     - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2024-05-04 17:52:44.864 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2024-05-04 17:52:44.865 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2024-05-04 17:52:44.866 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2024-05-04 17:52:44.866 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2024-05-04 17:52:44.867 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2024-05-04 17:52:44.868 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2024-05-04 17:52:44.871 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2024-05-04 17:52:44.872 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2024-05-04 17:52:44.872 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2024-05-04 17:52:44.873 +08:00 [INF]   - Yuannisha.AutomaticElectricitySystem.EntityFrameworkCore.AutomaticElectricitySystemEntityFrameworkCoreModule
+2024-05-04 17:52:44.873 +08:00 [INF]     - Yuannisha.AutomaticElectricitySystem.AutomaticElectricitySystemDomainModule
+2024-05-04 17:52:44.874 +08:00 [INF]       - Lion.AbpPro.BasicManagement.BasicManagementDomainModule
+2024-05-04 17:52:44.875 +08:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2024-05-04 17:52:44.875 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2024-05-04 17:52:44.876 +08:00 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2024-05-04 17:52:44.876 +08:00 [INF]             - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2024-05-04 17:52:44.877 +08:00 [INF]           - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2024-05-04 17:52:44.878 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2024-05-04 17:52:44.878 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainModule
+2024-05-04 17:52:44.879 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainModule
+2024-05-04 17:52:44.879 +08:00 [INF]         - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2024-05-04 17:52:44.880 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2024-05-04 17:52:45.001 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2024-05-04 17:52:45.038 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2024-05-04 17:52:45.042 +08:00 [INF]       - Lion.AbpPro.NotificationManagement.NotificationManagementDomainModule
+2024-05-04 17:52:45.048 +08:00 [INF]       - Lion.AbpPro.DataDictionaryManagement.DataDictionaryManagementDomainModule
+2024-05-04 17:52:45.050 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2024-05-04 17:52:45.054 +08:00 [INF]       - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2024-05-04 17:52:45.058 +08:00 [INF]     - Lion.AbpPro.BasicManagement.EntityFrameworkCore.BasicManagementEntityFrameworkCoreModule
+2024-05-04 17:52:45.061 +08:00 [INF]       - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2024-05-04 17:52:45.063 +08:00 [INF]         - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2024-05-04 17:52:45.065 +08:00 [INF]       - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2024-05-04 17:52:45.068 +08:00 [INF]       - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2024-05-04 17:52:45.069 +08:00 [INF]       - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2024-05-04 17:52:45.071 +08:00 [INF]       - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2024-05-04 17:52:45.073 +08:00 [INF]       - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2024-05-04 17:52:45.074 +08:00 [INF]       - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2024-05-04 17:52:45.076 +08:00 [INF]     - Lion.AbpPro.DataDictionaryManagement.EntityFrameworkCore.DataDictionaryManagementEntityFrameworkCoreModule
+2024-05-04 17:52:45.077 +08:00 [INF]     - Lion.AbpPro.NotificationManagement.EntityFrameworkCore.NotificationManagementEntityFrameworkCoreModule
+2024-05-04 17:52:45.079 +08:00 [INF]   - Volo.Abp.AspNetCore.Authentication.JwtBearer.AbpAspNetCoreAuthenticationJwtBearerModule
+2024-05-04 17:52:45.080 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2024-05-04 17:52:45.082 +08:00 [INF]   - Volo.Abp.Account.Web.AbpAccountWebModule
+2024-05-04 17:52:45.084 +08:00 [INF]     - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2024-05-04 17:52:45.089 +08:00 [INF]   - Yuannisha.AutomaticElectricitySystem.AutomaticElectricitySystemApplicationModule
+2024-05-04 17:52:45.090 +08:00 [INF]     - Lion.AbpPro.BasicManagement.BasicManagementApplicationModule
+2024-05-04 17:52:45.091 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationModule
+2024-05-04 17:52:45.093 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationModule
+2024-05-04 17:52:45.094 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2024-05-04 17:52:45.096 +08:00 [INF]         - Volo.Abp.Emailing.AbpEmailingModule
+2024-05-04 17:52:45.098 +08:00 [INF] Server 苑霓砂:25764:2c2f3211 successfully announced in 769.4337 ms
+2024-05-04 17:52:45.098 +08:00 [INF]           - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2024-05-04 17:52:45.115 +08:00 [INF] Server 苑霓砂:25764:2c2f3211 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-05-04 17:52:45.115 +08:00 [INF]             - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2024-05-04 17:52:45.204 +08:00 [INF]               - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2024-05-04 17:52:45.230 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2024-05-04 17:52:45.317 +08:00 [INF] 1 servers were removed due to timeout
+2024-05-04 17:52:45.473 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2024-05-04 17:52:45.670 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2024-05-04 17:52:45.870 +08:00 [INF] Server 苑霓砂:25764:2c2f3211 all the dispatchers started
+2024-05-04 17:52:45.882 +08:00 [INF]     - Lion.AbpPro.NotificationManagement.NotificationManagementApplicationModule
+2024-05-04 17:52:45.887 +08:00 [INF]       - Volo.Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule
+2024-05-04 17:52:45.889 +08:00 [INF]     - Lion.AbpPro.DataDictionaryManagement.DataDictionaryManagementApplicationModule
+2024-05-04 17:52:45.890 +08:00 [INF]     - Yuannisha.AutomaticElectricitySystem.FreeSqlRepository.AutomaticElectricitySystemFreeSqlModule
+2024-05-04 17:52:45.891 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2024-05-04 17:52:45.898 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2024-05-04 17:52:48.927 +08:00 [INF] Connecting to Redis endpoints: localhost. Using Server Name: 苑霓砂_f231a62908064c8f987a809e20f345a2
+2024-05-04 17:52:48.991 +08:00 [INF] Connected to Redis.
+2024-05-04 17:52:49.050 +08:00 [INF] Initialized all ABP modules.
+2024-05-04 17:54:11.219 +08:00 [INF] Now listening on: http://localhost:44315
+2024-05-04 17:54:11.229 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-04 17:54:11.230 +08:00 [INF] Hosting environment: Development
+2024-05-04 17:54:11.231 +08:00 [INF] Content root path: D:\GraduationProject\testProject5\AutomaticElectricitySystem\abp-vnext-pro-basic-no-ocelot-nuget\aspnet-core\host\Yuannisha.AutomaticElectricitySystem.HttpApi.Host
+2024-05-04 17:54:11.561 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/ - -
+2024-05-04 17:54:16.019 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.Controllers.HomeController.Index (Yuannisha.AutomaticElectricitySystem.HttpApi.Host)'
+2024-05-04 17:54:16.136 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Yuannisha.AutomaticElectricitySystem.Controllers.HomeController (Yuannisha.AutomaticElectricitySystem.HttpApi.Host).
+2024-05-04 17:54:16.220 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.Controllers.HomeController.Index (Yuannisha.AutomaticElectricitySystem.HttpApi.Host) - Validation state: "Valid"
+2024-05-04 17:54:16.232 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.Controllers.HomeController.Index (Yuannisha.AutomaticElectricitySystem.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 1.8943ms.
+2024-05-04 17:54:16.264 +08:00 [INF] Executing RedirectResult, redirecting to /Login.
+2024-05-04 17:54:16.290 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.Controllers.HomeController.Index (Yuannisha.AutomaticElectricitySystem.HttpApi.Host) in 140.5444ms
+2024-05-04 17:54:16.294 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.Controllers.HomeController.Index (Yuannisha.AutomaticElectricitySystem.HttpApi.Host)'
+2024-05-04 17:54:16.386 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/ - - - 302 0 - 4842.1121ms
+2024-05-04 17:54:16.404 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-05-04 17:54:26.290 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 17:54:26.341 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 17:54:26.346 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 17:54:27.307 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-05-04 17:54:27.309 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-05-04 17:54:27.317 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 17:54:27.320 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 17:54:27.473 +08:00 [INF] Executed page /Login in 1127.3249ms
+2024-05-04 17:54:27.475 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 17:54:27.486 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 11082.2988ms
+2024-05-04 17:54:28.220 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/favicon.ico - -
+2024-05-04 17:54:28.245 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/favicon.ico - - - 404 0 - 24.6672ms
+2024-05-04 18:06:43.551 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - -
+2024-05-04 18:06:43.758 +08:00 [INF] CORS policy execution successful.
+2024-05-04 18:06:43.818 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - - - 204 - - 275.8131ms
+2024-05-04 18:06:43.829 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 37
+2024-05-04 18:06:43.843 +08:00 [INF] CORS policy execution successful.
+2024-05-04 18:06:43.892 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-05-04 18:06:44.107 +08:00 [INF] Route matched with {action = "Login", controller = "Account", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Lion.AbpPro.BasicManagement.Users.Dtos.LoginOutput] LoginAsync(Lion.AbpPro.BasicManagement.Users.Dtos.LoginInput) on controller Lion.AbpPro.BasicManagement.Systems.AccountController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-05-04 18:06:44.788 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-05-04 18:06:49.810 +08:00 [ERR] Failed executing DbCommand (1,036ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__normalizedRoleName_0='?' (Size = 256), @__ef_filter__p_2='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t0`.`Id`, `t0`.`ClaimType`, `t0`.`ClaimValue`, `t0`.`RoleId`, `t0`.`TenantId`, `t`.`Id`
+FROM (
+    SELECT `a`.`Id`
+    FROM `AbpRoles` AS `a`
+    WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` IS NULL)) AND (`a`.`NormalizedName` = @__normalizedRoleName_0)
+    ORDER BY `a`.`Id`
+    LIMIT 1
+) AS `t`
+INNER JOIN (
+    SELECT `a0`.`Id`, `a0`.`ClaimType`, `a0`.`ClaimValue`, `a0`.`RoleId`, `a0`.`TenantId`
+    FROM `AbpRoleClaims` AS `a0`
+    WHERE @__ef_filter__p_2 OR (`a0`.`TenantId` IS NULL)
+) AS `t0` ON `t`.`Id` = `t0`.`RoleId`
+ORDER BY `t`.`Id`
+2024-05-04 18:06:50.264 +08:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Volo.Abp.Identity.EntityFrameworkCore.IdentityDbContext'.
+MySqlConnector.MySqlException (0x80004005): Table 'YuannishaAutomaticElectricitySystemDB.AbpRoleClaims' doesn't exist
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 962
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 337
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateSplitIncludeCollectionAsync>g__InitializeReaderAsync|27_0[TIncludingEntity,TIncludedEntity](RelationalQueryContext queryContext, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateSplitIncludeCollectionAsync[TIncludingEntity,TIncludedEntity](Int32 collectionId, RelationalQueryContext queryContext, IExecutionStrategy executionStrategy, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, SplitQueryResultCoordinator resultCoordinator, Func`3 childIdentifier, IReadOnlyList`1 identifierValueComparers, Func`5 innerShaper, Func`4 relatedDataLoaders, INavigationBase inverseNavigation, Action`2 fixup, Boolean trackingQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.TaskAwaiter(Func`1[] taskFactories)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+MySqlConnector.MySqlException (0x80004005): Table 'YuannishaAutomaticElectricitySystemDB.AbpRoleClaims' doesn't exist
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 962
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 337
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateSplitIncludeCollectionAsync>g__InitializeReaderAsync|27_0[TIncludingEntity,TIncludedEntity](RelationalQueryContext queryContext, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateSplitIncludeCollectionAsync[TIncludingEntity,TIncludedEntity](Int32 collectionId, RelationalQueryContext queryContext, IExecutionStrategy executionStrategy, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, SplitQueryResultCoordinator resultCoordinator, Func`3 childIdentifier, IReadOnlyList`1 identifierValueComparers, Func`5 innerShaper, Func`4 relatedDataLoaders, INavigationBase inverseNavigation, Action`2 fixup, Boolean trackingQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.TaskAwaiter(Func`1[] taskFactories)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-05-04 18:06:50.601 +08:00 [ERR] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": null,
+  "message": "对不起,在处理你的请求期间,产生了一个服务器内部错误!",
+  "details": null,
+  "data": {
+    "Server Error Code": 1146,
+    "SqlState": "42S02"
+  },
+  "validationErrors": null
+}
+
+2024-05-04 18:06:50.613 +08:00 [ERR] Table 'YuannishaAutomaticElectricitySystemDB.AbpRoleClaims' doesn't exist
+MySqlConnector.MySqlException (0x80004005): Table 'YuannishaAutomaticElectricitySystemDB.AbpRoleClaims' doesn't exist
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 962
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 337
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateSplitIncludeCollectionAsync>g__InitializeReaderAsync|27_0[TIncludingEntity,TIncludedEntity](RelationalQueryContext queryContext, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateSplitIncludeCollectionAsync[TIncludingEntity,TIncludedEntity](Int32 collectionId, RelationalQueryContext queryContext, IExecutionStrategy executionStrategy, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, SplitQueryResultCoordinator resultCoordinator, Func`3 childIdentifier, IReadOnlyList`1 identifierValueComparers, Func`5 innerShaper, Func`4 relatedDataLoaders, INavigationBase inverseNavigation, Action`2 fixup, Boolean trackingQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.TaskAwaiter(Func`1[] taskFactories)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Volo.Abp.Identity.EntityFrameworkCore.EfCoreIdentityRoleRepository.FindByNormalizedNameAsync(String normalizedRoleName, Boolean includeDetails, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Microsoft.AspNetCore.Identity.UserClaimsPrincipalFactory`2.GenerateClaimsAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserClaimsPrincipalFactory`1.CreateAsync(TUser user)
+   at Volo.Abp.Identity.AbpUserClaimsPrincipalFactory.CreateAsync(IdentityUser user)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.CreateUserPrincipalAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.SignInWithClaimsAsync(TUser user, AuthenticationProperties authenticationProperties, IEnumerable`1 additionalClaims)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.SignInOrTwoFactorAsync(TUser user, Boolean isPersistent, String loginProvider, Boolean bypassTwoFactor)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.PasswordSignInAsync(TUser user, String password, Boolean isPersistent, Boolean lockoutOnFailure)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.PasswordSignInAsync(String userName, String password, Boolean isPersistent, Boolean lockoutOnFailure)
+   at Volo.Abp.Identity.AspNetCore.AbpSignInManager.PasswordSignInAsync(String userName, String password, Boolean isPersistent, Boolean lockoutOnFailure)
+   at Lion.AbpPro.BasicManagement.Users.AccountAppService.LoginAsync(LoginInput input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.ProceedByLoggingAsync(IAbpMethodInvocation invocation, AbpAuditingOptions options, IAuditingHelper auditingHelper, IAuditLogScope auditLogScope)
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at lambda_method1816(Closure, Object)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-05-04 18:06:50.738 +08:00 [ERR] ---------- Exception Data ----------
+Server Error Code = 1146
+SqlState = 42S02
+
+2024-05-04 18:06:50.831 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2024-05-04 18:06:50.877 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) in 6766.3403ms
+2024-05-04 18:06:50.880 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-05-04 18:06:51.739 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 37 - 500 - application/json;+charset=utf-8 7909.0788ms
+2024-05-04 21:21:22.735 +08:00 [INF] DB tables already exist. Exit install
+2024-05-04 21:21:23.006 +08:00 [INF] Starting Hangfire Server using job storage: 'Server: localhost@YuannishaAutomaticElectricitySystemDB'
+2024-05-04 21:21:23.009 +08:00 [INF] Using the following options for SQL Server job storage:
+2024-05-04 21:21:23.010 +08:00 [INF]     Queue poll interval: 00:00:15.
+2024-05-04 21:21:23.011 +08:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-05-04 21:21:23.056 +08:00 [INF] Loaded ABP modules:
+2024-05-04 21:21:23.070 +08:00 [INF] - Yuannisha.AutomaticElectricitySystem.AutomaticElectricitySystemHttpApiHostModule
+2024-05-04 21:21:23.070 +08:00 [INF]   - Yuannisha.AutomaticElectricitySystem.AutomaticElectricitySystemHttpApiModule
+2024-05-04 21:21:23.071 +08:00 [INF]     - Yuannisha.AutomaticElectricitySystem.AutomaticElectricitySystemApplicationContractsModule
+2024-05-04 21:21:23.072 +08:00 [INF]       - Yuannisha.AutomaticElectricitySystem.AutomaticElectricitySystemDomainSharedModule
+2024-05-04 21:21:23.082 +08:00 [INF]         - Lion.AbpPro.BasicManagement.BasicManagementDomainSharedModule
+2024-05-04 21:21:23.082 +08:00 [INF]           - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2024-05-04 21:21:23.083 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationModule
+2024-05-04 21:21:23.084 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2024-05-04 21:21:23.085 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationModule
+2024-05-04 21:21:23.085 +08:00 [INF]                 - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2024-05-04 21:21:23.086 +08:00 [INF]                 - Volo.Abp.Settings.AbpSettingsModule
+2024-05-04 21:21:23.087 +08:00 [INF]                   - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2024-05-04 21:21:23.088 +08:00 [INF]                   - Volo.Abp.Security.AbpSecurityModule
+2024-05-04 21:21:23.089 +08:00 [INF]                   - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2024-05-04 21:21:23.090 +08:00 [INF]                     - Volo.Abp.Data.AbpDataModule
+2024-05-04 21:21:23.090 +08:00 [INF]                       - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2024-05-04 21:21:23.091 +08:00 [INF]                       - Volo.Abp.Uow.AbpUnitOfWorkModule
+2024-05-04 21:21:23.092 +08:00 [INF]                       - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2024-05-04 21:21:23.093 +08:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2024-05-04 21:21:23.094 +08:00 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2024-05-04 21:21:23.094 +08:00 [INF]           - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2024-05-04 21:21:23.104 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2024-05-04 21:21:23.105 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2024-05-04 21:21:23.106 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2024-05-04 21:21:23.107 +08:00 [INF]           - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2024-05-04 21:21:23.108 +08:00 [INF]             - Volo.Abp.Users.AbpUsersDomainSharedModule
+2024-05-04 21:21:23.108 +08:00 [INF]             - Volo.Abp.Features.AbpFeaturesModule
+2024-05-04 21:21:23.109 +08:00 [INF]               - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2024-05-04 21:21:23.110 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2024-05-04 21:21:23.111 +08:00 [INF]           - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2024-05-04 21:21:23.112 +08:00 [INF]           - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2024-05-04 21:21:23.112 +08:00 [INF]           - Lion.AbpPro.Core.LionAbpProCoreModule
+2024-05-04 21:21:23.113 +08:00 [INF]             - Lion.AbpPro.LionAbpProLocalizationModule
+2024-05-04 21:21:23.114 +08:00 [INF]               - Volo.Abp.Autofac.AbpAutofacModule
+2024-05-04 21:21:23.115 +08:00 [INF]                 - Volo.Abp.Castle.AbpCastleCoreModule
+2024-05-04 21:21:23.115 +08:00 [INF]         - Lion.AbpPro.NotificationManagement.NotificationManagementDomainSharedModule
+2024-05-04 21:21:23.116 +08:00 [INF]         - Lion.AbpPro.DataDictionaryManagement.DataDictionaryManagementDomainSharedModule
+2024-05-04 21:21:23.117 +08:00 [INF]       - Lion.AbpPro.BasicManagement.BasicManagementApplicationContractsModule
+2024-05-04 21:21:23.118 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2024-05-04 21:21:23.118 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2024-05-04 21:21:23.119 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2024-05-04 21:21:23.120 +08:00 [INF]         - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2024-05-04 21:21:23.121 +08:00 [INF]           - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2024-05-04 21:21:23.122 +08:00 [INF]             - Volo.Abp.Users.AbpUsersAbstractionModule
+2024-05-04 21:21:23.123 +08:00 [INF]               - Volo.Abp.EventBus.AbpEventBusModule
+2024-05-04 21:21:23.123 +08:00 [INF]                 - Volo.Abp.Json.AbpJsonModule
+2024-05-04 21:21:23.124 +08:00 [INF]                 - Volo.Abp.Guids.AbpGuidsModule
+2024-05-04 21:21:23.125 +08:00 [INF]                 - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2024-05-04 21:21:23.125 +08:00 [INF]                 - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2024-05-04 21:21:23.126 +08:00 [INF]             - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2024-05-04 21:21:23.127 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2024-05-04 21:21:23.127 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2024-05-04 21:21:23.128 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2024-05-04 21:21:23.129 +08:00 [INF]       - Lion.AbpPro.NotificationManagement.NotificationManagementApplicationContractsModule
+2024-05-04 21:21:23.129 +08:00 [INF]       - Lion.AbpPro.DataDictionaryManagement.DataDictionaryManagementApplicationContractsModule
+2024-05-04 21:21:23.130 +08:00 [INF]     - Lion.AbpPro.BasicManagement.BasicManagementHttpApiModule
+2024-05-04 21:21:23.131 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2024-05-04 21:21:23.131 +08:00 [INF]         - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2024-05-04 21:21:23.132 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingModule
+2024-05-04 21:21:23.133 +08:00 [INF]           - Volo.Abp.Http.AbpHttpModule
+2024-05-04 21:21:23.134 +08:00 [INF]             - Volo.Abp.Http.AbpHttpAbstractionsModule
+2024-05-04 21:21:23.134 +08:00 [INF]             - Volo.Abp.Minify.AbpMinifyModule
+2024-05-04 21:21:23.135 +08:00 [INF]           - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2024-05-04 21:21:23.136 +08:00 [INF]         - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2024-05-04 21:21:23.137 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2024-05-04 21:21:23.137 +08:00 [INF]         - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2024-05-04 21:21:23.138 +08:00 [INF]           - Volo.Abp.UI.AbpUiModule
+2024-05-04 21:21:23.139 +08:00 [INF]         - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2024-05-04 21:21:23.139 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationModule
+2024-05-04 21:21:23.140 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainModule
+2024-05-04 21:21:23.141 +08:00 [INF]             - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2024-05-04 21:21:23.141 +08:00 [INF]             - Volo.Abp.Specifications.AbpSpecificationsModule
+2024-05-04 21:21:23.142 +08:00 [INF]             - Volo.Abp.Caching.AbpCachingModule
+2024-05-04 21:21:23.143 +08:00 [INF]               - Volo.Abp.Serialization.AbpSerializationModule
+2024-05-04 21:21:23.144 +08:00 [INF]     - Lion.AbpPro.NotificationManagement.NotificationManagementHttpApiModule
+2024-05-04 21:21:23.144 +08:00 [INF]     - Lion.AbpPro.DataDictionaryManagement.DataDictionaryManagementHttpApiModule
+2024-05-04 21:21:23.145 +08:00 [INF]   - Lion.AbpPro.SharedHostingMicroserviceModule
+2024-05-04 21:21:23.146 +08:00 [INF]     - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2024-05-04 21:21:23.147 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2024-05-04 21:21:23.148 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2024-05-04 21:21:23.150 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2024-05-04 21:21:23.151 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2024-05-04 21:21:23.151 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2024-05-04 21:21:23.152 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2024-05-04 21:21:23.153 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2024-05-04 21:21:23.154 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2024-05-04 21:21:23.154 +08:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2024-05-04 21:21:23.155 +08:00 [INF]   - Yuannisha.AutomaticElectricitySystem.EntityFrameworkCore.AutomaticElectricitySystemEntityFrameworkCoreModule
+2024-05-04 21:21:23.156 +08:00 [INF]     - Yuannisha.AutomaticElectricitySystem.AutomaticElectricitySystemDomainModule
+2024-05-04 21:21:23.157 +08:00 [INF]       - Lion.AbpPro.BasicManagement.BasicManagementDomainModule
+2024-05-04 21:21:23.157 +08:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2024-05-04 21:21:23.158 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2024-05-04 21:21:23.159 +08:00 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2024-05-04 21:21:23.160 +08:00 [INF]             - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2024-05-04 21:21:23.161 +08:00 [INF]           - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2024-05-04 21:21:23.161 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2024-05-04 21:21:23.162 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainModule
+2024-05-04 21:21:23.163 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainModule
+2024-05-04 21:21:23.164 +08:00 [INF]         - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2024-05-04 21:21:23.165 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2024-05-04 21:21:23.167 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2024-05-04 21:21:23.168 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2024-05-04 21:21:23.169 +08:00 [INF]       - Lion.AbpPro.NotificationManagement.NotificationManagementDomainModule
+2024-05-04 21:21:23.170 +08:00 [INF]       - Lion.AbpPro.DataDictionaryManagement.DataDictionaryManagementDomainModule
+2024-05-04 21:21:23.170 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2024-05-04 21:21:23.171 +08:00 [INF]       - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2024-05-04 21:21:23.172 +08:00 [INF]     - Lion.AbpPro.BasicManagement.EntityFrameworkCore.BasicManagementEntityFrameworkCoreModule
+2024-05-04 21:21:23.173 +08:00 [INF]       - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2024-05-04 21:21:23.174 +08:00 [INF]         - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2024-05-04 21:21:23.174 +08:00 [INF]       - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2024-05-04 21:21:23.175 +08:00 [INF]       - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2024-05-04 21:21:23.176 +08:00 [INF]       - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2024-05-04 21:21:23.176 +08:00 [INF]       - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2024-05-04 21:21:23.177 +08:00 [INF]       - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2024-05-04 21:21:23.178 +08:00 [INF]       - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2024-05-04 21:21:23.179 +08:00 [INF]     - Lion.AbpPro.DataDictionaryManagement.EntityFrameworkCore.DataDictionaryManagementEntityFrameworkCoreModule
+2024-05-04 21:21:23.180 +08:00 [INF]     - Lion.AbpPro.NotificationManagement.EntityFrameworkCore.NotificationManagementEntityFrameworkCoreModule
+2024-05-04 21:21:23.181 +08:00 [INF]   - Volo.Abp.AspNetCore.Authentication.JwtBearer.AbpAspNetCoreAuthenticationJwtBearerModule
+2024-05-04 21:21:23.182 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2024-05-04 21:21:23.182 +08:00 [INF]   - Volo.Abp.Account.Web.AbpAccountWebModule
+2024-05-04 21:21:23.183 +08:00 [INF]     - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2024-05-04 21:21:23.184 +08:00 [INF]   - Yuannisha.AutomaticElectricitySystem.AutomaticElectricitySystemApplicationModule
+2024-05-04 21:21:23.185 +08:00 [INF]     - Lion.AbpPro.BasicManagement.BasicManagementApplicationModule
+2024-05-04 21:21:23.185 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationModule
+2024-05-04 21:21:23.186 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationModule
+2024-05-04 21:21:23.187 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2024-05-04 21:21:23.188 +08:00 [INF]         - Volo.Abp.Emailing.AbpEmailingModule
+2024-05-04 21:21:23.188 +08:00 [INF]           - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2024-05-04 21:21:23.189 +08:00 [INF]             - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2024-05-04 21:21:23.191 +08:00 [INF]               - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2024-05-04 21:21:23.191 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2024-05-04 21:21:23.192 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2024-05-04 21:21:23.193 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2024-05-04 21:21:23.194 +08:00 [INF]     - Lion.AbpPro.NotificationManagement.NotificationManagementApplicationModule
+2024-05-04 21:21:23.195 +08:00 [INF]       - Volo.Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule
+2024-05-04 21:21:23.196 +08:00 [INF]     - Lion.AbpPro.DataDictionaryManagement.DataDictionaryManagementApplicationModule
+2024-05-04 21:21:23.196 +08:00 [INF]     - Yuannisha.AutomaticElectricitySystem.FreeSqlRepository.AutomaticElectricitySystemFreeSqlModule
+2024-05-04 21:21:23.197 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2024-05-04 21:21:23.198 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2024-05-04 21:21:23.331 +08:00 [INF] Server 苑霓砂:7848:15a68fe3 successfully announced in 287.2963 ms
+2024-05-04 21:21:23.340 +08:00 [INF] Server 苑霓砂:7848:15a68fe3 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-05-04 21:21:23.388 +08:00 [INF] 1 servers were removed due to timeout
+2024-05-04 21:21:23.487 +08:00 [INF] Server 苑霓砂:7848:15a68fe3 all the dispatchers started
+2024-05-04 21:21:25.144 +08:00 [INF] Connecting to Redis endpoints: localhost. Using Server Name: 苑霓砂_26aa202435784ebcaecd1cde0561f8bb
+2024-05-04 21:21:25.189 +08:00 [INF] Connected to Redis.
+2024-05-04 21:21:25.243 +08:00 [INF] Initialized all ABP modules.
+2024-05-04 21:21:25.581 +08:00 [INF] Now listening on: http://localhost:44315
+2024-05-04 21:21:25.588 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-04 21:21:25.589 +08:00 [INF] Hosting environment: Development
+2024-05-04 21:21:25.590 +08:00 [INF] Content root path: D:\GraduationProject\testProject5\AutomaticElectricitySystem\abp-vnext-pro-basic-no-ocelot-nuget\aspnet-core\host\Yuannisha.AutomaticElectricitySystem.HttpApi.Host
+2024-05-04 21:21:25.916 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/ - -
+2024-05-04 21:21:29.046 +08:00 [INF] Executing endpoint 'Yuannisha.AutomaticElectricitySystem.Controllers.HomeController.Index (Yuannisha.AutomaticElectricitySystem.HttpApi.Host)'
+2024-05-04 21:21:29.126 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Yuannisha.AutomaticElectricitySystem.Controllers.HomeController (Yuannisha.AutomaticElectricitySystem.HttpApi.Host).
+2024-05-04 21:21:29.191 +08:00 [INF] Executing action method Yuannisha.AutomaticElectricitySystem.Controllers.HomeController.Index (Yuannisha.AutomaticElectricitySystem.HttpApi.Host) - Validation state: "Valid"
+2024-05-04 21:21:29.203 +08:00 [INF] Executed action method Yuannisha.AutomaticElectricitySystem.Controllers.HomeController.Index (Yuannisha.AutomaticElectricitySystem.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 2.7333ms.
+2024-05-04 21:21:29.227 +08:00 [INF] Executing RedirectResult, redirecting to /Login.
+2024-05-04 21:21:29.243 +08:00 [INF] Executed action Yuannisha.AutomaticElectricitySystem.Controllers.HomeController.Index (Yuannisha.AutomaticElectricitySystem.HttpApi.Host) in 107.0999ms
+2024-05-04 21:21:29.246 +08:00 [INF] Executed endpoint 'Yuannisha.AutomaticElectricitySystem.Controllers.HomeController.Index (Yuannisha.AutomaticElectricitySystem.HttpApi.Host)'
+2024-05-04 21:21:29.304 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/ - - - 302 0 - 3393.3726ms
+2024-05-04 21:21:29.314 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-05-04 21:21:35.979 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:21:36.015 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:21:36.018 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:21:36.788 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-05-04 21:21:36.791 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-05-04 21:21:36.800 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:21:36.803 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:21:36.960 +08:00 [INF] Executed page /Login in 942.6493ms
+2024-05-04 21:21:36.963 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:21:36.972 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 7657.8555ms
+2024-05-04 21:21:38.203 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/favicon.ico - -
+2024-05-04 21:21:38.230 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/favicon.ico - - - 404 0 - 26.2589ms
+2024-05-04 21:23:11.970 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 214
+2024-05-04 21:23:11.977 +08:00 [INF] CORS policy execution failed.
+2024-05-04 21:23:11.979 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-05-04 21:23:11.987 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:23:11.989 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:23:11.990 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:23:12.033 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-05-04 21:23:14.109 +08:00 [ERR] Failed executing DbCommand (425ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__normalizedRoleName_0='?' (Size = 256), @__ef_filter__p_2='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t0`.`Id`, `t0`.`ClaimType`, `t0`.`ClaimValue`, `t0`.`RoleId`, `t0`.`TenantId`, `t`.`Id`
+FROM (
+    SELECT `a`.`Id`
+    FROM `AbpRoles` AS `a`
+    WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` IS NULL)) AND (`a`.`NormalizedName` = @__normalizedRoleName_0)
+    ORDER BY `a`.`Id`
+    LIMIT 1
+) AS `t`
+INNER JOIN (
+    SELECT `a0`.`Id`, `a0`.`ClaimType`, `a0`.`ClaimValue`, `a0`.`RoleId`, `a0`.`TenantId`
+    FROM `AbpRoleClaims` AS `a0`
+    WHERE @__ef_filter__p_2 OR (`a0`.`TenantId` IS NULL)
+) AS `t0` ON `t`.`Id` = `t0`.`RoleId`
+ORDER BY `t`.`Id`
+2024-05-04 21:23:14.204 +08:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Volo.Abp.Identity.EntityFrameworkCore.IdentityDbContext'.
+MySqlConnector.MySqlException (0x80004005): Table 'YuannishaAutomaticElectricitySystemDB.AbpRoleClaims' doesn't exist
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 962
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 337
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateSplitIncludeCollectionAsync>g__InitializeReaderAsync|27_0[TIncludingEntity,TIncludedEntity](RelationalQueryContext queryContext, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateSplitIncludeCollectionAsync[TIncludingEntity,TIncludedEntity](Int32 collectionId, RelationalQueryContext queryContext, IExecutionStrategy executionStrategy, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, SplitQueryResultCoordinator resultCoordinator, Func`3 childIdentifier, IReadOnlyList`1 identifierValueComparers, Func`5 innerShaper, Func`4 relatedDataLoaders, INavigationBase inverseNavigation, Action`2 fixup, Boolean trackingQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.TaskAwaiter(Func`1[] taskFactories)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+MySqlConnector.MySqlException (0x80004005): Table 'YuannishaAutomaticElectricitySystemDB.AbpRoleClaims' doesn't exist
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 962
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 337
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateSplitIncludeCollectionAsync>g__InitializeReaderAsync|27_0[TIncludingEntity,TIncludedEntity](RelationalQueryContext queryContext, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateSplitIncludeCollectionAsync[TIncludingEntity,TIncludedEntity](Int32 collectionId, RelationalQueryContext queryContext, IExecutionStrategy executionStrategy, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, SplitQueryResultCoordinator resultCoordinator, Func`3 childIdentifier, IReadOnlyList`1 identifierValueComparers, Func`5 innerShaper, Func`4 relatedDataLoaders, INavigationBase inverseNavigation, Action`2 fixup, Boolean trackingQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.TaskAwaiter(Func`1[] taskFactories)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-05-04 21:23:15.236 +08:00 [ERR] 登录失败：Table 'YuannishaAutomaticElectricitySystemDB.AbpRoleClaims' doesn't exist
+2024-05-04 21:23:15.247 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-05-04 21:23:15.251 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:23:15.253 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:23:15.296 +08:00 [INF] Executed page /Login in 3305.9875ms
+2024-05-04 21:23:15.300 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:23:15.301 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-05-04 21:23:15.305 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:23:15.306 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:23:15.308 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:23:15.322 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-05-04 21:23:15.323 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-05-04 21:23:15.325 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:23:15.327 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:23:15.332 +08:00 [INF] Executed page /Login in 24.0924ms
+2024-05-04 21:23:15.335 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:23:15.339 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 37.1424ms
+2024-05-04 21:23:16.252 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 214 - 302 - text/html;+charset=utf-8 4282.4945ms
+2024-05-04 21:23:33.675 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 214
+2024-05-04 21:23:33.677 +08:00 [INF] CORS policy execution failed.
+2024-05-04 21:23:33.678 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-05-04 21:23:33.683 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:23:33.684 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:23:33.685 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:23:33.699 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-05-04 21:23:34.092 +08:00 [ERR] Failed executing DbCommand (228ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__normalizedRoleName_0='?' (Size = 256), @__ef_filter__p_2='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t0`.`Id`, `t0`.`ClaimType`, `t0`.`ClaimValue`, `t0`.`RoleId`, `t0`.`TenantId`, `t`.`Id`
+FROM (
+    SELECT `a`.`Id`
+    FROM `AbpRoles` AS `a`
+    WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` IS NULL)) AND (`a`.`NormalizedName` = @__normalizedRoleName_0)
+    ORDER BY `a`.`Id`
+    LIMIT 1
+) AS `t`
+INNER JOIN (
+    SELECT `a0`.`Id`, `a0`.`ClaimType`, `a0`.`ClaimValue`, `a0`.`RoleId`, `a0`.`TenantId`
+    FROM `AbpRoleClaims` AS `a0`
+    WHERE @__ef_filter__p_2 OR (`a0`.`TenantId` IS NULL)
+) AS `t0` ON `t`.`Id` = `t0`.`RoleId`
+ORDER BY `t`.`Id`
+2024-05-04 21:23:34.099 +08:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Volo.Abp.Identity.EntityFrameworkCore.IdentityDbContext'.
+MySqlConnector.MySqlException (0x80004005): Table 'YuannishaAutomaticElectricitySystemDB.AbpRoleClaims' doesn't exist
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 962
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 337
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateSplitIncludeCollectionAsync>g__InitializeReaderAsync|27_0[TIncludingEntity,TIncludedEntity](RelationalQueryContext queryContext, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateSplitIncludeCollectionAsync[TIncludingEntity,TIncludedEntity](Int32 collectionId, RelationalQueryContext queryContext, IExecutionStrategy executionStrategy, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, SplitQueryResultCoordinator resultCoordinator, Func`3 childIdentifier, IReadOnlyList`1 identifierValueComparers, Func`5 innerShaper, Func`4 relatedDataLoaders, INavigationBase inverseNavigation, Action`2 fixup, Boolean trackingQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.TaskAwaiter(Func`1[] taskFactories)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+MySqlConnector.MySqlException (0x80004005): Table 'YuannishaAutomaticElectricitySystemDB.AbpRoleClaims' doesn't exist
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 962
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 337
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateSplitIncludeCollectionAsync>g__InitializeReaderAsync|27_0[TIncludingEntity,TIncludedEntity](RelationalQueryContext queryContext, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateSplitIncludeCollectionAsync[TIncludingEntity,TIncludedEntity](Int32 collectionId, RelationalQueryContext queryContext, IExecutionStrategy executionStrategy, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, SplitQueryResultCoordinator resultCoordinator, Func`3 childIdentifier, IReadOnlyList`1 identifierValueComparers, Func`5 innerShaper, Func`4 relatedDataLoaders, INavigationBase inverseNavigation, Action`2 fixup, Boolean trackingQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.TaskAwaiter(Func`1[] taskFactories)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-05-04 21:23:34.388 +08:00 [ERR] 登录失败：Table 'YuannishaAutomaticElectricitySystemDB.AbpRoleClaims' doesn't exist
+2024-05-04 21:23:34.389 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-05-04 21:23:34.391 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:23:34.391 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:23:34.397 +08:00 [INF] Executed page /Login in 711.4063ms
+2024-05-04 21:23:34.399 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:23:34.400 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-05-04 21:23:34.404 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:23:34.405 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:23:34.406 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:23:34.413 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-05-04 21:23:34.414 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-05-04 21:23:34.415 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:23:34.416 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:23:34.419 +08:00 [INF] Executed page /Login in 12.8097ms
+2024-05-04 21:23:34.422 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:23:34.426 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 26.0536ms
+2024-05-04 21:23:34.464 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 214 - 302 - text/html;+charset=utf-8 789.2978ms
+2024-05-04 21:23:47.946 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 214
+2024-05-04 21:23:47.950 +08:00 [INF] CORS policy execution failed.
+2024-05-04 21:23:47.951 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-05-04 21:23:47.953 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:23:47.955 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:23:47.956 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:23:47.965 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-05-04 21:23:48.401 +08:00 [ERR] Failed executing DbCommand (253ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__normalizedRoleName_0='?' (Size = 256), @__ef_filter__p_2='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t0`.`Id`, `t0`.`ClaimType`, `t0`.`ClaimValue`, `t0`.`RoleId`, `t0`.`TenantId`, `t`.`Id`
+FROM (
+    SELECT `a`.`Id`
+    FROM `AbpRoles` AS `a`
+    WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` IS NULL)) AND (`a`.`NormalizedName` = @__normalizedRoleName_0)
+    ORDER BY `a`.`Id`
+    LIMIT 1
+) AS `t`
+INNER JOIN (
+    SELECT `a0`.`Id`, `a0`.`ClaimType`, `a0`.`ClaimValue`, `a0`.`RoleId`, `a0`.`TenantId`
+    FROM `AbpRoleClaims` AS `a0`
+    WHERE @__ef_filter__p_2 OR (`a0`.`TenantId` IS NULL)
+) AS `t0` ON `t`.`Id` = `t0`.`RoleId`
+ORDER BY `t`.`Id`
+2024-05-04 21:23:48.407 +08:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Volo.Abp.Identity.EntityFrameworkCore.IdentityDbContext'.
+MySqlConnector.MySqlException (0x80004005): Table 'YuannishaAutomaticElectricitySystemDB.AbpRoleClaims' doesn't exist
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 962
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 337
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateSplitIncludeCollectionAsync>g__InitializeReaderAsync|27_0[TIncludingEntity,TIncludedEntity](RelationalQueryContext queryContext, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateSplitIncludeCollectionAsync[TIncludingEntity,TIncludedEntity](Int32 collectionId, RelationalQueryContext queryContext, IExecutionStrategy executionStrategy, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, SplitQueryResultCoordinator resultCoordinator, Func`3 childIdentifier, IReadOnlyList`1 identifierValueComparers, Func`5 innerShaper, Func`4 relatedDataLoaders, INavigationBase inverseNavigation, Action`2 fixup, Boolean trackingQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.TaskAwaiter(Func`1[] taskFactories)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+MySqlConnector.MySqlException (0x80004005): Table 'YuannishaAutomaticElectricitySystemDB.AbpRoleClaims' doesn't exist
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 962
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 337
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateSplitIncludeCollectionAsync>g__InitializeReaderAsync|27_0[TIncludingEntity,TIncludedEntity](RelationalQueryContext queryContext, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateSplitIncludeCollectionAsync[TIncludingEntity,TIncludedEntity](Int32 collectionId, RelationalQueryContext queryContext, IExecutionStrategy executionStrategy, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, SplitQueryResultCoordinator resultCoordinator, Func`3 childIdentifier, IReadOnlyList`1 identifierValueComparers, Func`5 innerShaper, Func`4 relatedDataLoaders, INavigationBase inverseNavigation, Action`2 fixup, Boolean trackingQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.TaskAwaiter(Func`1[] taskFactories)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-05-04 21:23:48.672 +08:00 [ERR] 登录失败：Table 'YuannishaAutomaticElectricitySystemDB.AbpRoleClaims' doesn't exist
+2024-05-04 21:23:48.674 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-05-04 21:23:48.675 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:23:48.676 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:23:48.679 +08:00 [INF] Executed page /Login in 723.4235ms
+2024-05-04 21:23:48.680 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:23:48.684 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-05-04 21:23:48.687 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:23:48.688 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:23:48.689 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:23:48.694 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-05-04 21:23:48.698 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-05-04 21:23:48.701 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:23:48.702 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:23:48.703 +08:00 [INF] Executed page /Login in 14.1241ms
+2024-05-04 21:23:48.704 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:23:48.707 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 22.3142ms
+2024-05-04 21:23:48.730 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 214 - 302 - text/html;+charset=utf-8 784.1840ms
+2024-05-04 21:23:51.962 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 208
+2024-05-04 21:23:51.964 +08:00 [INF] CORS policy execution failed.
+2024-05-04 21:23:51.966 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-05-04 21:23:51.972 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:23:51.975 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:23:51.978 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:23:51.991 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-05-04 21:23:52.281 +08:00 [ERR] 登录失败：Exception of type 'Volo.Abp.BusinessException' was thrown.
+2024-05-04 21:23:52.282 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-05-04 21:23:52.284 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:23:52.285 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:23:52.288 +08:00 [INF] Executed page /Login in 310.184ms
+2024-05-04 21:23:52.289 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:23:52.293 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-05-04 21:23:52.295 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:23:52.296 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:23:52.298 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:23:52.307 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-05-04 21:23:52.308 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-05-04 21:23:52.309 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:23:52.312 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:23:52.316 +08:00 [INF] Executed page /Login in 18.3246ms
+2024-05-04 21:23:52.318 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:23:52.320 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 26.6949ms
+2024-05-04 21:23:52.349 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 208 - 302 - text/html;+charset=utf-8 386.8862ms
+2024-05-04 21:24:11.459 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 208
+2024-05-04 21:24:11.462 +08:00 [INF] CORS policy execution failed.
+2024-05-04 21:24:11.463 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-05-04 21:24:11.466 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:24:11.467 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:24:11.468 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:24:11.478 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-05-04 21:24:11.723 +08:00 [ERR] 登录失败：Exception of type 'Volo.Abp.BusinessException' was thrown.
+2024-05-04 21:24:11.724 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-05-04 21:24:11.726 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:24:11.727 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:24:11.731 +08:00 [INF] Executed page /Login in 262.5785ms
+2024-05-04 21:24:11.732 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:24:11.739 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-05-04 21:24:11.743 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:24:11.745 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:24:11.747 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:24:11.779 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-05-04 21:24:11.781 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-05-04 21:24:11.784 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:24:11.785 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:24:11.791 +08:00 [INF] Executed page /Login in 44.2294ms
+2024-05-04 21:24:11.793 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:24:11.794 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 55.4373ms
+2024-05-04 21:24:11.905 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 208 - 302 - text/html;+charset=utf-8 447.4164ms
+2024-05-04 21:26:50.610 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 208
+2024-05-04 21:26:50.615 +08:00 [INF] CORS policy execution failed.
+2024-05-04 21:26:50.616 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-05-04 21:26:50.622 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:26:50.624 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:26:50.630 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:26:50.656 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-05-04 21:26:50.942 +08:00 [ERR] 登录失败：Exception of type 'Volo.Abp.BusinessException' was thrown.
+2024-05-04 21:26:50.943 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-05-04 21:26:50.945 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:26:50.945 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:26:50.949 +08:00 [INF] Executed page /Login in 320.4848ms
+2024-05-04 21:26:50.950 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:26:50.954 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-05-04 21:26:50.959 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:26:50.961 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:26:50.963 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:26:50.974 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-05-04 21:26:50.978 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-05-04 21:26:50.981 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:26:50.982 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:26:50.984 +08:00 [INF] Executed page /Login in 21.2342ms
+2024-05-04 21:26:50.985 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:26:50.987 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 32.9711ms
+2024-05-04 21:26:51.018 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 208 - 302 - text/html;+charset=utf-8 408.5467ms
+2024-05-04 21:26:56.272 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 208
+2024-05-04 21:26:56.274 +08:00 [INF] CORS policy execution failed.
+2024-05-04 21:26:56.276 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-05-04 21:26:56.285 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:26:56.289 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:26:56.292 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:26:56.318 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-05-04 21:26:56.554 +08:00 [ERR] 登录失败：Exception of type 'Volo.Abp.BusinessException' was thrown.
+2024-05-04 21:26:56.555 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-05-04 21:26:56.557 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:26:56.557 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:26:56.561 +08:00 [INF] Executed page /Login in 268.6302ms
+2024-05-04 21:26:56.563 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:26:56.567 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-05-04 21:26:56.572 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:26:56.573 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:26:56.575 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:26:56.595 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-05-04 21:26:56.598 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-05-04 21:26:56.600 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:26:56.601 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:26:56.604 +08:00 [INF] Executed page /Login in 28.8505ms
+2024-05-04 21:26:56.607 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:26:56.610 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 43.1126ms
+2024-05-04 21:26:56.636 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 208 - 302 - text/html;+charset=utf-8 364.9181ms
+2024-05-04 21:27:02.750 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 208
+2024-05-04 21:27:02.753 +08:00 [INF] CORS policy execution failed.
+2024-05-04 21:27:02.755 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-05-04 21:27:02.763 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:02.765 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:02.768 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:02.781 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-05-04 21:27:03.054 +08:00 [ERR] 登录失败：Exception of type 'Volo.Abp.BusinessException' was thrown.
+2024-05-04 21:27:03.055 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-05-04 21:27:03.056 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:03.057 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:03.061 +08:00 [INF] Executed page /Login in 292.1562ms
+2024-05-04 21:27:03.062 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:03.066 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-05-04 21:27:03.071 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:03.073 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:03.074 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:03.087 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-05-04 21:27:03.089 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-05-04 21:27:03.090 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:03.091 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:03.096 +08:00 [INF] Executed page /Login in 21.2468ms
+2024-05-04 21:27:03.097 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:03.099 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 32.8745ms
+2024-05-04 21:27:03.123 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 208 - 302 - text/html;+charset=utf-8 372.2461ms
+2024-05-04 21:27:04.510 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202
+2024-05-04 21:27:04.512 +08:00 [INF] CORS policy execution failed.
+2024-05-04 21:27:04.513 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-05-04 21:27:04.516 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:04.519 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:04.522 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:04.534 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-05-04 21:27:04.536 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-05-04 21:27:04.537 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:04.539 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:04.541 +08:00 [INF] Executed page /Login in 19.9117ms
+2024-05-04 21:27:04.543 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:04.546 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-05-04 21:27:04.550 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:04.551 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:04.553 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:04.571 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-05-04 21:27:04.574 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-05-04 21:27:04.576 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:04.577 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:04.581 +08:00 [INF] Executed page /Login in 27.6716ms
+2024-05-04 21:27:04.582 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:04.584 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 38.4464ms
+2024-05-04 21:27:04.588 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202 - 302 - text/html;+charset=utf-8 78.3338ms
+2024-05-04 21:27:05.229 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202
+2024-05-04 21:27:05.233 +08:00 [INF] CORS policy execution failed.
+2024-05-04 21:27:05.234 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-05-04 21:27:05.238 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:05.239 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:05.242 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:05.252 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-05-04 21:27:05.254 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-05-04 21:27:05.255 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:05.256 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:05.258 +08:00 [INF] Executed page /Login in 16.4971ms
+2024-05-04 21:27:05.260 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:05.264 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-05-04 21:27:05.267 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:05.268 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:05.270 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:05.281 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-05-04 21:27:05.283 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-05-04 21:27:05.284 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:05.285 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:05.290 +08:00 [INF] Executed page /Login in 20.579ms
+2024-05-04 21:27:05.292 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:05.295 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 30.9276ms
+2024-05-04 21:27:05.305 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202 - 302 - text/html;+charset=utf-8 76.4388ms
+2024-05-04 21:27:05.738 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202
+2024-05-04 21:27:05.753 +08:00 [INF] CORS policy execution failed.
+2024-05-04 21:27:05.754 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-05-04 21:27:05.760 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:05.762 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:05.764 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:05.779 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-05-04 21:27:05.780 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-05-04 21:27:05.782 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:05.783 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:05.788 +08:00 [INF] Executed page /Login in 23.7539ms
+2024-05-04 21:27:05.790 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:05.792 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-05-04 21:27:05.797 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:05.800 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:05.801 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:05.821 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-05-04 21:27:05.824 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-05-04 21:27:05.827 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:05.828 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:05.832 +08:00 [INF] Executed page /Login in 30.6998ms
+2024-05-04 21:27:05.834 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202 - 302 - text/html;+charset=utf-8 95.9453ms
+2024-05-04 21:27:05.834 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:05.837 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 44.2672ms
+2024-05-04 21:27:06.181 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202
+2024-05-04 21:27:06.187 +08:00 [INF] CORS policy execution failed.
+2024-05-04 21:27:06.189 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-05-04 21:27:06.194 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:06.196 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:06.197 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:06.208 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-05-04 21:27:06.210 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-05-04 21:27:06.213 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:06.214 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:06.242 +08:00 [INF] Executed page /Login in 45.0279ms
+2024-05-04 21:27:06.243 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202
+2024-05-04 21:27:06.244 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:06.251 +08:00 [INF] CORS policy execution failed.
+2024-05-04 21:27:06.259 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-05-04 21:27:06.279 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:06.283 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:06.298 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:06.332 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-05-04 21:27:06.335 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-05-04 21:27:06.339 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:06.340 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:06.343 +08:00 [INF] Executed page /Login in 44.5006ms
+2024-05-04 21:27:06.348 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:06.355 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-05-04 21:27:06.368 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:06.375 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:06.377 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:06.387 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202 - 302 - text/html;+charset=utf-8 205.5374ms
+2024-05-04 21:27:06.402 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-05-04 21:27:06.407 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-05-04 21:27:06.410 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:06.413 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:06.417 +08:00 [INF] Executed page /Login in 40.478ms
+2024-05-04 21:27:06.422 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:06.424 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 69.0373ms
+2024-05-04 21:27:06.431 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202 - 302 - text/html;+charset=utf-8 187.8779ms
+2024-05-04 21:27:06.442 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202
+2024-05-04 21:27:06.446 +08:00 [INF] CORS policy execution failed.
+2024-05-04 21:27:06.449 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-05-04 21:27:06.453 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:06.455 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:06.456 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:06.471 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-05-04 21:27:06.473 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-05-04 21:27:06.475 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:06.477 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:06.479 +08:00 [INF] Executed page /Login in 22.9668ms
+2024-05-04 21:27:06.481 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:06.485 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-05-04 21:27:06.491 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:06.492 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:06.494 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:06.512 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-05-04 21:27:06.514 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-05-04 21:27:06.518 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:06.521 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:06.525 +08:00 [INF] Executed page /Login in 31.4477ms
+2024-05-04 21:27:06.527 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:06.529 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 43.9771ms
+2024-05-04 21:27:06.533 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202
+2024-05-04 21:27:06.535 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202 - 302 - text/html;+charset=utf-8 92.3617ms
+2024-05-04 21:27:06.537 +08:00 [INF] CORS policy execution failed.
+2024-05-04 21:27:06.538 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-05-04 21:27:06.541 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:06.542 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:06.544 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:06.558 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-05-04 21:27:06.560 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-05-04 21:27:06.561 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:06.562 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:06.565 +08:00 [INF] Executed page /Login in 20.8797ms
+2024-05-04 21:27:06.567 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:06.570 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-05-04 21:27:06.575 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:06.576 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:06.578 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:06.595 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-05-04 21:27:06.597 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-05-04 21:27:06.598 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:06.601 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:06.608 +08:00 [INF] Executed page /Login in 30.6177ms
+2024-05-04 21:27:06.611 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:06.613 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 42.7578ms
+2024-05-04 21:27:06.624 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202 - 302 - text/html;+charset=utf-8 90.5357ms
+2024-05-04 21:27:06.917 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202
+2024-05-04 21:27:06.918 +08:00 [INF] CORS policy execution failed.
+2024-05-04 21:27:06.919 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-05-04 21:27:06.924 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:06.926 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:06.929 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:06.942 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-05-04 21:27:06.943 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-05-04 21:27:06.945 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:06.946 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:06.950 +08:00 [INF] Executed page /Login in 20.9405ms
+2024-05-04 21:27:06.952 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:06.956 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-05-04 21:27:06.962 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:06.964 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:06.975 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:06.992 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-05-04 21:27:06.996 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-05-04 21:27:07.009 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:07.015 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:07.026 +08:00 [INF] Executed page /Login in 53.1743ms
+2024-05-04 21:27:07.028 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:07.030 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 73.8196ms
+2024-05-04 21:27:07.030 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202 - 302 - text/html;+charset=utf-8 113.5239ms
+2024-05-04 21:27:07.082 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202
+2024-05-04 21:27:07.085 +08:00 [INF] CORS policy execution failed.
+2024-05-04 21:27:07.087 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-05-04 21:27:07.094 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:07.095 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:07.097 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:07.112 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-05-04 21:27:07.114 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-05-04 21:27:07.120 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:07.123 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:07.126 +08:00 [INF] Executed page /Login in 29.1992ms
+2024-05-04 21:27:07.128 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:07.224 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202
+2024-05-04 21:27:07.235 +08:00 [INF] CORS policy execution failed.
+2024-05-04 21:27:07.237 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-05-04 21:27:07.245 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:07.257 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:07.269 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:07.304 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-05-04 21:27:07.306 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-05-04 21:27:07.308 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:07.309 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:07.311 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202 - 302 - text/html;+charset=utf-8 228.8279ms
+2024-05-04 21:27:07.312 +08:00 [INF] Executed page /Login in 42.9476ms
+2024-05-04 21:27:07.314 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:07.317 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-05-04 21:27:07.325 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:27:07.326 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:27:07.327 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:27:07.348 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-05-04 21:27:07.350 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-05-04 21:27:07.353 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:27:07.354 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:27:07.359 +08:00 [INF] Executed page /Login in 31.7753ms
+2024-05-04 21:27:07.362 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:27:07.364 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 46.3527ms
+2024-05-04 21:27:07.375 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 202 - 302 - text/html;+charset=utf-8 150.6150ms
+2024-05-04 21:27:23.468 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - -
+2024-05-04 21:27:23.522 +08:00 [INF] CORS policy execution successful.
+2024-05-04 21:27:23.568 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - - - 204 - - 99.7364ms
+2024-05-04 21:27:23.573 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 30
+2024-05-04 21:27:23.581 +08:00 [INF] CORS policy execution successful.
+2024-05-04 21:27:23.587 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-05-04 21:27:23.789 +08:00 [INF] Route matched with {action = "Login", controller = "Account", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Lion.AbpPro.BasicManagement.Users.Dtos.LoginOutput] LoginAsync(Lion.AbpPro.BasicManagement.Users.Dtos.LoginInput) on controller Lion.AbpPro.BasicManagement.Systems.AccountController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-05-04 21:27:24.130 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-05-04 21:27:24.297 +08:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": "Lion.AbpPro.BasicManagement:100003",
+  "message": "用户名或者密码错误",
+  "details": null,
+  "data": {},
+  "validationErrors": null
+}
+
+2024-05-04 21:27:24.306 +08:00 [WRN] Exception of type 'Volo.Abp.BusinessException' was thrown.
+Volo.Abp.BusinessException: Exception of type 'Volo.Abp.BusinessException' was thrown.
+   at Lion.AbpPro.BasicManagement.Users.AccountAppService.LoginAsync(LoginInput input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.ProceedByLoggingAsync(IAbpMethodInvocation invocation, AbpAuditingOptions options, IAuditingHelper auditingHelper, IAuditLogScope auditLogScope)
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at lambda_method2564(Closure, Object)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-05-04 21:27:24.373 +08:00 [WRN] Code:Lion.AbpPro.BasicManagement:100003
+2024-05-04 21:27:24.374 +08:00 [WRN] Details:
+2024-05-04 21:27:24.448 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2024-05-04 21:27:24.510 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) in 718.2747ms
+2024-05-04 21:27:24.511 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-05-04 21:27:24.588 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 30 - 500 - application/json;+charset=utf-8 1014.7888ms
+2024-05-04 21:28:31.115 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - -
+2024-05-04 21:28:31.118 +08:00 [INF] CORS policy execution successful.
+2024-05-04 21:28:31.121 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - - - 204 - - 7.1954ms
+2024-05-04 21:28:31.124 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 38
+2024-05-04 21:28:31.127 +08:00 [INF] CORS policy execution successful.
+2024-05-04 21:28:31.139 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-05-04 21:28:31.157 +08:00 [INF] Route matched with {action = "Login", controller = "Account", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Lion.AbpPro.BasicManagement.Users.Dtos.LoginOutput] LoginAsync(Lion.AbpPro.BasicManagement.Users.Dtos.LoginInput) on controller Lion.AbpPro.BasicManagement.Systems.AccountController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-05-04 21:28:31.213 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-05-04 21:28:31.913 +08:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": "Lion.AbpPro.BasicManagement:100003",
+  "message": "用户名或者密码错误",
+  "details": null,
+  "data": {},
+  "validationErrors": null
+}
+
+2024-05-04 21:28:31.916 +08:00 [WRN] Exception of type 'Volo.Abp.BusinessException' was thrown.
+Volo.Abp.BusinessException: Exception of type 'Volo.Abp.BusinessException' was thrown.
+   at Lion.AbpPro.BasicManagement.Users.AccountAppService.LoginAsync(LoginInput input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.ProceedByLoggingAsync(IAbpMethodInvocation invocation, AbpAuditingOptions options, IAuditingHelper auditingHelper, IAuditLogScope auditLogScope)
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at lambda_method2564(Closure, Object)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-05-04 21:28:31.928 +08:00 [WRN] Code:Lion.AbpPro.BasicManagement:100003
+2024-05-04 21:28:31.930 +08:00 [WRN] Details:
+2024-05-04 21:28:31.932 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2024-05-04 21:28:31.934 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) in 772.1921ms
+2024-05-04 21:28:31.936 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-05-04 21:28:32.145 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 38 - 500 - application/json;+charset=utf-8 1021.4462ms
+2024-05-04 21:40:56.464 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 214
+2024-05-04 21:40:56.515 +08:00 [INF] CORS policy execution failed.
+2024-05-04 21:40:56.518 +08:00 [INF] Request origin http://localhost:44315 does not have permission to access the resource.
+2024-05-04 21:40:56.570 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:40:56.591 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:40:56.596 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:40:56.715 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnPost - ModelState is "Valid"
+2024-05-04 21:40:57.753 +08:00 [ERR] Failed executing DbCommand (373ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__normalizedRoleName_0='?' (Size = 256), @__ef_filter__p_2='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t0`.`Id`, `t0`.`ClaimType`, `t0`.`ClaimValue`, `t0`.`RoleId`, `t0`.`TenantId`, `t`.`Id`
+FROM (
+    SELECT `a`.`Id`
+    FROM `AbpRoles` AS `a`
+    WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` IS NULL)) AND (`a`.`NormalizedName` = @__normalizedRoleName_0)
+    ORDER BY `a`.`Id`
+    LIMIT 1
+) AS `t`
+INNER JOIN (
+    SELECT `a0`.`Id`, `a0`.`ClaimType`, `a0`.`ClaimValue`, `a0`.`RoleId`, `a0`.`TenantId`
+    FROM `AbpRoleClaims` AS `a0`
+    WHERE @__ef_filter__p_2 OR (`a0`.`TenantId` IS NULL)
+) AS `t0` ON `t`.`Id` = `t0`.`RoleId`
+ORDER BY `t`.`Id`
+2024-05-04 21:40:57.802 +08:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Volo.Abp.Identity.EntityFrameworkCore.IdentityDbContext'.
+MySqlConnector.MySqlException (0x80004005): Table 'YuannishaAutomaticElectricitySystemDB.AbpRoleClaims' doesn't exist
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 962
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 337
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateSplitIncludeCollectionAsync>g__InitializeReaderAsync|27_0[TIncludingEntity,TIncludedEntity](RelationalQueryContext queryContext, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateSplitIncludeCollectionAsync[TIncludingEntity,TIncludedEntity](Int32 collectionId, RelationalQueryContext queryContext, IExecutionStrategy executionStrategy, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, SplitQueryResultCoordinator resultCoordinator, Func`3 childIdentifier, IReadOnlyList`1 identifierValueComparers, Func`5 innerShaper, Func`4 relatedDataLoaders, INavigationBase inverseNavigation, Action`2 fixup, Boolean trackingQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.TaskAwaiter(Func`1[] taskFactories)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+MySqlConnector.MySqlException (0x80004005): Table 'YuannishaAutomaticElectricitySystemDB.AbpRoleClaims' doesn't exist
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 962
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 337
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateSplitIncludeCollectionAsync>g__InitializeReaderAsync|27_0[TIncludingEntity,TIncludedEntity](RelationalQueryContext queryContext, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateSplitIncludeCollectionAsync[TIncludingEntity,TIncludedEntity](Int32 collectionId, RelationalQueryContext queryContext, IExecutionStrategy executionStrategy, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, SplitQueryResultCoordinator resultCoordinator, Func`3 childIdentifier, IReadOnlyList`1 identifierValueComparers, Func`5 innerShaper, Func`4 relatedDataLoaders, INavigationBase inverseNavigation, Action`2 fixup, Boolean trackingQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.TaskAwaiter(Func`1[] taskFactories)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-05-04 21:40:58.229 +08:00 [ERR] 登录失败：Table 'YuannishaAutomaticElectricitySystemDB.AbpRoleClaims' doesn't exist
+2024-05-04 21:40:58.231 +08:00 [INF] Executed handler method OnPost, returned result .
+2024-05-04 21:40:58.234 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:40:58.235 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:40:58.279 +08:00 [INF] Executed page /Login in 1686.2737ms
+2024-05-04 21:40:58.281 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:40:58.299 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:44315/Login - -
+2024-05-04 21:40:58.306 +08:00 [INF] Executing endpoint '/Login'
+2024-05-04 21:40:58.307 +08:00 [INF] Route matched with {page = "/Login", action = "", controller = "", area = ""}. Executing page /Login
+2024-05-04 21:40:58.309 +08:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2024-05-04 21:40:58.326 +08:00 [INF] Executing handler method Yuannisha.AutomaticElectricitySystem.Pages.Login.OnGet - ModelState is "Valid"
+2024-05-04 21:40:58.327 +08:00 [INF] Executed handler method OnGet, returned result .
+2024-05-04 21:40:58.329 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-04 21:40:58.331 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-04 21:40:58.335 +08:00 [INF] Executed page /Login in 26.0793ms
+2024-05-04 21:40:58.336 +08:00 [INF] Executed endpoint '/Login'
+2024-05-04 21:40:58.340 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:44315/Login - - - 200 - text/html;+charset=utf-8 41.4727ms
+2024-05-04 21:40:58.467 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/Login application/x-www-form-urlencoded 214 - 302 - text/html;+charset=utf-8 2012.0511ms
+2024-05-04 22:26:15.196 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - -
+2024-05-04 22:26:15.315 +08:00 [INF] CORS policy execution successful.
+2024-05-04 22:26:15.342 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:44315/api/app/account/login - - - 204 - - 156.7875ms
+2024-05-04 22:26:15.348 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 36
+2024-05-04 22:26:15.350 +08:00 [INF] CORS policy execution successful.
+2024-05-04 22:26:15.408 +08:00 [INF] Executing endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-05-04 22:26:15.426 +08:00 [INF] Route matched with {action = "Login", controller = "Account", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Lion.AbpPro.BasicManagement.Users.Dtos.LoginOutput] LoginAsync(Lion.AbpPro.BasicManagement.Users.Dtos.LoginInput) on controller Lion.AbpPro.BasicManagement.Systems.AccountController (Lion.AbpPro.BasicManagement.HttpApi).
+2024-05-04 22:26:15.592 +08:00 [INF] Executing action method Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) - Validation state: "Valid"
+2024-05-04 22:26:16.641 +08:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": "Lion.AbpPro.BasicManagement:100003",
+  "message": "用户名或者密码错误",
+  "details": null,
+  "data": {},
+  "validationErrors": null
+}
+
+2024-05-04 22:26:16.646 +08:00 [WRN] Exception of type 'Volo.Abp.BusinessException' was thrown.
+Volo.Abp.BusinessException: Exception of type 'Volo.Abp.BusinessException' was thrown.
+   at Lion.AbpPro.BasicManagement.Users.AccountAppService.LoginAsync(LoginInput input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.ProceedByLoggingAsync(IAbpMethodInvocation invocation, AbpAuditingOptions options, IAuditingHelper auditingHelper, IAuditLogScope auditLogScope)
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at lambda_method2564(Closure, Object)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-05-04 22:26:16.740 +08:00 [WRN] Code:Lion.AbpPro.BasicManagement:100003
+2024-05-04 22:26:16.744 +08:00 [WRN] Details:
+2024-05-04 22:26:16.751 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2024-05-04 22:26:16.756 +08:00 [INF] Executed action Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi) in 1326.4395ms
+2024-05-04 22:26:16.765 +08:00 [INF] Executed endpoint 'Lion.AbpPro.BasicManagement.Systems.AccountController.LoginAsync (Lion.AbpPro.BasicManagement.HttpApi)'
+2024-05-04 22:26:17.113 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:44315/api/app/account/login application/json 36 - 500 - application/json;+charset=utf-8 1765.8481ms
+2024-05-04 22:53:16.166 +08:00 [ERR] An exception was thrown while activating Volo.Abp.BackgroundJobs.EntityFrameworkCore.BackgroundJobsDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.BackgroundJobs.EntityFrameworkCore.BackgroundJobsDbContext, Volo.Abp.BackgroundJobs.EntityFrameworkCore, Version=7.2.2.0, Culture=neutral, PublicKeyToken=null]].
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.BackgroundJobs.EntityFrameworkCore.BackgroundJobsDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.BackgroundJobs.EntityFrameworkCore.BackgroundJobsDbContext, Volo.Abp.BackgroundJobs.EntityFrameworkCore, Version=7.2.2.0, Culture=neutral, PublicKeyToken=null]].
+ ---> MySqlConnector.MySqlException (0x80004005): Couldn't connect to server
+ ---> System.IO.EndOfStreamException: Expected to read 4 header bytes but only received 0.
+   at MySqlConnector.Protocol.Serialization.ProtocolUtility.<DoReadPayloadAsync>g__AddContinuation|5_0(ValueTask`1 readPacketTask, BufferedByteReader bufferedByteReader, IByteHandler byteHandler, Func`1 getNextSequenceNumber, ArraySegmentHolder`1 previousPayloads, ProtocolErrorBehavior protocolErrorBehavior, IOBehavior ioBehavior) in /_/src/MySqlConnector/Protocol/Serialization/ProtocolUtility.cs:line 494
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 951
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int32 startTickCount, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 456
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int32 startTickCount, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 600
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, String logMessage, Int32 startTickCount, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 403
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, String logMessage, Int32 startTickCount, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 408
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 98
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 128
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int32 startTickCount, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 929
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 423
+   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 382
+   at Microsoft.EntityFrameworkCore.ServerVersion.AutoDetect(String connectionString)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextConfigurationContextMySQLExtensions.UseMySQL(AbpDbContextConfigurationContext context, Action`1 mySQLOptionsAction)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextOptionsMySQLExtensions.<>c__DisplayClass0_0.<UseMySQL>b__0(AbpDbContextConfigurationContext context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Configure[TDbContext](AbpDbContextOptions options, AbpDbContextConfigurationContext`1 context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Create[TDbContext](IServiceProvider serviceProvider)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.<>c__DisplayClass3_0.<Register>b__0(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.<ConfigurePipeline>b__2_0(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ScopeSelectionMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContextAsync(IUnitOfWork unitOfWork)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContextAsync(IUnitOfWork unitOfWork, String connectionStringName, String connectionString)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.GetDbContextAsync()
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.GetDbSetAsync()
+   at Volo.Abp.BackgroundJobs.EntityFrameworkCore.EfCoreBackgroundJobRepository.GetWaitingListQueryAsync(Int32 maxResultCount)
+   at Volo.Abp.BackgroundJobs.EntityFrameworkCore.EfCoreBackgroundJobRepository.GetWaitingListAsync(Int32 maxResultCount, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount)
+   at Volo.Abp.BackgroundJobs.BackgroundJobWorker.DoWorkAsync(PeriodicBackgroundWorkerContext workerContext)
+   at Volo.Abp.BackgroundJobs.BackgroundJobWorker.DoWorkAsync(PeriodicBackgroundWorkerContext workerContext)
+   at Volo.Abp.BackgroundWorkers.AsyncPeriodicBackgroundWorkerBase.DoWorkAsync(CancellationToken cancellationToken)
+2024-05-04 22:53:16.256 +08:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.BackgroundJobs.EntityFrameworkCore.BackgroundJobsDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.BackgroundJobs.EntityFrameworkCore.BackgroundJobsDbContext, Volo.Abp.BackgroundJobs.EntityFrameworkCore, Version=7.2.2.0, Culture=neutral, PublicKeyToken=null]]
+
